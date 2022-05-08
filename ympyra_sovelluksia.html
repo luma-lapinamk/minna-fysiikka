@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sovelluksia &#8212; Fysiikka</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Käsitteitä" href="energia_kasitteet.html" />
+    <link rel="prev" title="Kiihtyvyys ja voimat" href="ympyra_kiihtyvyys.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fysiikka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Fysiikan perusteet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Suureet ja yksiköt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yksikot.html">
+   Suureet ja yksiköt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kymmenpotenssit.html">
+   Kymmenpotenssiesitys
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esitystarkkuus.html">
+   Suureiden esitystarkkuus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasainen liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasainen_liike.html">
+   Suoraviivainen tasainen liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suhteellinen_nopeus.html">
+   Suhteellinen nopeus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="liike_vektorit.html">
+   Paikka- ja nopeusvektorit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Kiihtyvä liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vaakasuora.html">
+   Tasaisesti kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_pystysuora.html">
+   Pystysuuntainen kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vino.html">
+   Vino heittoliike
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voimat
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_perus.html">
+   Peruskäsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_newton.html">
+   Newtonin lait
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_sovelluksia.html">
+   Dynamiikkaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ympyräliike
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_suureet.html">
+   Ympyräliike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_kiihtyvyys.html">
+   Kiihtyvyys ja voimat
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Energia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_kasitteet.html">
+   Käsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_mekaaninen.html">
+   Mekaaninen energia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_periaate.html">
+   Energian säilyminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Törmäyksiä
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="liikemaara.html">
+   Liikemäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tormaykset.html">
+   Törmäyksiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jäykät kappaleet
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="hitausmomentit.html">
+   Hitausmomentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vieriminen.html">
+   Vieriminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Momentit ja tasapaino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentti.html">
+   Voiman momentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="painopiste.html">
+   Painopiste
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasapaino.html">
+   Tasapainoehdot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Nesteet ja kaasut
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_paikallaan.html">
+   Hydrostatiikkaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_liikkeessa.html">
+   Liikkuvat nesteet ja kaasut
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/ympyra_sovelluksia.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/luma-lapinamk/minna-fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kallistamaton-kaarre">
+   Kallistamaton kaarre
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kallistettu-kaarre">
+   Kallistettu kaarre
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optimaalinen-kallistus">
+   Optimaalinen kallistus
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Sovelluksia</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kallistamaton-kaarre">
+   Kallistamaton kaarre
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#kallistettu-kaarre">
+   Kallistettu kaarre
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optimaalinen-kallistus">
+   Optimaalinen kallistus
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="sovelluksia">
+<h1>Sovelluksia<a class="headerlink" href="#sovelluksia" title="Permalink to this headline">¶</a></h1>
+<p>Ympyräliikkeeseen liittyviä fysiikan lakeja voidaan käyttää esimerkiksi, kun tarkastellaan satelliittien liikettä maapallon ympärillä. Tällaisiin sovelluksiin perehdytään enemmän geofysiikan opintojaksolla. Tutustutaan tässä siihen, miten ympyräliikkeen kaavoja voi huomioida kaarteissa liikkuessa.</p>
+<div class="section" id="kallistamaton-kaarre">
+<h2>Kallistamaton kaarre<a class="headerlink" href="#kallistamaton-kaarre" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Kallistamaton kaarre" src="_images/kallistamaton_kaarre.png" /></p>
+<p>Auto pysyy kaarteessa tiellä renkaiden ja tien välisen kitkan ansiosta. Tilannetta voidaan tarkastella liikkuvassa koordinaatistossa keskipakovoiman avulla. Koska auto ei luisu sivusuunnassa, renkaiden ja tien välillä vaikuttaa lepokitka.
+Auto ei luisu pois tieltä, jos</p>
+<p><span class="math notranslate nohighlight">\(μmg \geq \frac{mv^2}{r}\)</span> eli <span class="math notranslate nohighlight">\(μg \geq \frac{v^2}{r}\)</span>.</p>
+<p><strong>Esim.</strong> Laske auton maksiminopeus kaarteessa, jonka kaarevuussäde on 140 m, jos lepokitkakerroin on 0.25.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Yhtälöstä <span class="math notranslate nohighlight">\(μg \geq \frac{v^2}{r}\)</span> saadaan <span class="math notranslate nohighlight">\(v \leq \sqrt{\mu g r} = \sqrt{0.25\cdot 9.81~\frac{\text{m}}{\text{s}^2}\cdot 140~\text{m}} = 18.5~\frac{\text{m}}{\text{s}} \approx 66~\frac{\text{km}}{\text{h}}\)</span>.</p>
+</div>
+<p></p>
+</div>
+<div class="section" id="kallistettu-kaarre">
+<h2>Kallistettu kaarre<a class="headerlink" href="#kallistettu-kaarre" title="Permalink to this headline">¶</a></h2>
+<p>Kitkallisessa kaarteessa, jonka kallistuskulma on <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span>, autolla voidaan (teoriassa) ajaa nopeammin kuin kallistamattomassa.</p>
+<p><img alt="Voimat kallistetussa kaarteessa" src="_images/kallistettu_kaarre.png" /></p>
+<p>Autoon vaikuttavat kaarteessa seuraavat voimat:</p>
+<p>(1) keskipakovoima <span class="math notranslate nohighlight">\(\frac{mv^2}{r}\)</span>,</p>
+<p>(2) painovoima <span class="math notranslate nohighlight">\(mg\)</span>,</p>
+<p>(3) kitkavoima <span class="math notranslate nohighlight">\(\mu N\)</span>,</p>
+<p>(4) pinnan tukivoima <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>Jokainen voima voidaan trigonometrian avulla jakaa vaaka- ja pystysuoraan komponenttiin. Auto pysyy tiellä, jos voimien summa sekä vaaka- että pystysuunnassa on nolla. Tuloksena saadaan maksiminopeus:</p>
+<p><span class="math notranslate nohighlight">\(v_{\text{max}}=\sqrt{ \frac{gr(\sin{\alpha}+\mu \cos{\alpha})}{\cos{\alpha}-\mu \sin{\alpha} }}\)</span></p>
+<p>ja miniminopeus:</p>
+<p><span class="math notranslate nohighlight">\(v_{\text{min}}=\sqrt{ \frac{gr(\sin{\alpha}+\mu \cos{\alpha})}{\cos{\alpha}+\mu \sin{\alpha} }}\)</span></p>
+<p><strong>Esim.</strong> Laske auton maksiminopeus kaarteessa, jonka kaarevuussäde on 140 m ja kallistuskulma 8.0 astetta. Renkaan ja tien välinen lepokitkakerroin on 0.25.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><span class="math notranslate nohighlight">\(v_{\text{max}}=\sqrt{\frac{9.81~\frac{\text{m}}{\text{s}^2} \cdot 140~\text{m}(\sin{8^{\circ}}+0.25 \cos{8^{\circ}})}{\cos{8^{\circ}}-0.25 \sin{8^{\circ}}}} \approx 23.6~\frac{\text{m}}{\text{s}} \approx 84.8~\frac{\text{km}}{\text{h}}\)</span></p>
+</div>
+<p>Periaatteessa täysin kitkattomastakin kallistetusta kaarteesta voidaan selvitä. Sijoitetaan maksimi- ja miniminopeuden yhtälöihin kitkakerroin <span class="math notranslate nohighlight">\(\mu=0\)</span>. Tällöin</p>
+<p><span class="math notranslate nohighlight">\(v_{\text{max}}=\sqrt{ \frac{gr\sin{\alpha}}{\cos{\alpha}}}\)</span> ja <span class="math notranslate nohighlight">\(v_{\text{min}}=\sqrt{\frac{gr \sin{\alpha}}{\cos{\alpha}}}\)</span>.</p>
+<p>Siis maksiminopeus ja miniminopeus ovat samat! Lisäksi kumpaankin kaavaa voidaan vielä sieventää:</p>
+<p><span class="math notranslate nohighlight">\(v_{\text{max,min}}=\sqrt{gr \tan{\alpha}}\)</span>.</p>
+<p>Esimerkiksi kaarteessa, jonka kaarevuussäde on 50 metriä ja kallistuskulma on 8 astetta, voitaisiin kitkattomissa olosuhteissa ajaa nopeudella</p>
+<p><span class="math notranslate nohighlight">\(v_{\text{max,min}}=\sqrt{9.81~\frac{\text{m}}{\text{s}^2} \cdot 50~\text{m} \cdot \tan{8^{\circ}}} = 8.30~\frac{\text{m}}{\text{s}} \approx 30~\frac{\text{km}}{\text{h}}\)</span>.</p>
+<p><strong>HUOM.</strong> Todellisuudessa auto ei käyttäydy näin yksinkertaisesti, vaan malli on tarkoitettu pistemäisille kappaleille. Aja hitaammin!</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Perustelu</p>
+<p>Jaetaan voimat trigonometrian avulla vaaka- ja pystysuoriin osiin:</p>
+<p>(1) keskipakovoima <span class="math notranslate nohighlight">\(\frac{mv^2}{r}\)</span> on jo valmiiksi vaakasuuntainen</p>
+<p>(2) painovoima <span class="math notranslate nohighlight">\(mg\)</span> on jo valmiiksi pystysuuntainen</p>
+<p>(3) kitkavoiman <span class="math notranslate nohighlight">\(\mu N\)</span> vaakasuora osuus on <span class="math notranslate nohighlight">\(\mu N \cos{\alpha}\)</span> ja pystysuora osuus on <span class="math notranslate nohighlight">\(\mu N \sin{\alpha}\)</span></p>
+<p>(4) pinnan tukivoiman <span class="math notranslate nohighlight">\(N\)</span> vaakasuora osuus on <span class="math notranslate nohighlight">\(N \sin{\alpha}\)</span> ja pystysuora osuus on <span class="math notranslate nohighlight">\(N \cos{\alpha}\)</span></p>
+<p>Auto pysyy tiellä, jos ympyrältä poispäin osoittavien voimien summa on yhtä suuri kuin ympyrän keskipisteeseen osoittavien voimien summa. Kirjoitetaan ehtoa kuvaavat yhtälöt erikseen vaaka- ja pystysuunnassa ja ratkaistaan yhtälöparista nopeus.</p>
+<p>Vaakasuunnassa: <span class="math notranslate nohighlight">\(N \sin⁡{\alpha} + \mu N \cos{\alpha}=\frac{mv^2}{r}\)</span> eli <span class="math notranslate nohighlight">\(N (\sin⁡{\alpha} + \mu \cos{\alpha})=\frac{mv^2}{r}\)</span> (yhtälö 1)</p>
+<p>Pystysuunnassa: <span class="math notranslate nohighlight">\(N \cos{\alpha} = \mu N \sin{\alpha} + mg\)</span> eli <span class="math notranslate nohighlight">\(N (\cos⁡{\alpha}-\mu \sin{\alpha}=mg\)</span></p>
+<p>Ratkaistaan pystysuunnan yhtälöstä <span class="math notranslate nohighlight">\(N=\frac{mg}{\cos{\alpha}-\mu \sin{\alpha}}\)</span> (yhtälö 2)</p>
+<p>Sijoitetaan yhtälö 2 yhtälöön 1:</p>
+<p><span class="math notranslate nohighlight">\(\frac{mg}{\cos{\alpha}-\mu \sin{\alpha}} (\sin⁡{\alpha} +\mu \cos{\alpha})=\frac{mv^2}{r}\)</span></p>
+<p>Jaetaan molemmilta puolilta pois auton massa:</p>
+<p><span class="math notranslate nohighlight">\(\frac{g}{\cos{\alpha}-\mu \sin{\alpha}} (\sin⁡{\alpha} +\mu \cos{\alpha})=\frac{v^2}{r}\)</span></p>
+<p>Kerrotaan molemmat puolet kaarevuussäteellä ja vaihdetaan puolet:</p>
+<p><span class="math notranslate nohighlight">\(v^2=\frac{gr}{\cos{\alpha}-\mu \sin{\alpha}}(\sin⁡{\alpha} +\mu \cos{\alpha})\)</span></p>
+<p>Sieventämällä saadaan maksiminopeus:</p>
+<p><span class="math notranslate nohighlight">\(v_{\text{max}}=\sqrt{ \frac{gr(\sin{\alpha}+\mu \cos{\alpha})}{\cos{\alpha}-\mu \sin{\alpha} }}\)</span></p>
+<p>Laskennallinen miniminopeus (ettei auto lähde valumaan sisäkaarteeseen) saadaan johdettua vastaavalla tavalla, mutta siten, että kitkavoiman ajatellaan suuntautuvan poispäin ympyrältä.</p>
+</div>
+</div>
+<div class="section" id="optimaalinen-kallistus">
+<h2>Optimaalinen kallistus<a class="headerlink" href="#optimaalinen-kallistus" title="Permalink to this headline">¶</a></h2>
+<p>Supernopeille junille käytetään ns. optimaalista kallistusta. Tällöin raide on kohtisuorassa painovoiman ja keskipakovoiman vektorisummaa vastaan. Matkustusmukavuus paranee, esim. juomat eivät läiky!</p>
+<p><img alt="Optimaalinen kallistuskulma" src="_images/optimaalinen_kallistuskulma.png" /></p>
+<p>Kallistuskulma on optimaalinen silloin, kun <span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{v^2}{rg}\)</span></p>
+<p><strong>Esim.</strong> Luotijunan nopeus on 270 km/h (=75 m/s) kaarteessa, jonka kaarevuussäde on 1500 m. Laske optimaalinen kallistuskulma.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><span class="math notranslate nohighlight">\(\tan{\alpha}=\frac{(75~\frac{\text{m}}{\text{s}})^2}{1500~\text{m}\cdot 9.81~\frac{\text{m}}{\text{s}^2}} \approx 0.38\)</span>, josta <span class="math notranslate nohighlight">\(\alpha = 21^{\circ}\)</span>.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ympyra_kiihtyvyys.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Kiihtyvyys ja voimat</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="energia_kasitteet.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Käsitteitä</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

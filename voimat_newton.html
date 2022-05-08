@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newtonin lait &#8212; Fysiikka</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Dynamiikkaa" href="voimat_sovelluksia.html" />
+    <link rel="prev" title="Peruskäsitteitä" href="voimat_perus.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fysiikka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Fysiikan perusteet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Suureet ja yksiköt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yksikot.html">
+   Suureet ja yksiköt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kymmenpotenssit.html">
+   Kymmenpotenssiesitys
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esitystarkkuus.html">
+   Suureiden esitystarkkuus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasainen liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasainen_liike.html">
+   Suoraviivainen tasainen liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suhteellinen_nopeus.html">
+   Suhteellinen nopeus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="liike_vektorit.html">
+   Paikka- ja nopeusvektorit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Kiihtyvä liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vaakasuora.html">
+   Tasaisesti kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_pystysuora.html">
+   Pystysuuntainen kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vino.html">
+   Vino heittoliike
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voimat
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_perus.html">
+   Peruskäsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Newtonin lait
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_sovelluksia.html">
+   Dynamiikkaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ympyräliike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_suureet.html">
+   Ympyräliike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_kiihtyvyys.html">
+   Kiihtyvyys ja voimat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_sovelluksia.html">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Energia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_kasitteet.html">
+   Käsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_mekaaninen.html">
+   Mekaaninen energia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_periaate.html">
+   Energian säilyminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Törmäyksiä
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="liikemaara.html">
+   Liikemäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tormaykset.html">
+   Törmäyksiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jäykät kappaleet
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="hitausmomentit.html">
+   Hitausmomentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vieriminen.html">
+   Vieriminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Momentit ja tasapaino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentti.html">
+   Voiman momentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="painopiste.html">
+   Painopiste
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasapaino.html">
+   Tasapainoehdot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Nesteet ja kaasut
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_paikallaan.html">
+   Hydrostatiikkaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_liikkeessa.html">
+   Liikkuvat nesteet ja kaasut
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/voimat_newton.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/luma-lapinamk/minna-fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#newtonin-1-laki-jatkavuuden-laki">
+   Newtonin 1. laki: jatkavuuden laki
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#newtonin-2-laki-dynamiikan-peruslaki">
+   Newtonin 2. laki: dynamiikan peruslaki
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#newtonin-3-laki-voiman-ja-vastavoiman-laki">
+   Newtonin 3. laki: voiman ja vastavoiman laki:
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Newtonin lait</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#newtonin-1-laki-jatkavuuden-laki">
+   Newtonin 1. laki: jatkavuuden laki
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#newtonin-2-laki-dynamiikan-peruslaki">
+   Newtonin 2. laki: dynamiikan peruslaki
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#newtonin-3-laki-voiman-ja-vastavoiman-laki">
+   Newtonin 3. laki: voiman ja vastavoiman laki:
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="newtonin-lait">
+<h1>Newtonin lait<a class="headerlink" href="#newtonin-lait" title="Permalink to this headline">¶</a></h1>
+<p>Edellisessä luvussa opittiin laskemaan eri voimista muodostuva kokonaisvoima. Kokonaisvoiman suunta ja suuruus määräävät yhdessä Newtonin lakien kanssa, mitä kappaleelle tapahtuu: pysyykö se paikallaan tai jatkaako liikkumasta entisellä nopeudellaan, lähteekö se liikkeelle, tai hidastuuko se liike. Newtonin kolme lakia ovat peräisin 1600-luvulta. Edelleen näitä lakeja tarvitaan, jos halutaan esimerkiksi avaruusraketit menemään oikeaan paikkaan.</p>
+<div class="section" id="newtonin-1-laki-jatkavuuden-laki">
+<h2>Newtonin 1. laki: jatkavuuden laki<a class="headerlink" href="#newtonin-1-laki-jatkavuuden-laki" title="Permalink to this headline">¶</a></h2>
+<p><em>“Jos kappaleeseen ei kohdistu voimia tai jos siihen kohdistuva kokonaisvoima on 0, niin kappale pysyy paikallaan tai jatkaa suoraviivaista liikettä tasaisella nopeudella.”</em></p>
+<p>Newtonin 1. lain toinen nimi, jatkavuuden laki, kertoo että jos kappaleen ei kohdistu voimia, niin se jatkaa sitä, mitä se oli alunperinkin tekemässä. Jos kappale oli paikallaan, se pysyy paikallaan. Jos kappale oli liikkeessä, se jatkaa liikkumista. Käytännössä tämä voisi tarkoittaa monenlaisia asioita:</p>
+<ul class="simple">
+<li><p>jalkapallokentällä maassa paikallaan oleva pallo liikkeelle vasta, kun sitä potkaistaan</p></li>
+<li><p>liukkaalla jäällä liikkeessä oleva jääkiekko pysähtyy vasta, kun se törmää kaukalon laitaan</p></li>
+<li><p>auton tehdessä äkkijarrutuksen takaikkunalla oleva esine jatkaa liikkumista samalla nopeudella kuin auto liikkui</p></li>
+</ul>
+<p>Newtonin 1. lakia voidaan soveltaa ikään kuin takaperin: jos tiedetään, että kappale on paikallaan tai liikkuu tasaisella nopeudella, niin voidaan päätellä että kokonaisvoiman pitää olla nolla. Tällöin voidaan laskea, millaisia voimia kappaleeseen vaikuttaa.</p>
+<p><strong>Esim.</strong> Vedetään 10 kg laatikkoa 15 N voimalla etuviistoon 35 asteen kulmassa. Kuinka suurella voimalla <span class="math notranslate nohighlight">\(N\)</span> alusta tukee laatikkoa?</p>
+<p><img alt="Newtonin 1. laki, esimerkki 1" src="_images/n1_esim1.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Voiman komponentit ovat <span class="math notranslate nohighlight">\(F_x=15~\text{N}\cdot\cos{35^{\circ}}=12.3~\text{N}\)</span> ja <span class="math notranslate nohighlight">\(F_x=15~\text{N}\cdot\sin{35^{\circ}}=8.6~\text{N}\)</span>.</p>
+<p>Tukivoima ei nyt ole yhtä suuri kuin painovoima, sillä osa vetävästä voimasta suuntautuu ylöspäin, ja tällöin alustan ei tarvitse tukea laatikkoa yhtä suurella voimalla kuin ilman vetävää voimaa. Kappaleen tiedetään - tai ainakin oletetaan - olevan pystysuunnassa paikallaan. Newtonin 1. lain mukaisesti pystysuuntaisten voimien summan pitää silloin olla nolla, joten kirjoitetaan yhtälö ja ratkaistaan tukivoima <span class="math notranslate nohighlight">\(N\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(F_y+N-G=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(N=G-F_y\)</span></p>
+<p><span class="math notranslate nohighlight">\(N=mg-F_y\)</span></p>
+<p><span class="math notranslate nohighlight">\(N=10~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2}-8.6~\text{N}=89.5~\text{N}\)</span></p>
+<p><span class="math notranslate nohighlight">\(N=98.1~\text{N}-8.6~\text{N}=89.5~\text{N}\)</span></p>
+</div>
+<p><strong>Esim.</strong> Kitkavoiman suuruus <span class="math notranslate nohighlight">\(F_{\mu}\)</span> riippuu kitkakertoimesta µ ja tukivoimasta <span class="math notranslate nohighlight">\(N\)</span> seuraavasti: <span class="math notranslate nohighlight">\(F_{\mu}=µN\)</span>. Pulkkaa, jonka massa on 20 kg, vedetään tasaisella tiellä siten, että kulma narun ja tien välillä on 40 astetta. Kitkakerroin on <span class="math notranslate nohighlight">\(\mu=0.58\)</span>. Kuinka suurella voimalla <span class="math notranslate nohighlight">\(F\)</span> pulkkaa pitää vetää, jotta se kulkee tasaisella nopeudella?</p>
+<p><img alt="Newtonin 1. laki, esimerkki 2" src="_images/n1_esim2.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kirjoitetaan erikseen kokonaisvoima vaaka- ja pystysuunnassa. Kummankin pitää olla 0.</p>
+<p>Vaakasuunta:</p>
+<p><span class="math notranslate nohighlight">\(F_x - F_{\mu}=0\)</span></p>
+<p><span class="math notranslate nohighlight">\(F \cos{40^{\circ}} - \mu N =0 \)</span></p>
+<p><span class="math notranslate nohighlight">\(F \cos{40^{\circ}} - 0.58 N =0 \)</span></p>
+<p>Pystysuunta:</p>
+<p><span class="math notranslate nohighlight">\(F_y - G + N =0\)</span></p>
+<p><span class="math notranslate nohighlight">\(F \sin{40^{\circ}} - mg + N = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(F \sin{40^{\circ}} - 20~\text{kg} \cdot 9.81~\frac{\text{m}}{\text{s}^2} + N = 0\)</span></p>
+<p>Tuloksena on yhtälöpari, jonka kummassakin yhtälössä esiintyvät molemmat tuntemattomat <span class="math notranslate nohighlight">\(F\)</span> ja <span class="math notranslate nohighlight">\(N\)</span>. Ratkaisu onnistuu esimerkiksi WolframAlphalla:</p>
+<p>solve F*cos(40)-0.58*N=0, F*sin(40)-20*9.81+N=0</p>
+<p>Tulokseksi saadaan <span class="math notranslate nohighlight">\(F=100~\text{N}\)</span> ja <span class="math notranslate nohighlight">\(N=132~\text{N}\)</span>.</p>
+</div>
+<p></p>
+</div>
+<div class="section" id="newtonin-2-laki-dynamiikan-peruslaki">
+<h2>Newtonin 2. laki: dynamiikan peruslaki<a class="headerlink" href="#newtonin-2-laki-dynamiikan-peruslaki" title="Permalink to this headline">¶</a></h2>
+<p><em>“Jos kappaleeseen vaikuttava kokonaisvoima on <span class="math notranslate nohighlight">\(F\)</span>, niin kappale, jonka massa on <span class="math notranslate nohighlight">\(m\)</span>, saa kiihtyvyyden <span class="math notranslate nohighlight">\(a\)</span>, jonka suuruus saadaan yhtälöstä
+<span class="math notranslate nohighlight">\(F=ma\)</span>”.</em></p>
+<p>Kokemusperäisesti on selvää, että esimerkiksi painavat ostoskärryt kaupassa on hankalampi saada työnnettyä liikkeelle kuin kevyet. Siis mitä suurempi on massa, sitä pienempi on kiihtyvyys, ja toisin päin.</p>
+<p><strong>Esim.</strong> Ratkaistaan Newtonin 2. laista eri suureita liittyen peräkärryn vetämiseen:</p>
+<p>a) Kuinka suurella voimalla on vedettävä 1000 kg massaista vaunua, jos sille halutaan kiihtyvyys 3.0 <span class="math notranslate nohighlight">\(\frac{\text{m}}{\text{s}^2}\)</span>?</p>
+<p>b) Kuinka suuren kiihtyvyyden saa 250 kg peräkärry, kun sitä vedetään voimalla 1 kN?</p>
+<p>c) Kuinka suuri voi olla kuorma, kun vetävän auton voima on 2000 N ja kiihtyvyyden pitää olla 4 <span class="math notranslate nohighlight">\(\frac{\text{m}}{\text{s}^2}\)</span>?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>a) Sijoitetaan luvut suoraan Newtonin 2. lakiin:</p>
+<p><span class="math notranslate nohighlight">\(F=1000~\text{kg} \cdot 3.0 \frac{\text{m}}{\text{s}^2} = 3000~\text{N}\)</span></p>
+<p>b) Ratkaistaan Newtonin 2. laista kiihtyvyys ja sijoitetaan luvut:</p>
+<p><span class="math notranslate nohighlight">\(a=\frac{F}{m}= \frac{1000~\text{N}}{250~text{kg}}=4.0 \frac{\text{m}}{\text{s}^2}\)</span></p>
+<p>c) Ratkaistaan Newtonin 2. laista massa ja sijoitetaan luvut:</p>
+<p><span class="math notranslate nohighlight">\(m=\frac{F}{a}= \frac{2000~\text{N}}{4~\frac{\text{m}}{\text{s}^2}} = 500~\text{kg}\)</span></p>
+</div>
+<p>Newtonin 2. lakia tarvitaan usein myös tilanteissa, joissa jokin esine on liukumassa kaltevalla tasolla tai putoamassa. Esimerkiksi kun omena putoaa, siihen vaikuttaa painovoima alaspäin, mutta myös hyvin vähäinen ilmanvastus ylöspäin. Ilmanvastus ei riitä kumoamaan painovoimaa, joten pystysuuntaisten voimien summa ei ole nolla. Siksi omena putoaa kiihtyvällä nopeudella. Vastaavasti jos auto on liikkumassa alamäkeen ja jarruttaa, niin kokonaisvoima muodostuu mäkeä alas suuntautuvasta painovoimasta ja sille vastakkaisesta kitkavoimasta. Tällöin kiihtyvyys saa eri arvon kuin silloin, kun auto jarruttaa tasaisella tai ylämäessä. Tällaisiin ongelmiin palataan kappaleessa “Dynamiikkaa”.</p>
+</div>
+<div class="section" id="newtonin-3-laki-voiman-ja-vastavoiman-laki">
+<h2>Newtonin 3. laki: voiman ja vastavoiman laki:<a class="headerlink" href="#newtonin-3-laki-voiman-ja-vastavoiman-laki" title="Permalink to this headline">¶</a></h2>
+<p><em>“Jos kappale A kohdistaa kappaleeseen B voiman, jonka suuruus on <span class="math notranslate nohighlight">\(F\)</span>, niin kappale B kohdistaa kappaleeseen A yhtä suuren, mutta vastakkaissuuntaisen voiman <span class="math notranslate nohighlight">\(–F\)</span>.”</em></p>
+<p>Esimerkiksi kun hyttynen osuu liikkuvan auton tuulilasiin, niin törmäyksestä hyttyseen ja autoon kohdistuvat voimat ovat yhtä suuret. Selitys sille, miksi hyttysen liike loppuu kuin seinään ja se jopa liiskaantuu, mutta autolle ei tapahdu juuri mitään, löytyy Newtonin 2. laista. Hyttynen saa suuren kiihtyvyyden, koska sen massa on hyvin pieni, kun taas auto saa aivan mitättömän pienen kiihtyvyyden, jota ei kuski huomaakaan. Lain todenperäisyyden huomaat myös, kun vaikkapa nojaat seinään - seinä työntää sinua yhtä suurella voimalla kuin sinä työnnät seinää.</p>
+<p>Newtonin 3. lakia tarvitaan harvemmin laskuissa. Siihen palataan törmäyslaskujen yhteydessä, osana liikemäärän säilymislain johtamista.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="voimat_perus.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Peruskäsitteitä</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="voimat_sovelluksia.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dynamiikkaa</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

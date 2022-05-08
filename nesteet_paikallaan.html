@@ -1,0 +1,574 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydrostatiikkaa &#8212; Fysiikka</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Liikkuvat nesteet ja kaasut" href="nesteet_liikkeessa.html" />
+    <link rel="prev" title="Tasapainoehdot" href="tasapaino.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fysiikka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Fysiikan perusteet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Suureet ja yksiköt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yksikot.html">
+   Suureet ja yksiköt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kymmenpotenssit.html">
+   Kymmenpotenssiesitys
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esitystarkkuus.html">
+   Suureiden esitystarkkuus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasainen liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasainen_liike.html">
+   Suoraviivainen tasainen liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suhteellinen_nopeus.html">
+   Suhteellinen nopeus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="liike_vektorit.html">
+   Paikka- ja nopeusvektorit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Kiihtyvä liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vaakasuora.html">
+   Tasaisesti kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_pystysuora.html">
+   Pystysuuntainen kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vino.html">
+   Vino heittoliike
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voimat
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_perus.html">
+   Peruskäsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_newton.html">
+   Newtonin lait
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_sovelluksia.html">
+   Dynamiikkaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ympyräliike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_suureet.html">
+   Ympyräliike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_kiihtyvyys.html">
+   Kiihtyvyys ja voimat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_sovelluksia.html">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Energia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_kasitteet.html">
+   Käsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_mekaaninen.html">
+   Mekaaninen energia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_periaate.html">
+   Energian säilyminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Törmäyksiä
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="liikemaara.html">
+   Liikemäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tormaykset.html">
+   Törmäyksiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jäykät kappaleet
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="hitausmomentit.html">
+   Hitausmomentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vieriminen.html">
+   Vieriminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Momentit ja tasapaino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentti.html">
+   Voiman momentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="painopiste.html">
+   Painopiste
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasapaino.html">
+   Tasapainoehdot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Nesteet ja kaasut
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Hydrostatiikkaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_liikkeessa.html">
+   Liikkuvat nesteet ja kaasut
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/nesteet_paikallaan.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/luma-lapinamk/minna-fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paine">
+   Paine
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#noste-ja-arkhimedeen-laki">
+   Noste ja Arkhimedeen laki
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pascalin-laki">
+   Pascalin laki
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Hydrostatiikkaa</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paine">
+   Paine
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#noste-ja-arkhimedeen-laki">
+   Noste ja Arkhimedeen laki
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pascalin-laki">
+   Pascalin laki
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="hydrostatiikkaa">
+<h1>Hydrostatiikkaa<a class="headerlink" href="#hydrostatiikkaa" title="Permalink to this headline">¶</a></h1>
+<p>Hydrostatiikassa tutkitaan paikallaan olevia nesteitä ja kaasuja. Paine ja noste ovat tähän tieteenalaan liittyviä tuttuja käsitteitä. Jokaisella lienee jonkinlainen näkemys siitä, miltä tuntuu pieni tai suuri paine. Pystymme myös intuitiivisesti arvioimaan, millaiset esineet kelluvat ja millaiset eivät. Perehdytään tässä määritelmiin ja laskukaavoihin, jolla näitä asioita voidaan käsitellä hieman tarkemmin.</p>
+<div class="section" id="paine">
+<h2>Paine<a class="headerlink" href="#paine" title="Permalink to this headline">¶</a></h2>
+<p>Paine <span class="math notranslate nohighlight">\(p\)</span> on tietylle pinta-alalle <span class="math notranslate nohighlight">\(A\)</span> kohdistuva voima <span class="math notranslate nohighlight">\(F\)</span> jaettuna kyseisellä pinta-alalla:</p>
+<p><span class="math notranslate nohighlight">\(p=\frac{F}{A}\)</span>.</p>
+<p>Jos voima kohdistuu kaltevalle (kaltevuuskulma <span class="math notranslate nohighlight">\(\alpha\)</span>) tasolle, niin voimasta huomioidaan tasoa vastaan kohtisuora osuus <span class="math notranslate nohighlight">\(F \cos{\alpha}\)</span>, jolloin siis</p>
+<p><span class="math notranslate nohighlight">\(p=\frac{F \cos{\alpha}}{A}\)</span>.</p>
+<p>Paineen yksikköä <span class="math notranslate nohighlight">\(\frac{\text{N}}{\text{m}^2}\)</span> merkitään lyhyemmin Pa (Pascal).</p>
+<p>Voima on usein kappaleen oma painovoima, siis <span class="math notranslate nohighlight">\(F=mg\)</span>. Massan <span class="math notranslate nohighlight">\(m\)</span> voi ilmaista myös aineen tiheyden <span class="math notranslate nohighlight">\(\rho\)</span> ja tilavuuden <span class="math notranslate nohighlight">\(V\)</span> avulla, <span class="math notranslate nohighlight">\(m=\rho V\)</span>.</p>
+<p>Ilma aiheuttaa paineen kaikkialle ympärillemme. Normaali ilmanpaine on noin 101.3 kPa. Muita yleisesti käytettyjä yksiköitä ovat 1 bar = 100 000 Pa, 1 atm = 1.013 bar ja 1 mmHg =1/760 atm. Painetta aiheutuu tietenkin myös esim. veden alla vedestä, ja rakennuksissa rakennusmateriaalista itsestään.</p>
+<p><strong>Esim.</strong> Laske 10 m korkean tiiliseinän alimpaan kerrokseen kohdistuva paine. Tiilien tiheys on <span class="math notranslate nohighlight">\(\rho=1400 \frac{\text{kg}}{\text{m}^3}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Tarkastellaan painetta pinta-alalla <span class="math notranslate nohighlight">\(A\)</span>. Tämän alueen yläpuolella olevien tiilien paino on <span class="math notranslate nohighlight">\(mg=\rho Vg\)</span>, missä <span class="math notranslate nohighlight">\(V\)</span> on tiilikerroksen tilavuus. Tilavuus <span class="math notranslate nohighlight">\(V\)</span> on tarkasteltava pinta-ala <span class="math notranslate nohighlight">\(A\)</span> kerrottuna tiilikerroksen korkeudella <span class="math notranslate nohighlight">\(h\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(mg=\rho A h g\)</span></p>
+<p>Siispä paine on <span class="math notranslate nohighlight">\(\frac{mg}{A}=\frac{\rho A h g}{A}= \rho h g = 1400 \frac{\text{kg}}{\text{m}^3}\cdot 9.81 \frac{\text{m}}{s^2} \cdot 10~\text{m} = 137.3~\text{kPa}\)</span>.</p>
+</div>
+<p>Esimerkin mukaisella tavalla määritetään paine myös vesi- tai muiden nestekerroksien alla. Tarkastellaan veden alla olevaa pinta-alaa <span class="math notranslate nohighlight">\(A\)</span>, jonka päällä on korkeudeltaan <span class="math notranslate nohighlight">\(h\)</span> kerros vettä.</p>
+<p>Alueelle <span class="math notranslate nohighlight">\(A\)</span> kohdistuva voima on veden paino: <span class="math notranslate nohighlight">\(F=mg=\rho V g=\rho A h g\)</span></p>
+<p>Paine on voima jaettuna pinta-alalla: <span class="math notranslate nohighlight">\(p=\frac{F}{A}=\frac{\rho A h g}{A}\)</span>, joka sievenee muotoon <span class="math notranslate nohighlight">\(p=\rho h g\)</span>.</p>
+<p><strong>Esim.</strong> Paljonko on veden aiheuttama paine Mariaanien haudassa 10920 m syvyydessä? Suolaisen meriveden tiheys on <span class="math notranslate nohighlight">\(1010 \frac{\text{kg}}{\text{m}^3}\)</span>.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><span class="math notranslate nohighlight">\(p=1010 \frac{\text{kg}}{\text{m}^3}\cdot 9.81\frac{\text{m}}{\text{s}^2}\cdot 10920~\text{m}=108 192 452~\text{Pa} \approx 108~\text{MPa}\)</span></p>
+<p>Veden allakin vaikuttaa lisäksi ilman paine. Kokonaispaineeseen tulee siis edellä lasketun paineen lisäksi noin 0.1 MPa ilmanpaine.</p>
+</div>
+<p></p>
+</div>
+<div class="section" id="noste-ja-arkhimedeen-laki">
+<h2>Noste ja Arkhimedeen laki<a class="headerlink" href="#noste-ja-arkhimedeen-laki" title="Permalink to this headline">¶</a></h2>
+<p>Nesteessä (tai kaasussa) kappaleen ylä- ja alapintaan kohdistuu erisuuruinen paine. Yläpinnalta neste painaa kappaletta alaspäin, ja alapuolelta se nostaa kappaletta ylöspäin. Kappaleeseen esim. vedestä ylöspäin kohdistuva nettovoima, noste, on</p>
+<p><span class="math notranslate nohighlight">\(F=A p_2 -A p_1 = A (p_2-p_2) = A(\rho g h_1 - \rho g h_2) = A \rho g (h_2-h_1) = \rho g A h = \rho gV\)</span></p>
+<p>Siis jos kappale, jonka tilavuus on <span class="math notranslate nohighlight">\(V\)</span>, on nesteessä (tai kaasussa) jonka tiheys on <span class="math notranslate nohighlight">\(\rho\)</span>, niin siihen kohdistuvan nostevoiman suuruus on</p>
+<p><span class="math notranslate nohighlight">\(F=\rho gV\)</span></p>
+<p>Äskeinen tulos on nimeltään Arkhimedeen laki: “The net force acting on a body in a liquid is the same as the weight of the equal volume of liquid.”</p>
+<p>Nosteen lisäksi kappaleeseen kohdistuu alaspäin painovoima <span class="math notranslate nohighlight">\(-G=-mg\)</span>. Paino voi aiheutua pelkästään kappaleesta itsestään, tai sitten kappaleen päällä voi olla jotakin. Kappale kelluu, jos noste on suurempi kuin paino, siis jos <span class="math notranslate nohighlight">\(F-G \geq 0\)</span>.</p>
+<p><strong>Esim.</strong> Sahattu hirsi on kooltaan 15 cm <span class="math notranslate nohighlight">\(\times\)</span> 20 cm <span class="math notranslate nohighlight">\(\times\)</span> 800 cm. Sen massa on 140 kg. Kuinka suuren kuorman se voi korkeintaan kantaa vedessä?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Merkitään hirren ja kuorman kokonaismassaa kirjaimella <span class="math notranslate nohighlight">\(M\)</span>. Hirsi kelluu, kun kokonaisvoima on vähintään nolla, siis</p>
+<p><span class="math notranslate nohighlight">\(F-G\geq 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(\rho g V-Mg \geq 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(M \leq \rho V = 1000 \frac{\text{kg}}{\text{m}^3}\cdot 0.15~\text{m}\cdot 0.20~\text{m} \cdot 8.00~\text{m}=240~\text{kg}\)</span>.</p>
+<p>Kuormaa voi siis olla 240 kg – 140 kg = 100 kg.</p>
+</div>
+</div>
+<div class="section" id="pascalin-laki">
+<h2>Pascalin laki<a class="headerlink" href="#pascalin-laki" title="Permalink to this headline">¶</a></h2>
+<p>Pascalin laki on yksinkertainen: nesteeseen kohdistuva ulkoinen paine leviää tasaisesti kaikkialle nesteeseen. Pascalin lain käyttökelpoinen sovellus on hydraulinen nosturi. Sen taustalla on Pascalin lain lisäksi se tosiasia, että nesteet eivät juurikaan puristu kokoon.</p>
+<p><img alt="Hydraulinen nosturi" src="_images/hydraulinen_nosturi.png" /></p>
+<p>Kun nestettä painetaan voimalla <span class="math notranslate nohighlight">\(F_1\)</span> männällä, jonka ala on <span class="math notranslate nohighlight">\(A_1\)</span>, nesteeseen kohdistuu paine <span class="math notranslate nohighlight">\(p=\frac{F_1}{A_1}\)</span>. Pascalin lain mukaisesti sama paine työntää ylöspäin toista mäntää, jonka ala on <span class="math notranslate nohighlight">\(A_2\)</span>. Koska paine on sama, niin toiseen mäntään kohdistuva voima on <span class="math notranslate nohighlight">\(F_2=p A_2 = \frac{F_1}{A_1} A_2\)</span>. Tämä voidaan ilmaista myös muodossa <span class="math notranslate nohighlight">\(\frac{F_1}{A_1}=\frac{F_2}{A_2}\)</span></p>
+<p>Painettavan ja nostavan männän liikkumat matkan ovat myös yhteydessä toisiinsa. Kun pientä mäntää liikutetaan voimalla <span class="math notranslate nohighlight">\(F_1\)</span> matka <span class="math notranslate nohighlight">\(s_1\)</span>, siihen tehdään työ <span class="math notranslate nohighlight">\(W=F_1 s_1\)</span>. Isompi mäntä tekee samalla yhtä suuren työn <span class="math notranslate nohighlight">\(F_2 s_2\)</span>. Niinpä tarvittaessa voidaan myös laskea, kuinka paljon pienempää mäntää pitää työntää alaspäin, jotta isompi mäntä saadaan nousemaan halutun matkan, esimerkiksi nostamaan kuormaa tietylle korkeudelle.</p>
+<p><strong>Esim.</strong> Kuinka suurella voimalla saadaan 800-kiloinen auto nousemaan, kun nostavan männän pinta-ala on 3 neliömetriä ja painettavan männän pinta-ala on 0.5 neliömetriä?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Ratkaistaan yhtälöstä <span class="math notranslate nohighlight">\(\frac{F_1}{A_1}=\frac{F_2}{A_2}\)</span> kysytty voima <span class="math notranslate nohighlight">\(F_1\)</span> ja sijoitetaan siihen tunnetut suureet: <span class="math notranslate nohighlight">\(F_2=800~\text{kg}\cdot 9.81\frac{\text{m}}{\text{s}^2}, A_1=0.5~\text{m}^2, A_2=3~\text{m}^2\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(F_1=F_2 \frac{A_1}{A_2} = 800~\text{kg}\cdot 9.81 \frac{\text{m}}{\text{s}^2} \cdot \frac{0.5~\text{m}^2}{3~\text{m}^2}=1.3~\text{kN}\)</span></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="tasapaino.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Tasapainoehdot</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="nesteet_liikkeessa.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Liikkuvat nesteet ja kaasut</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
