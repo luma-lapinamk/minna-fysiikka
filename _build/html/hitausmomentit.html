@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitausmomentti &#8212; Fysiikka</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Vieriminen" href="vieriminen.html" />
+    <link rel="prev" title="Törmäyksiä" href="tormaykset.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fysiikka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Fysiikan perusteet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Suureet ja yksiköt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yksikot.html">
+   Suureet ja yksiköt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kymmenpotenssit.html">
+   Kymmenpotenssiesitys
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esitystarkkuus.html">
+   Suureiden esitystarkkuus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasainen liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasainen_liike.html">
+   Suoraviivainen tasainen liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suhteellinen_nopeus.html">
+   Suhteellinen nopeus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="liike_vektorit.html">
+   Paikka- ja nopeusvektorit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Kiihtyvä liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vaakasuora.html">
+   Tasaisesti kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_pystysuora.html">
+   Pystysuuntainen kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vino.html">
+   Vino heittoliike
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voimat
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_perus.html">
+   Peruskäsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_newton.html">
+   Newtonin lait
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_sovelluksia.html">
+   Dynamiikkaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ympyräliike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_suureet.html">
+   Ympyräliike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_kiihtyvyys.html">
+   Kiihtyvyys ja voimat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_sovelluksia.html">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Energia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_kasitteet.html">
+   Käsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_mekaaninen.html">
+   Mekaaninen energia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_periaate.html">
+   Energian säilyminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Törmäyksiä
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="liikemaara.html">
+   Liikemäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tormaykset.html">
+   Törmäyksiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jäykät kappaleet
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Hitausmomentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vieriminen.html">
+   Vieriminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Momentit ja tasapaino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentti.html">
+   Voiman momentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="painopiste.html">
+   Painopiste
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasapaino.html">
+   Tasapainoehdot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Nesteet ja kaasut
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_paikallaan.html">
+   Hydrostatiikkaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_liikkeessa.html">
+   Liikkuvat nesteet ja kaasut
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/hitausmomentit.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/luma-lapinamk/minna-fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hitausmomentit">
+   Hitausmomentit
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Hitausmomentti</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hitausmomentit">
+   Hitausmomentit
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="hitausmomentti">
+<h1>Hitausmomentti<a class="headerlink" href="#hitausmomentti" title="Permalink to this headline">¶</a></h1>
+<p>Jäykällä kappaleella tarkoitetaan kappaletta, joka ei muuta muotoaan. Tällaisia kappaleita voivat olla erilaiset tangot, palkit, nosturin puomit, tarpeeksi paksut puut jne. Tarkasteltava liike keskittyy nyt pyörimiseen, ei etenemiseen. Pyörimistä on esimerkiksi se, kun puu kaatuu katkeamatta. Silloin se pyörähtää neljänneskierroksen verran sen pisteen ympäri, josta se oli kiinni maassa. Maapallokin on yksi esimerkki kappaleesta, jota voitaan tarkastella pyörivänä jäykkänä kappaleena.</p>
+<div class="section" id="hitausmomentit">
+<h2>Hitausmomentit<a class="headerlink" href="#hitausmomentit" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Hitausmomentin määritelmä" src="_images/hitausmomentti_perustelu.png" /></p>
+<p>Pyörivän jäykän kappaleen pyörimiseen liittyvä liike-energia määritellään sen pienten osasten liike-energioiden summana. Tarkastellaan kuvan levymäistä kappaletta, joka pyörii keskipisteensä ympäri. Sen jokainen piste (massat <span class="math notranslate nohighlight">\(m_1, m_2, \ldots\)</span>) pyörii omalla etäisyydellään (säteet <span class="math notranslate nohighlight">\(r_1, r_2, \ldots\)</span>) keskipisteestä, joten jokaisella pisteellä on eri nopeus <span class="math notranslate nohighlight">\(v_1, v_2, \ldots\)</span>.</p>
+<p>Kaikkien pisteiden yhteenlaskettu liike-energia on</p>
+<p><span class="math notranslate nohighlight">\(E_k=\frac{1}{2}m_1 v_1^2+\frac{1}{2} m_2 v_2^2 + \ldots\)</span></p>
+<p>Pyörimisliikkeen kaavoista saadaan <span class="math notranslate nohighlight">\(v=r\omega\)</span>, joka voidaan sijoittaa yhtälöön:</p>
+<p><span class="math notranslate nohighlight">\(E_k=\frac{1}{2} m_1 (r_1 \omega)^2+\frac{1}{2} m_2 (r_2 \omega)^2 + \ldots\)</span></p>
+<p><span class="math notranslate nohighlight">\(E_k=\frac{1}{2} \omega^2 (m_1 r_1^2+m_2 r_2^2 + \ldots)\)</span></p>
+<p>Merkitään suluissa olevaa lausekettä lyhyemmin: <span class="math notranslate nohighlight">\(m_1 r_1^2+m_2 r_2^2 + \ldots = J\)</span></p>
+<p>Siis: <span class="math notranslate nohighlight">\(E_k=\frac{1}{2} J \omega^2\)</span> missä suuretta <span class="math notranslate nohighlight">\(J\)</span> kutsutaan kappaleen hitausmomentiksi.</p>
+<p>Hitausmomentti riippuu siis siitä, millä tavalla kappaleen pienet osaset jakautuvat pyörimisakselin ympärille. Osilla voi olla eri suuruiset massat, eli kappaleen tiheyden ei tarvitse olla koko kappaleen alueella samanlainen. Hitausmomentti riippuu myös siitä, minkä akselin ympäri kappale pyörii. Esimerkiksi pitkää keppiä voidaan pyörittää joko päädystä kiinni pitäen tai keskikohdalta.</p>
+<p>Hitausmomentteja erilaisille kappaleille voidaan laskea integraalilaskennan avulla. Muutamia tällaisten laskujen tuloksia on valmiina <a class="reference external" href="http://www.taulukot.com/fysiikka/fysiikka_kaavoja/">taulukossa</a>. Ainakin kaikkien taulukoitujen kappaleiden hitausmomenteissa esiintyy kappaleen kokonaismassa <span class="math notranslate nohighlight">\(m\)</span> ja lisäksi kappaleen jokin mitta potenssiin kaksi, tai kahden mitan tulo. Niinpä hitausmomentin yksiköksi tulee <span class="math notranslate nohighlight">\(\text{kg}\cdot \text{m}^2\)</span>. Laskukaavoissa on myös erilaisia murtolukukertoimia. Ne ovat peräisin integraalilaskusta ja liittyvät kappaleen massan jakautumiseen.</p>
+<p><strong>Esim.</strong> Laske hitausmomentti tasapaksulle ohuelle levylle, jonka massa on 3.0 kg ja jonka sivujen pituudet ovat 20 cm ja 50 cm.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Taulukosta nähdään hitausmomentin laskukaava: <span class="math notranslate nohighlight">\(J=\frac{1}{12} m (a^2+b^2)\)</span></p>
+<p>Sijoitetaan lukuarvot:</p>
+<p><span class="math notranslate nohighlight">\(J=\frac{1}{12}\cdot 3.0~\text{kg} \left[(0.20~\text{m})^2+(0.50~\text{m})^2\right]=0.0725~\text{kgm}^2\)</span></p>
+</div>
+<p>Pistemäisten kappaleiden hitausmomentti on <span class="math notranslate nohighlight">\(J=mr^2\)</span>, missä <span class="math notranslate nohighlight">\(m\)</span> on kappaleen massa ja <span class="math notranslate nohighlight">\(r\)</span> etäisyys pyörimisakselista. Jos kappale koostuu useista pistemäisistä massoista, lasketaan pistemäisten osien hitausmomentit yhteen.</p>
+<p><strong>Esim.</strong>  Laske oheisen systeemin (jossa massat A, B ja C on kiinnitetty toisiinsa ohuilla tangoilla) hitausmomentti, kun pyörimisakseli kulkee a) pisteen A kautta ja on kohtisuorassa tasoa vastaan, b) pisteiden B ja C kautta.</p>
+<p><img alt="Hitausmomentti, esimerkki" src="_images/hitausmomentti_esim.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>a) <span class="math notranslate nohighlight">\(J=0.3~\text{kg}\cdot (0~\text{m})^2+0.2~\text{kg}\cdot (0.4~\text{m})^2+0.1~\text{kg}\cdot (0.5~\text{m})^2\)</span></p>
+<p><span class="math notranslate nohighlight">\(J=0.057~\text{kg m}^2\)</span></p>
+<p>b) <span class="math notranslate nohighlight">\(J=0.3~\text{kg}\cdot(0.4~\text{m})^2=0.048~\text{kg m}^2\)</span></p>
+</div>
+<p></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="tormaykset.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Törmäyksiä</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="vieriminen.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Vieriminen</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

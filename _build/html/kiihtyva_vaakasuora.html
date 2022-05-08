@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasaisesti kiihtyvä liike &#8212; Fysiikka</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Pystysuuntainen kiihtyvä liike" href="kiihtyva_pystysuora.html" />
+    <link rel="prev" title="Paikka- ja nopeusvektorit" href="liike_vektorit.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fysiikka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Fysiikan perusteet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Suureet ja yksiköt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yksikot.html">
+   Suureet ja yksiköt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kymmenpotenssit.html">
+   Kymmenpotenssiesitys
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esitystarkkuus.html">
+   Suureiden esitystarkkuus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasainen liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasainen_liike.html">
+   Suoraviivainen tasainen liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suhteellinen_nopeus.html">
+   Suhteellinen nopeus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="liike_vektorit.html">
+   Paikka- ja nopeusvektorit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Kiihtyvä liike
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tasaisesti kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_pystysuora.html">
+   Pystysuuntainen kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vino.html">
+   Vino heittoliike
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voimat
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_perus.html">
+   Peruskäsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_newton.html">
+   Newtonin lait
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_sovelluksia.html">
+   Dynamiikkaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ympyräliike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_suureet.html">
+   Ympyräliike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_kiihtyvyys.html">
+   Kiihtyvyys ja voimat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_sovelluksia.html">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Energia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_kasitteet.html">
+   Käsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_mekaaninen.html">
+   Mekaaninen energia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_periaate.html">
+   Energian säilyminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Törmäyksiä
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="liikemaara.html">
+   Liikemäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tormaykset.html">
+   Törmäyksiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jäykät kappaleet
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="hitausmomentit.html">
+   Hitausmomentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vieriminen.html">
+   Vieriminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Momentit ja tasapaino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentti.html">
+   Voiman momentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="painopiste.html">
+   Painopiste
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasapaino.html">
+   Tasapainoehdot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Nesteet ja kaasut
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_paikallaan.html">
+   Hydrostatiikkaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_liikkeessa.html">
+   Liikkuvat nesteet ja kaasut
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/kiihtyva_vaakasuora.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/luma-lapinamk/minna-fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tehtavien-ratkaisun-periaate">
+   Tehtävien ratkaisun periaate
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tasaisesti kiihtyvä liike</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tehtavien-ratkaisun-periaate">
+   Tehtävien ratkaisun periaate
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tasaisesti-kiihtyva-liike">
+<h1>Tasaisesti kiihtyvä liike<a class="headerlink" href="#tasaisesti-kiihtyva-liike" title="Permalink to this headline">¶</a></h1>
+<p>Tasaisesti kiihtyvässä liikkeessä nopeus ei pysy vakiona, vaan muuttuu joka sekunti yhtä paljon. Nopeus voi kasvaa tai pienentyä. Liike on periaatteessa kiihtyvää myös silloin, kun liikkuvan esineen suunta muuttuu, esim. kun autolla ajetaan kaarteessa nopeusmittarin näyttäessä koko ajan samaa lukemaa. Tähän palataan ympyräliikkeen yhteydessä.</p>
+<p>Kiihtyvyys <span class="math notranslate nohighlight">\(a\)</span> on nopeuden muutos <span class="math notranslate nohighlight">\(\Delta v=v_2-v_1\)</span> jaettuna muutokseen kuluneella ajalla <span class="math notranslate nohighlight">\(\Delta t=t_2-t_1\)</span>, siis</p>
+<p><span class="math notranslate nohighlight">\(a=\frac{v_2-v_1}{t_2-t_1}\)</span></p>
+<p>Usein voidaan valita kiihdytyksen alkuhetkeksi <span class="math notranslate nohighlight">\(t_1=0\)</span>, jolloin riittää merkitä <span class="math notranslate nohighlight">\(t_2=t\)</span> ja tällöin kiihtyvyyden määritelmäksi tulee</p>
+<p><span class="math notranslate nohighlight">\(a=\frac{v_2-v_1}{t}\)</span></p>
+<p>Jatkossa käytetään merkinnän <span class="math notranslate nohighlight">\(v_1\)</span> sijasta merkintätapaa <span class="math notranslate nohighlight">\(v_0\)</span> alkunopeudesta eli nopeudesta hetkellä <span class="math notranslate nohighlight">\(t=0\)</span> s, ja merkinnän <span class="math notranslate nohighlight">\(v_2\)</span> sijasta merkintätapaa <span class="math notranslate nohighlight">\(v\)</span> kiihdytyksen jälkeisestä nopeudesta. Siis kiihtyvyys voidaan esittää muodossa</p>
+<p><span class="math notranslate nohighlight">\(a=\frac{v-v_0}{t}\)</span></p>
+<p><strong>Esim.</strong> Kuinka suuri on kiihtyvyys, kun auto kiihdyttää nollasta sataseen viidessä sekunnissa?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><span class="math notranslate nohighlight">\(a=\frac{100~\text{km/h}-0~\text{km/h}}{5~\text{s}}=\frac{\frac{100}{3.6}~\text{m/s}}{5~\text{s}} = \frac{100}{3.6\cdot 5} \frac{\text{m}}{\text{s}^2} = 5.6 \frac{\text{m}}{\text{s}^2}\)</span>.</p>
+</div>
+<p>Kun kiihtyvyys on tasaista, niin nopeus muuttuu joka sekunti määrällä <span class="math notranslate nohighlight">\(a\)</span>. Niinpä <span class="math notranslate nohighlight">\(t\)</span> sekunnin kuluttua nopeus on muuttunut määrällä <span class="math notranslate nohighlight">\(at\)</span>. Nopeus hetkellä <span class="math notranslate nohighlight">\(t\)</span> on</p>
+<p><span class="math notranslate nohighlight">\(v=v_0+at\)</span></p>
+<p>Tätä kutsutaan <strong>kiihtyvän liikkeen nopeusyhtälöksi</strong>.</p>
+<p><strong>Esim.</strong> Pyöräilijä ajaa nopeudella 15 km/h ja kiihdyttää sitten 5 sekunnin ajan kiihtyvyydellä <span class="math notranslate nohighlight">\(0.3 \frac{\text{m}}{\text{s}^2}\)</span>. Laske pyöräilijän nopeus kiihdytyksen jälkeen.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Pyöräilijän nopeus kiihdytyksen jälkeen on <span class="math notranslate nohighlight">\(v=v_0+at=\frac{15}{3.6} \frac{\text{m}}{\text{s}} +5~\text{s}\cdot 0.3 \frac{\text{m}}{\text{s}^2} =5.67 \frac{\text{m}}{\text{s}}=20.4 \frac{\text{km}}{\text{h}}\)</span></p>
+</div>
+<p>Hidastuvassa liikkeessä kiihtyvyys on negatiivinen. Tällöin nopeusyhtälöstä <span class="math notranslate nohighlight">\(v=v_0+at\)</span> saadaan aika, jolloin loppunopeus <span class="math notranslate nohighlight">\(v\)</span> on nolla:</p>
+<p><span class="math notranslate nohighlight">\(0=v_0+at\)</span></p>
+<p><span class="math notranslate nohighlight">\(-at=v_0\)</span></p>
+<p><span class="math notranslate nohighlight">\(t=-\frac{v_0}{a}\)</span></p>
+<p><strong>Esim.</strong> Ferrari-kuski aloittaa jarrutuksen 200 km/h nopeudesta. Kiihtyvyys jarrutuksessa on <span class="math notranslate nohighlight">\(-5.5 \frac{\text{m}}{\text{s}^2}\)</span>. Laske jarrutukseen kuluva aika.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><span class="math notranslate nohighlight">\(t=-\frac{v_0}{a}=-\frac{200/3.6 \frac{\text{m}}{\text{s}}}{-5.5 \frac{\text{m}}{\text{s}^2}} = \frac{200}{3.6\cdot 5.5}~\text{s} = 10.1~\text{s}\)</span>.</p>
+</div>
+<p>Tasaisesti kiihtyvässä liikkeessä (aika, nopeus) -kuvaaja on suora. Jos suora on laskeva, niin nopeus pienenee, ja jos jos suora on nouseva, niin nopeus kasvaa. Kappaleen liikkuman matkan saa aina laskettua (aika, nopeus) –kuvaajasta nopeuskäyrän ja aika-akselin välisenä pinta-alana. Tämä pätee niin tasaisessa kuin muuttuvassakin liikkeessä.</p>
+<p><strong>Esim.</strong> Oheisessa kuvassa alkunopeus on <span class="math notranslate nohighlight">\(v_0=5 \frac{\text{m}}{\text{s}}\)</span> ja kiihtyvyys <span class="math notranslate nohighlight">\(a=1 \frac{\text{m}}{\text{s}^2}\)</span>. Laske viiden sekunnin aikana kuljettu matka.</p>
+<p><img alt="Matka kiihtyvässä liikkeessä, esimerkki" src="_images/kiihtyva_matka_esim.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kuljettu matka saadaan laskemalla: suorakulmion ala + kolmion ala</p>
+<p>Suorakulmio: <span class="math notranslate nohighlight">\(5 \frac{\text{m}}{\text{s}} \cdot 5~\text{s}=25~\text{m}\)</span></p>
+<p>Kolmio: <span class="math notranslate nohighlight">\(\frac{1}{2}\cdot 5~\ text{s} \cdot (10 \frac{\text{m}}{\text{s}} - 5 \frac{\text{m}}{\text{s}})=\frac{1}{2}\cdot 5~\text{s}\cdot 5 \frac{\text{m}}{\text{s}}=12.5~\text{m}\)</span></p>
+<p>Yhteensä kuljettu matka on 25 m + 12.5 m = 37.5 m.</p>
+</div>
+<p>Edellisen esimerkin laskutoimitus voidaan suorittaa yleisesti:</p>
+<p><img alt="Matka kiihtyvässä liikkeessä" src="_images/kiihtyva_matka_yleinen.png" /></p>
+<p>Matka = suorakulmion ala + kolmion ala eli <span class="math notranslate nohighlight">\(x=v_0\cdot t+\frac{1}{2} at\cdot t\)</span>, joka voidaan sieventää <strong>kiihtyvän liikkeen paikkayhtälöksi</strong>:</p>
+<p><span class="math notranslate nohighlight">\(x=v_0 t + \frac{1}{2} at^2\)</span></p>
+<p>Kaavaan voidaan tarvittaessa lisätä vielä paikka <span class="math notranslate nohighlight">\(x_0\)</span>, jossa ollaan juuri silloin kun kiihdytys alkaa. Tällöin kappaleen sijaintia kuvaavaksi yhtälöksi muodostuu <span class="math notranslate nohighlight">\(x=x_0+v_0 t+ \frac{1}{2} at^2\)</span>. Usein voidaan kuitenkin valita <span class="math notranslate nohighlight">\(x_0=0\)</span> m.</p>
+<p><strong>Esim.</strong> Pyöräilijä ajaa nopeudella 15 km/h ja kiihdyttää sitten 5 sekunnin ajan keskikiihtyvyydellä <span class="math notranslate nohighlight">\(0.3 \frac{\text{m}}{\text{s}^2}\)</span>. Kuinka pitkän matkan pyöräilijä etenee kiihdytyksen aikana?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{15}{3.6}~\frac{\text{m}}{\text{s}} \cdot 5~\text{s}+\frac{1}{2}\cdot 0.3~\frac{\text{m}}{\text{s}^2}\cdot (5 ~\text{s})^2=24.6~\text{m}\)</span></p>
+</div>
+<p><strong>Esim.</strong> Ferrari-kuski aloittaa jarrutuksen 200 km/h nopeudesta. Kiihtyvyys jarrutuksessa on <span class="math notranslate nohighlight">\(-5.5 ~\frac{\text{m}}{\text{s}^2}\)</span>.</p>
+<p>a) Laske jarrutusmatka, kun jarrutusajaksi laskettiin aiemmin 10.1 s.</p>
+<p>b) Paljonko on pysähtymismatka, jos matkaa aletaan mitata kohdasta, josta kuljettajalla kestää vielä 0.5 sekuntia aloittaa jarrutus?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>a) <span class="math notranslate nohighlight">\(x=\frac{200}{3.6} \frac{\text{m}}{\text{s}}\cdot 10.1~\text{s}-\frac{1}{2} \cdot 5.5~\frac{\text{m}}{\text{s}^2}\cdot (10.1~\text{s})^2=281~\text{m}\)</span></p>
+<p>b) Nyt auto liikkuu ennen jarrutuksen alkua mittauskohdan alusta matkan <span class="math notranslate nohighlight">\(x_0=\frac{200}{3.6}~\frac{\text{m}}{\text{s}}\cdot 0.5~\text{s} = 27.8~\text{m}\)</span>.</p>
+<p>Kokonaismatka on <span class="math notranslate nohighlight">\(x=27.8~\text{m} + 281~\text{m}=309~\text{m}\)</span>.</p>
+</div>
+<div class="section" id="tehtavien-ratkaisun-periaate">
+<h2>Tehtävien ratkaisun periaate<a class="headerlink" href="#tehtavien-ratkaisun-periaate" title="Permalink to this headline">¶</a></h2>
+<p>Yleisesti fysiikan yhtälöissä on monta kirjainlyhenteillä ilmaistua suuretta. Suureista saa jäädä tuntemattomaksi niin monta kappaletta kuin yhtälöitä on käytettävissä. Siis jos käytämme sekä nopeuden että paikan yhtälöä, voimme selvittää niiden avulla kaksi tuntematonta suuretta. Niiden paikalle merkitään kirjainlyhenne, ja kaikkien muiden suureiden paikalle pitäisi tehtävänannon perusteella löytää lukuarvo. Periaate pätee muutenkin: jokaista tiedossa olevaa yhtälöä kohden saa olla yksi tuntematon muuttujan arvo. Kaikki yhtälöt voi kirjoittaa WolframAlphaan kerralla.</p>
+<p><strong>Esim.</strong> Henkilöauto ajaa talvikelillä nopeudella 100 km/h. Sen kiihtyvyys jarrutuksessa on <span class="math notranslate nohighlight">\(-2.8~\frac{\text{m}}{\text{s}^2}\)</span>. Kuinka pitkä on jarrutusmatka?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Tehtävänannon perusteella tiedetään seuraavat suureiden arvot:</p>
+<p><span class="math notranslate nohighlight">\(v_0=100~\frac{\text{km}}{\text{h}}= \frac{100}{3.6}~\frac{\text{m}}{\text{s}} \approx  27.8~\frac{\text{m}}{\text{s}}, a=-2.8~\frac{\text{m}}{\text{s}^2}, v=0~\frac{\text{m}}{\text{s}}, x_0=0~\text{m}\)</span>.</p>
+<p>Jarrutusmatkaa <span class="math notranslate nohighlight">\(x\)</span> ei tiedetä, eikä myöskään jarrutukseen kuluvaa aikaa <span class="math notranslate nohighlight">\(t\)</span>, vaikka sitä ei tehtävänannossa mainitakaan.</p>
+<p>Ratkaisutapa 1:</p>
+<p>Lasketaan nopeusyhtälöstä <span class="math notranslate nohighlight">\(t=-\frac{v_0}{a}= -\frac{27.8~\text{m/s}}{-2.8~\frac{\text{m}}{\text{s}^2}} \approx  9.93~\text{s}\)</span></p>
+<p>Sijoitetaan tämä paikkayhtälöön:</p>
+<p><span class="math notranslate nohighlight">\(x=0~\text{m}+27.8~\frac{\text{m}}{\text{s}}\cdot 9.93~\text{s}+\frac{1}{2} (-2.8) \frac{\text{m}}{\text{s}^2} \cdot (9.93 ~\text{s})^2 \approx 138~\text{m}\)</span></p>
+<p>Ratkaisutapa 2:</p>
+<p>Kirjoitetaan nopeus- ja paikkayhtälö suoraan WolframAlphaan siten, että tunnetut lukuarvot on sijoitettu paikoilleen:</p>
+<p>solve 0=100/3.6-2.8*t, x=100/3.6*t+0.5*(-2.8)*t^2</p>
+<p>Vastaukseksi saadaan <span class="math notranslate nohighlight">\(t \approx 9.92063, x \approx 137.787\)</span>.</p>
+</div>
+<p>Toisinaan, jos yhtälöissä on mukana muuttujia toiseen potenssiin korotettuna, ratkaisuja saattaa tulla kaksi. Tällöin oikean ratkaisun valitsemiseksi kannattaa tarkastella ajan, paikan ja nopeuden merkkejä. Esimerkiksi negatiivinen aika ei yleensä ole fysikaalisesti järkevä tulos. Mitään kaavamaisia sääntöjä sille, mikä vastaus milloinkin on oikea, ei kannata opetella ulkoa.</p>
+<p><strong>Esim.</strong> Auto liikkuu talvikelillä nopeudella 90 km/h eli 25 m/s. Kuski huomaa poron 60 m päässä tiellä ja suorittaa 1 s reaktioajan jälkeen hätäjarrutuksen. Millä nopeudella auto osuu poroon, kun hätäjarrutuksessa kiihtyvyys on <span class="math notranslate nohighlight">\(-3.0~\frac{\text{m}}{\text{s}^2}\)</span>?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Tehtävänannosta selviää, että auto ehtii liikkua yhtä sekuntia vastaavan matkan eli 25 m ennen kuin jarrutus alkaa.</p>
+<p>Listataan muuttujat: <span class="math notranslate nohighlight">\(v=?,v_0=25~\frac{\text{m}}{\text{s}}, a=-3.0~\frac{\text{m}}{\text{s}^2}, x=60~\text{m}, x_0=25~\text{m}, t=?\)</span></p>
+<p>Käytössä ovat yhtälöt: nopeusyhtälö <span class="math notranslate nohighlight">\(v=v_0+at\)</span>, paikkayhtälö <span class="math notranslate nohighlight">\(x=x_0+v_0 t+\frac{1}{2} at^2\)</span></p>
+<p>Kirjoitetaan WolframAlphaan nopeus- ja paikkayhtälö siten, että niihin sijoitettu tiedossa olevat suureet:</p>
+<p>solve v=25-3*t, 60=25+25*t-0.5*3*t^2</p>
+<p>Ensimmäinen ratkaisuvaihtoehto on <span class="math notranslate nohighlight">\(t\approx 1.54282, v \approx 20.3715\)</span>. Auto siis törmää poroon noin 1.5 sekunnin kuluttua nopeudella 20.37 m/s eli noin 73 km/h.</p>
+<p>Toinen ratkaisuvaihtoehto on <span class="math notranslate nohighlight">\(t \approx 15.1238, v\approx -20.3715\)</span>. Tämän mukaan 15 sekunnin kuluttua auto olisi poron kohdalla, mutta liikkumassa takaperin nopeudella 73 km/h. Tämä ei kuulosta järkevältä. Vastaus on peräisin siitä, että jos auto vielä pysähtymisen jälkeenkin jatkaisi jarruttamista, se alkaisi matemaattisesti ajateltuna liikkua kiihtyvällä nopeudella taaksepäin, vaikka oikeastihan niin ei voi tapahtua. Tällöin se olisi hetken kuluttua uudestaan siinä kohdalla, jossa poro alunperin oli.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="liike_vektorit.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Paikka- ja nopeusvektorit</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="kiihtyva_pystysuora.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Pystysuuntainen kiihtyvä liike</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

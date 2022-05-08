@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasapainoehdot &#8212; Fysiikka</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Hydrostatiikkaa" href="nesteet_paikallaan.html" />
+    <link rel="prev" title="Painopiste" href="painopiste.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fysiikka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Fysiikan perusteet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Suureet ja yksiköt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yksikot.html">
+   Suureet ja yksiköt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kymmenpotenssit.html">
+   Kymmenpotenssiesitys
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esitystarkkuus.html">
+   Suureiden esitystarkkuus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasainen liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasainen_liike.html">
+   Suoraviivainen tasainen liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suhteellinen_nopeus.html">
+   Suhteellinen nopeus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="liike_vektorit.html">
+   Paikka- ja nopeusvektorit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Kiihtyvä liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vaakasuora.html">
+   Tasaisesti kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_pystysuora.html">
+   Pystysuuntainen kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vino.html">
+   Vino heittoliike
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voimat
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_perus.html">
+   Peruskäsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_newton.html">
+   Newtonin lait
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_sovelluksia.html">
+   Dynamiikkaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ympyräliike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_suureet.html">
+   Ympyräliike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_kiihtyvyys.html">
+   Kiihtyvyys ja voimat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_sovelluksia.html">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Energia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_kasitteet.html">
+   Käsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_mekaaninen.html">
+   Mekaaninen energia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_periaate.html">
+   Energian säilyminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Törmäyksiä
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="liikemaara.html">
+   Liikemäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tormaykset.html">
+   Törmäyksiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jäykät kappaleet
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="hitausmomentit.html">
+   Hitausmomentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vieriminen.html">
+   Vieriminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Momentit ja tasapaino
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentti.html">
+   Voiman momentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="painopiste.html">
+   Painopiste
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tasapainoehdot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Nesteet ja kaasut
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_paikallaan.html">
+   Hydrostatiikkaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_liikkeessa.html">
+   Liikkuvat nesteet ja kaasut
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/tasapaino.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/luma-lapinamk/minna-fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tasapainoehdot</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tasapainoehdot">
+<h1>Tasapainoehdot<a class="headerlink" href="#tasapainoehdot" title="Permalink to this headline">¶</a></h1>
+<p>Tarkastellaan jäykän kappaleen tasapainossa pysymistä. Jäykkiä kappaleita ovat esimerkiksi sillat, työkoneiden puomit ja vastaavat, sekä vaikkapa ihmisen raajat. Tasapainoehtojen avulla voi arvioida, millaisia voimia niveliin ja lihaksiin kohdistuu kuvan tilanteessa.</p>
+<p><img alt="Voimia käsivarressa" src="_images/hauis.png" /></p>
+<p>Jäykkä kappale on tasapainossa, jos seuraavat kaksi ehtoa toteutuvat:</p>
+<ul class="simple">
+<li><p>kappaleeseen vaikuttavien voimien summa on nolla (= ei kiihtyvyyttä)</p></li>
+<li><p>kappaleeseen vaikuttavien momenttien summa on nolla (= ei kulmakiihtyvyyttä)</p></li>
+</ul>
+<p>Tasapainoehtoisin liittyvissä laskuissa tarkastellaan usein erilaisiin liitoskohtiin tai tukiin liittyviä voimia. Laskut sujuvat helposti, kun ensin piirretään kuva systeemistä. Kuvaan pitäisi lisätä kaikki oleelliset voimat.</p>
+<p>Sitten täytyy valita piste, jonka suhteen voimien momentteja lasketaan. Eräs helppo tapa on valita tämä momenttiakselipiste jonkin voiman kohdalle. Silloin nimittäin yhden voiman momentiksi saadaan nolla, ja lasku helpottuu. Pisteen voi kuitenkin valita vapaasti, esimerkiksi sillan tai palkin päädyn kohdalta.</p>
+<p>Voimat kannattaa kirjoittaa allekkain taulukoksi. Taulukkoon voidaan kirjoittaa kaikkien voimien etäisyydet kyseisestä pisteestä. Siten taulukkoon saa helposti myös voimien momentit. Lopuksi kerätään taulukosta yhdeksi yhtälöksi voimien summa, ja toiseksi yhtälöksi momenttien summa, ja ratkaistaan tämä yhtälöpari.</p>
+<p><strong>Esim.</strong> Laske tukivoimat <span class="math notranslate nohighlight">\(N_1\)</span> ja <span class="math notranslate nohighlight">\(N_2\)</span>, kun 240 cm pitkä, 25 kg painava palkki on tasapainossa. Voima <span class="math notranslate nohighlight">\(N_1\)</span> sijaitsee 10 cm palkin päädystä ja voima <span class="math notranslate nohighlight">\(N_2\)</span> 30 cm palkin vastakkaisesta päädystä mitattuna.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Piirretään aluksi kuva:</p>
+<p><img alt="Tasapaino, esim. 1" src="_images/palkki1.png" /></p>
+<p>Kuvaan on merkitty painovoima <span class="math notranslate nohighlight">\(G\)</span>, tukivoimat <span class="math notranslate nohighlight">\(N_1\)</span> ja <span class="math notranslate nohighlight">\(N_2\)</span> sekä momenttipiste <span class="math notranslate nohighlight">\(A\)</span>, joka on asetettu voiman <span class="math notranslate nohighlight">\(N_1\)</span> kohdalle.</p>
+<p>Ainoa tunnettu voima on <span class="math notranslate nohighlight">\(G = -25~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} = -245.25~\text{N}\)</span>. Tämän voiman etäisyys voimasta <span class="math notranslate nohighlight">\(N_1\)</span> on 1.1 m. Palkin painopistehän on puolivälissä palkkia eli 1.2 m palkin päädystä, mutta voima <span class="math notranslate nohighlight">\(N_1\)</span> on 10 cm päädystä oikealle.</p>
+<p>Voiman <span class="math notranslate nohighlight">\(N_2\)</span> etäisyys on 2.0 m voimasta <span class="math notranslate nohighlight">\(N_1\)</span>. Etäisyys saadaan laskemalla 2.40 m - 0.10 m - 0.30 m.</p>
+<p>Kerätään voimat ja momentit taulukoon. Momenteista täytyy muistaa tarkistaa merkki. Voima <span class="math notranslate nohighlight">\(G\)</span> palkkia myötäpäivään ja <span class="math notranslate nohighlight">\(N_2\)</span> vastapäivään.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Voima (N)</p></th>
+<th class="head"><p>Voiman varsi (m)</p></th>
+<th class="head"><p>Momentti (Nm)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(N_1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(G=-245.25\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1.1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-245.25\cdot 1.1 = -266.475\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(N_2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2.0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2N_2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Kootaan taulukon 1. sarakkeesta yhtälö, jonka mukaan voimien summa on nolla:</p>
+<p><span class="math notranslate nohighlight">\(N_1-245.25 ~\text{N} +N_2=0\)</span></p>
+<p>Taulukon 3. sarakkeesta saadaan yhtälö, jonka mukaan momenttien summa on nolla:</p>
+<p><span class="math notranslate nohighlight">\(0-266.475 ~\text{N} +2 N_2  = 0\)</span></p>
+<p>Jälkimmäisestä yhtälöstä voidaan ratkaista</p>
+<p><span class="math notranslate nohighlight">\(N_2 = \frac{266.475~\text{N}}{2}=133.24~\text{N}\)</span>,</p>
+<p>ja kun se sijoitaan ensimmäiseen yhtälöön, saadaan</p>
+<p><span class="math notranslate nohighlight">\(N_1=245.25~\text{N}-133.24~\text{N}=112.01~\text{N}\)</span>,</p>
+<p>eli voimat ovat noin 133 N ja 112 N.</p>
+<p>WolframAlphalla ratkaisu saataisiin komennolla: N1-25*9.81+N2=0, -25*9.81*1.1+2*N2=0
+(ratkaisut ovat hieman erilaisia lukuarvoiltaan, kun painovoima lasketaan suoraan yhtälöissä ilman välitulosta)</p>
+</div>
+<p><strong>Esim.</strong> Laske tukivoimat <span class="math notranslate nohighlight">\(N_1\)</span> ja <span class="math notranslate nohighlight">\(N_2\)</span> kuvan esittämässä tilanteessa. Punnuksen massa on 5 kg ja palkin massa on 10 kg.</p>
+<p><img alt="Tasapaino, esim. 2" src="_images/palkki2.png" /></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Valitaan momenttiakselipisteeksi voima <span class="math notranslate nohighlight">\(N_1\)</span>. Nyt mukana on tukivoimien lisäksi palkin oma paino <span class="math notranslate nohighlight">\(G_1\)</span> ja punnuksen paino <span class="math notranslate nohighlight">\(G_2\)</span>. Näiden suuruudet ovat</p>
+<p><span class="math notranslate nohighlight">\(G_1 = -10~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} = -98.1~\text{N}\)</span> ja <span class="math notranslate nohighlight">\(G_2 = -5~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} = -49.05~\text{N}\)</span> ja sijainnit vastaavasti 1.5 m (palkin painopiste on puolivälissä palkkia) ja 2.8 m (300 cm - 20 cm).</p>
+<p>Kerätään voimat, etäisyydet ja momentit taulukkoon:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Voima (N)</p></th>
+<th class="head"><p>Voiman varsi (m)</p></th>
+<th class="head"><p>Momentti (Nm)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(N_1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(G_1=-98.1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1.5\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-98.15\cdot 1.5 = -147.15\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(G_2 = -49.05\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2.0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(-49.05\cdot 2.0 = -98.1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(N_2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2.8\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(2.8N_2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Voimayhtälö: <span class="math notranslate nohighlight">\(N_1-98.1~\text{N}-49.05~\text{N}+N_2=0\)</span></p>
+<p>Momenttiyhtälö: <span class="math notranslate nohighlight">\(-147.15~\text{N}-98.1~\text{N}+2.8 N_2=0\)</span></p>
+<p>Momenttiyhtälöstä saadaan <span class="math notranslate nohighlight">\(N_2=\frac{147.15~\text{N}+98.1~\text{N}}{2.8}=87.59~\text{N}\)</span></p>
+<p>ja edelleen voimayhtälöstä</p>
+<p><span class="math notranslate nohighlight">\(N_1=98.1~\text{N}+49.05~\text{N}-87.59~\text{N}=59.56~\text{N}\)</span>.</p>
+<p>WolframAlphalla ratkaisun saa komennolla:</p>
+<p>solve N1-10*9.81-5*9.81+N2=0, -10*9.81*1.5-5*9.81*2+2.8*N2=0</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="painopiste.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Painopiste</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="nesteet_paikallaan.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Hydrostatiikkaa</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,53 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Suureet ja yksiköt
+    chapters:
+    - file: yksikot
+    - file: kymmenpotenssit
+    - file: esitystarkkuus
+  - caption: Tasainen liike
+    chapters:
+    - file: tasainen_liike
+    - file: suhteellinen_nopeus
+    - file: liike_vektorit
+  - caption: Kiihtyvä liike
+    chapters:
+    - file: kiihtyva_vaakasuora
+    - file: kiihtyva_pystysuora
+    - file: kiihtyva_vino
+  - caption: Voimat
+    chapters:
+    - file: voimat_perus
+    - file: voimat_newton
+    - file: voimat_sovelluksia
+  - caption: Ympyräliike
+    chapters:
+    - file: ympyra_suureet
+    - file: ympyra_kiihtyvyys
+    - file: ympyra_sovelluksia
+  - caption: Energia
+    chapters:
+    - file: energia_kasitteet
+    - file: energia_mekaaninen
+    - file: energia_periaate
+  - caption: Törmäyksiä
+    chapters:
+    - file: liikemaara
+    - file: tormaykset
+  - caption: Jäykät kappaleet
+    chapters: 
+    - file: hitausmomentit
+    - file: vieriminen
+  - caption: Momentit ja tasapaino
+    chapters:
+    - file: momentti
+    - file: painopiste
+    - file: tasapaino
+  - caption: Nesteet ja kaasut
+    chapters:
+    - file: nesteet_paikallaan
+    - file: nesteet_liikkeessa

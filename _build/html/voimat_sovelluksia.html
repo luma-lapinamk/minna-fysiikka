@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamiikkaa &#8212; Fysiikka</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Ympyräliike" href="ympyra_suureet.html" />
+    <link rel="prev" title="Newtonin lait" href="voimat_newton.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fysiikka</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Fysiikan perusteet
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Suureet ja yksiköt
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="yksikot.html">
+   Suureet ja yksiköt
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kymmenpotenssit.html">
+   Kymmenpotenssiesitys
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="esitystarkkuus.html">
+   Suureiden esitystarkkuus
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tasainen liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasainen_liike.html">
+   Suoraviivainen tasainen liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="suhteellinen_nopeus.html">
+   Suhteellinen nopeus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="liike_vektorit.html">
+   Paikka- ja nopeusvektorit
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Kiihtyvä liike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vaakasuora.html">
+   Tasaisesti kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_pystysuora.html">
+   Pystysuuntainen kiihtyvä liike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="kiihtyva_vino.html">
+   Vino heittoliike
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Voimat
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_perus.html">
+   Peruskäsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="voimat_newton.html">
+   Newtonin lait
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dynamiikkaa
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Ympyräliike
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_suureet.html">
+   Ympyräliike
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_kiihtyvyys.html">
+   Kiihtyvyys ja voimat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ympyra_sovelluksia.html">
+   Sovelluksia
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Energia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_kasitteet.html">
+   Käsitteitä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_mekaaninen.html">
+   Mekaaninen energia
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="energia_periaate.html">
+   Energian säilyminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Törmäyksiä
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="liikemaara.html">
+   Liikemäärä
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tormaykset.html">
+   Törmäyksiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Jäykät kappaleet
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="hitausmomentit.html">
+   Hitausmomentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vieriminen.html">
+   Vieriminen
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Momentit ja tasapaino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="momentti.html">
+   Voiman momentti
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="painopiste.html">
+   Painopiste
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tasapaino.html">
+   Tasapainoehdot
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Nesteet ja kaasut
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_paikallaan.html">
+   Hydrostatiikkaa
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="nesteet_liikkeessa.html">
+   Liikkuvat nesteet ja kaasut
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://jupyterbook.org">Jupyter Book</a> voimaa
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/voimat_sovelluksia.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/luma-lapinamk/minna-fysiikka"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jarrutus-tasaisella">
+   Jarrutus tasaisella
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jarrutus-alamaessa">
+   Jarrutus alamäessä
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jarrutus-ylamaessa">
+   Jarrutus ylämäessä
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paastaanko-maki-ylos">
+   Päästäänkö mäki ylös?
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Dynamiikkaa</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jarrutus-tasaisella">
+   Jarrutus tasaisella
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jarrutus-alamaessa">
+   Jarrutus alamäessä
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jarrutus-ylamaessa">
+   Jarrutus ylämäessä
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#paastaanko-maki-ylos">
+   Päästäänkö mäki ylös?
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="dynamiikkaa">
+<h1>Dynamiikkaa<a class="headerlink" href="#dynamiikkaa" title="Permalink to this headline">¶</a></h1>
+<p>Paikallaan pysyviin tai tasaisella nopeutta liikkuviin kappaleisiin liittyvissä ongelmissa tarvittiin Newtonin 1. lakia. Dynamiikka on fysiikan osa-alue, joka tarkastelee sitä, miksi ja millä tavalla kappaleet lähtevät liikkeelle. Tällaisissa ongelmissa hyödynnetään Newtonin 2. lakia.</p>
+<p>Tarkastellaan muutamaa käytännönläheistä dynamiikan ongelmaa, jotka liittyvät mäkiin ja jarrutuksiin. Kun ajoneuvo jarruttaa, se on fysiikan mielessä kiihtyvässä liikkeessä, eli sen nopeus muuttuu. Siksi tarvitaan myös kiihtyvän liikkeen fysiikkaan liittyviä kaavoja.</p>
+<p>Jarrutuksessa kiihtyvyys on peräisin renkaiden ja alustan välisestä kitkasta sekä pinnan kaltevuudesta:</p>
+<ul class="simple">
+<li><p>Kitkavoima <span class="math notranslate nohighlight">\(F_{\mu}=\mu N\)</span> on kahden pinnan välillä vaikuttava, pinnan suuntainen voima, johon vaikuttaa pintojen laatu ja kappaleeseen kohdistuva pinnan tukivoima. Pintaparin vaikutusta kuvaa kitkakerroin <span class="math notranslate nohighlight">\(\mu\)</span>, josta on esimerkkejä taulukossa. Tukivoima <span class="math notranslate nohighlight">\(N\)</span> riippuu kappaleen massasta, mahdollisista pystysuuntaisista voimista ja tason kaltevuudesta.</p></li>
+</ul>
+<p><img alt="Kitkakertoimia" src="_images/kitkakertoimia.png" /></p>
+<ul class="simple">
+<li><p>Kaltevalla pinnalla painovoima kiihdyttää kappaletta alamäen suuntaan. Kiihtyvyys ei kuitenkaan ole niin suurta kuin suoraan alaspäin putoamisessa.</p></li>
+</ul>
+<p>Tasaisella, alamäessä ja ylämäessä kitkavoima ja painovoima aiheuttavat eri suuruisen kokonaisvoiman. Kokonaisvoimasta seuraa Newtonin 2. lain mukainen kiihtyvyys. Sen jälkeen päästäänkin käyttämään kiihtyvän liikkeen laskukaavoja. Kiihtyvän liikkeen kaavoista tarvitaan kaksi yhtälöä:</p>
+<ul class="simple">
+<li><p>nopeusyhtälö <span class="math notranslate nohighlight">\( v=v_0+at\)</span>,</p></li>
+<li><p>paikkayhtälö <span class="math notranslate nohighlight">\(x=v_0 t+\frac{1}{2} at^2\)</span>,</p></li>
+</ul>
+<p>joissa <span class="math notranslate nohighlight">\(v\)</span> on loppunopeus, <span class="math notranslate nohighlight">\(v_0\)</span> alkunopeus ja <span class="math notranslate nohighlight">\(t\)</span> aika.</p>
+<div class="section" id="jarrutus-tasaisella">
+<h2>Jarrutus tasaisella<a class="headerlink" href="#jarrutus-tasaisella" title="Permalink to this headline">¶</a></h2>
+<p>Kun jarrutetaan tasaisella tiellä, niin jarrutuksen aikaansaava voima on renkaiden ja tien välinen kitkavoima. Kun kappale on tasaisella pinnalla eikä kappaleeseen kohdistu muista pystysuuntaisia voimia kuin painovoima ja alustan tukivoima, niin kitkavoiman suuruus on</p>
+<p><span class="math notranslate nohighlight">\(F_{\mu}=\mu N=\mu mg\)</span>.</p>
+<p>Koska auton oletetaan pystysuunnassa olevan paikallaan ja siten noudattavan Newtonin 1. lakia, riittää tarkastella Newtonin 2. lain avulla vaakasuuntaisia voimia. Lain mukaan voimien summa on yhtä suuri kuin auton massa <span class="math notranslate nohighlight">\(m\)</span> kertaa auton kiihtyvyys <span class="math notranslate nohighlight">\(a\)</span>. Ainoa vaakasuuntainen voima on kitkavoima, ja koska se suuntautuu liikettä vastaan, merkitään se yhtälöön negatiivisena:</p>
+<p><span class="math notranslate nohighlight">\(-\mu mg=ma\)</span>, josta ratkeaa välittömästi <span class="math notranslate nohighlight">\(a=-\mu g\)</span>.</p>
+<p><strong>Esim.</strong> Kitkakerroin renkaan ja jäisen tien välillä on 0.20. Kuinka pitkä on jarrutusmatka pysähdykseen asti nopeudesta 85 km/h?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kiihtyvyys on <span class="math notranslate nohighlight">\(a=-\mu g = -0.20\cdot 9.81~\frac{\text{m}}{\text{s}^2}=-1.962 ~\frac{\text{m}}{\text{s}^2}\)</span>.</p>
+<p>Sijoitetaan tiedossa olevat luvut nopeus- ja paikkayhtälöön:</p>
+<p><span class="math notranslate nohighlight">\(0=\frac{85}{3.6}~\frac{\text{m}}{\text{s}}-1.962~\frac{\text{m}}{\text{s}^2}\cdot t\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{85}{3.6}~\frac{\text{m}}{\text{s}}\cdot t - \frac{1}{2}\cdot 1.962 ~\frac{\text{m}}{\text{s}^2} \cdot t^2\)</span></p>
+<p>Nopeusyhtälöstä voi ratkaista jarrutusajan</p>
+<p><span class="math notranslate nohighlight">\(t=\frac{85}{3.6\cdot 1.962} ~\text{s} = 12.034 ~\text{s}\)</span>,</p>
+<p>jonka sijoittamalla paikkayhtälöön saa</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{85}{3.6}~\frac{\text{m}}{\text{s}}\cdot 12.034~\text{s} - \frac{1}{2}\cdot 1.962 ~\frac{\text{m}}{\text{s}^2} \cdot (12.034~\text{s})^2 = 142~\text{m}\)</span>.</p>
+<p>Tehtävän voi ratkaista myös WolframAlphalla:</p>
+<p>solve a=-0.2*9.81, 0=85/3.6+a*t, x=85/3.6*t+0.5*a*t^2</p>
+<p>Huomaa, että nopeus- ja paikkayhtälössä kiihtyvyyden edellä on plus (+) eikä miinus (-), sillä miinusmerkki on jo huomioitu kiihtyvyyttä laskettaessa.</p>
+</div>
+</div>
+<div class="section" id="jarrutus-alamaessa">
+<h2>Jarrutus alamäessä<a class="headerlink" href="#jarrutus-alamaessa" title="Permalink to this headline">¶</a></h2>
+<p>Alamäessä painovoima saa kappaleen kiihtyvään liikkeeseen. Kitkavoima puolestaan jarruttaa liikettä.</p>
+<p><img alt="Voimat alamäessä" src="_images/kitka_alamaki.png" /></p>
+<p>Tasolla, jonka kaltevuuskulma on <span class="math notranslate nohighlight">\(\alpha\)</span>, kappaleeseen vaikuttaa painovoima <span class="math notranslate nohighlight">\(G=mg\)</span> suoraan alaspäin, pinnan tukivoima <span class="math notranslate nohighlight">\(N\)</span> kohtisuoraan pintaa vastaan sekä pinnan suuntainen kitkavoima <span class="math notranslate nohighlight">\(F_{\mu}\)</span>. Kuvassa kitkan arvo on negatiivinen, sillä kitka kohdistuu liikesuuntaa vastaan.</p>
+<p>Tukivoima on aina kohtisuorassa pintaa vastaan. Niinpä se ei ole yhtä suuri kuin painovoima, vaan se on yhtä suuri kuin se osuus painovoimasta, joka on pintaa vasten kohtisuorassa. Suorakulmaisen kolmion trigonometrian perusteella pinnan tukivoima on</p>
+<p><span class="math notranslate nohighlight">\(N=mg \cos⁡{\alpha}\)</span>,</p>
+<p>joten kitkavoiman suuruus on</p>
+<p><span class="math notranslate nohighlight">\(\mu mg \cos {\alpha}\)</span>.</p>
+<p>Painovoimasta kiihtyvyyttä alaspäin aiheuttaa vain se osa, joka on pinnan suuntainen. Tämäkin osa saadaan suorakulmaisen kolmion trigonometrian perusteella: pinnan suuntainen komponentti on</p>
+<p><span class="math notranslate nohighlight">\(mg \sin{\alpha}\)</span>.</p>
+<p>Liukuvan kappaleen kiihtyvyys selviää laskemalla näiden voimien summa, suunnat huomioiden, ja soveltamalla Newtonin 2. lakia samalla tavalla kuin tasaisella. Siis</p>
+<p><span class="math notranslate nohighlight">\(mg \sin{\alpha} - \mu mg \cos {\alpha} = ma\)</span>,</p>
+<p>josta saadaan kiihtyvyys</p>
+<p><span class="math notranslate nohighlight">\(a= g \sin{\alpha} - \mu g \cos {\alpha} = g (\sin{\alpha}- \mu g \cos {\alpha} )\)</span></p>
+<p>Jos kiihtyvyys on negatiivinen, voidaan laskea jarrutusaika ja jarrutusmatka kiihtyvän liikkeen yhtälöistä. Jos kiihtyvyys on positiivinen, nopeus kasvaakin koko ajan. Tällainen tilanne voi olla toivottukin esimerkiksi laskettelurinteessä. Jos tällaisessa tilanteessa yritettäisiin laskea jarrutusaikaa ja -matkaa, vastaukseksi tulisi negatiivisia lukuja: joskus ollaan oltu paikallaan, mutta ei tulla enää olemaan!</p>
+<p><strong>Esim.</strong> Autoilija suorittaa lukkojarrutuksen alamäessä, jonka kaltevuuskulma on 3 astetta. Kitkakerroin on vain 0.1. Laske kiihtyvyys. Miten jyrkässä mäessä jarrutus olisi mahdollinen?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kiihtyvyys on <span class="math notranslate nohighlight">\(a=9.81 ~\frac{\text{m}}{\text{s}^2} (\sin{3^{\circ}}-0.1 \cos⁡{3^{\circ}})=-0.47 ~\frac{\text{m}}{\text{s}^2}\)</span>.</p>
+<p>Kokeilemalla laskukaavaan isompia kaltevuuskulman arvoja todetaan, että 6 asteen kaltevuuskulmalla kiihtyvyys saisi jo positiivisen arvon.</p>
+<p>WolframAlpha tulkitsee pienet kulmat radiaaneina. Kannattaa siis tarkistaa, onko se tulkinnut lukemat asteina, ja tarvittaessa vaihtaa asetus.</p>
+</div>
+<p><strong>Esim.</strong> Laske auton jarrutusmatka 90 km/h nopeudesta 5 asteen alamäessä, kun kitkakerroin on 0.35.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kiihtyvyys on <span class="math notranslate nohighlight">\(a=9.81 ~\frac{\text{m}}{\text{s}^2} (\sin{5^{\circ}}-0.35 \cos⁡{5^{\circ}}=-2.57 ~\frac{\text{m}}{\text{s}^2}\)</span>.</p>
+<p>Sijoitetaan tiedossa olevat luvut nopeus- ja paikkayhtälöön:</p>
+<p><span class="math notranslate nohighlight">\(0=\frac{90}{3.6}~\frac{\text{m}}{\text{s}}-2.57~\frac{\text{m}}{\text{s}^2}\cdot t\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{90}{3.6}~\frac{\text{m}}{\text{s}}\cdot t - \frac{1}{2}\cdot 2.57 ~\frac{\text{m}}{\text{s}^2} \cdot t^2\)</span></p>
+<p>Nopeusyhtälöstä voi ratkaista jarrutusajan</p>
+<p><span class="math notranslate nohighlight">\(t=\frac{90}{3.6\cdot 2.57} ~\text{s} = 9.73 ~\text{s}\)</span>,</p>
+<p>jonka sijoittamalla paikkayhtälöön saa</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{90}{3.6}~\frac{\text{m}}{\text{s}}\cdot 9.73~\text{s} - \frac{1}{2}\cdot 2.57 ~\frac{\text{m}}{\text{s}^2} \cdot (9.73~\text{s})^2 = 122~\text{m}\)</span>.</p>
+<p>Tehtävän voi ratkaista myös WolframAlphalla:</p>
+<p>solve a=9.81*(sin(5)-0.35*cos(5)), 0=90/3.6+a*t, x=90/3.6*t+0.5*a*t^2</p>
+</div>
+</div>
+<div class="section" id="jarrutus-ylamaessa">
+<h2>Jarrutus ylämäessä<a class="headerlink" href="#jarrutus-ylamaessa" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Voimat ylämäessä" src="_images/kitka_ylamaki.png" /></p>
+<p>Ylämäessä auton liikettä hidastavat sekä kitka <span class="math notranslate nohighlight">\(\mu mg \cos {\alpha}\)</span> että painovoiman tason suuntainen komponentti <span class="math notranslate nohighlight">\(mg \sin{\alpha}\)</span>. Kumpikin ovat liikesuunnan vastaisina negatiivisia. Newtonin 2. laki on siis:</p>
+<p><span class="math notranslate nohighlight">\(-mg \sin{\alpha} - \mu mg \cos {\alpha} = ma\)</span>,</p>
+<p>josta saadaan kiihtyvyys</p>
+<p><span class="math notranslate nohighlight">\(a=-g(\mu \cos{\alpha}+\sin{\alpha})\)</span>.</p>
+<p><strong>Esim.</strong> Laske edellisen tehtävän jarrutusmatka, jos kyseessä on 5 asteen ylämäki.</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>Kiihtyvyys on <span class="math notranslate nohighlight">\(a=-9.81 ~\frac{\text{m}}{\text{s}^2} (\sin{5^{\circ}}+0.35 \cos⁡{5^{\circ}})=-4.28 ~\frac{\text{m}}{\text{s}^2}\)</span>.</p>
+<p>Sijoitetaan tiedossa olevat luvut nopeus- ja paikkayhtälöön:</p>
+<p><span class="math notranslate nohighlight">\(0=\frac{90}{3.6}~\frac{\text{m}}{\text{s}}-4.28~\frac{\text{m}}{\text{s}^2}\cdot t\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{90}{3.6}~\frac{\text{m}}{\text{s}}\cdot t - \frac{1}{2}\cdot 2.48 ~\frac{\text{m}}{\text{s}^2} \cdot t^2\)</span></p>
+<p>Nopeusyhtälöstä voi ratkaista jarrutusajan</p>
+<p><span class="math notranslate nohighlight">\(t=\frac{90}{3.6\cdot 2.57} ~\text{s} = 5.85 ~\text{s}\)</span>,</p>
+<p>jonka sijoittamalla paikkayhtälöön saa</p>
+<p><span class="math notranslate nohighlight">\(x=\frac{90}{3.6}~\frac{\text{m}}{\text{s}}\cdot 5.85~\text{s} - \frac{1}{2}\cdot 4.28 ~\frac{\text{m}}{\text{s}^2} \cdot (5.85~\text{s})^2 = 73~\text{m}\)</span>.</p>
+<p>Tehtävän voi ratkaista myös WolframAlphalla:</p>
+<p>solve a=-9.81*(sin(5)+0.35*cos(5)), 0=90/3.6+a*t, x=90/3.6*t+0.5*a*t^2</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Huomautus</p>
+<p>Esimerkkien ja kokemustenkin perusteella lienee selvää, että jarrutusmatkat ovat lyhimmistä pisimpään järjestyksessä ylämäessä, tasaisella ja alamäessä.</p>
+<p>Sekä ala- että ylämäen laskukaavat toimivat myös tasaisella tiellä. Tällöin kaltevuuskulma on 0 astetta. Tälle kulmalle pätee <span class="math notranslate nohighlight">\(\cos{0^{\circ}}=1\)</span> ja <span class="math notranslate nohighlight">\(\sin{0^{\circ}}=0\)</span>. Sijoittamalla nämä arvot kumpikin kaava sievenee muotoon <span class="math notranslate nohighlight">\(a=-\mu g\)</span>.</p>
+<p>Mitähän tapahtuisi, jos kulma olisikin 90 astetta? Kokeile sijoittamalla ala- ja ylämäen kaavoihin <span class="math notranslate nohighlight">\(\cos{90^{\circ}}\)</span> ja <span class="math notranslate nohighlight">\(\sin{90^{\circ}}
+\)</span>!</p>
+</div>
+<p></p>
+</div>
+<div class="section" id="paastaanko-maki-ylos">
+<h2>Päästäänkö mäki ylös?<a class="headerlink" href="#paastaanko-maki-ylos" title="Permalink to this headline">¶</a></h2>
+<p>Tarkastellaan vielä lopuksi, miten kitka ja mäen kaltevuus vaikuttavat siihen, miten mäkiä pääsee kiipeämään ylös. Ylämäkeen liikuttaessa kiihtyvyyttä ylöspäin aiheuttaa kitkavoima renkaiden - tai vaikka kenkien - ja pinnan välillä. Painovoima taas aiheuttaa kiihtyvyyttä alaspäin eli käytännössä taaksepäin. Oletetaan, että riittäisi päästä mäkeä ylös tasaisella nopeudella. Tällöin Newtonin 1. lain mukaisesti tulisi olla:</p>
+<p><span class="math notranslate nohighlight">\(\mu mg \cos{\alpha} - mg \sin{\alpha} = 0\)</span>.</p>
+<p>Jaetaan yhtälö massalla ja putoamiskiihtyvyydellä, jolloin se muuttuu muotoon</p>
+<p><span class="math notranslate nohighlight">\(\mu \cos{\alpha} - \sin{\alpha} = 0\)</span>.</p>
+<p>Nyt yhtälöstä ratkeaa</p>
+<p><span class="math notranslate nohighlight">\(\mu = \frac{\sin{\alpha}}{\cos{\alpha}}\)</span> eli lyhyemmin <span class="math notranslate nohighlight">\(\mu = \tan{\alpha}\)</span>.</p>
+<p>Liikennemerkeissä mäen kaltevuus on kerrottu prosentteina. Luku tarkoittaa sitä, kuinka paljon mäki nousee ylöspäin suhteessa vaakasuuntaiseen siirtymään. Kyseinen lukema, desimaalilukuna ilmaisuna, on täsmälleen sama asia kuin kaltevuuskulman tangentti (eli pysty- ja vaakasuoran kateetin suhde). Niinpä jos mäen jyrkkyydeksi ilmoitetaan liikennemerkissä 7 %, tarkoittaa se samaa kuin mäki, jonka kaltevuuskulman tangentti on 0.07. Tällainen mäki päästään periaatteessa ylös, jos kitkakerroin on vähintään 0.07.</p>
+<p><strong>Esim.</strong></p>
+<p>a) Kuinka suuren pitää renkaan ja tien välisen kitkakertoimen olla, jotta päästäisiin ylös mäki, jonka kaltevuus on 8 astetta?</p>
+<p>b) Kuinka jyrkän mäen voi päästä ylös, kun kitkakerroin on 0.1?</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Ratkaisu</p>
+<p>a) <span class="math notranslate nohighlight">\(\mu=\tan{8^{\circ}}=0.14\)</span>, joka vastaa 14 % mäkeä</p>
+<p>b) <span class="math notranslate nohighlight">\(\alpha=\arctan{0.1}=5.7^{\circ}\)</span> tai prosentteina ilmaistuna 10 %</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="voimat_newton.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Newtonin lait</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ympyra_suureet.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ympyräliike</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By LUMA-tiimi, Lapin AMK / Minna Korhonen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
