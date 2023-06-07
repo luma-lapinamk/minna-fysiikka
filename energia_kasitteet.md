@@ -1,6 +1,6 @@
 # Käsitteitä
 
-Energia on eräs tärkeimmistä fysiikan käsitteistä. Erityisen merkittävää on energian säilyminen: energiaa voi esiintyy erilaisissa muodoissa, mutta energian määrä ei muutu mihinkään. Energiaa esiintyy monissa muodoissa, esimerkiksi sähkönä, lämpönä, kappaleiden liikkeenä tai ruoan sisältämänä kemiallisena energiana. Esimerkiksi kun poltetaan puuta, niin polttopuun molekyylien sidoksissa esiintyvä kemiallinen energia muuttuu lämpöenergiaksi. Jos polttaminen tapahtuu sisällä talossa takassa, tarvitaan vielä tietoa energian siirtymisestä, jottalämpö saadaan pysymään sisällä talossa.
+Energia on eräs tärkeimmistä fysiikan käsitteistä. Erityisen merkittävää on energian säilyminen: energiaa voi esiintyy erilaisissa muodoissa, mutta energian määrä ei muutu mihinkään. Energiaa esiintyy monissa muodoissa, esimerkiksi sähkönä, lämpönä, kappaleiden liikkeenä tai ruoan sisältämänä kemiallisena energiana. Esimerkiksi kun poltetaan puuta, niin polttopuun molekyylien sidoksissa esiintyvä kemiallinen energia muuttuu lämpöenergiaksi. Jos polttaminen tapahtuu sisällä talossa takassa, tarvitaan vielä tietoa energian siirtymisestä, jotta lämpö saadaan pysymään sisällä talossa. Sitä käsitellään esimerkiksi [lämpöopin](https://luma-lapinamk.github.io/minna-lampooppi/intro.html) opintojaksolla.
 
 ## Energia, työ ja teho
 
@@ -15,7 +15,9 @@ $W=Fs \cos{\alpha}$.
 
 Muussa kuin nostamisen tapauksessa voimalle ei ole mitään yleispätevää laskukaavaa. Voimia voidaan laskea samaan tapaan kuin Newtonin lakien tai ympyräliikkeen yhteydessä. Esimerkiksi kun satelliitit kiertävät Maata, niin satelliitin radallaan pitävä voima on maapallon ja satelliitin välinen gravitaatiovoima, jolle on oma laskukaavansa. Voiman ja satelliitin siirtymän (eli kiertoradan tangentin) välinen kulma on 90 astetta, joten tehty työ on 0 J.
 
-**Esim.** Paljonko tehdään työtä, kun vedetään laatikkoa 160 N voimalla 2.5 metriä
+::::{admonition} Esimerkki
+
+Paljonko tehdään työtä, kun vedetään laatikkoa 160 N voimalla 2.5 metriä
 
 a) suoraan eteenpäin, 
 
@@ -30,7 +32,11 @@ b) $W=160~\text{N}\cdot 2.5~\text{m} \cdot \cos{30^{\circ}} = 346~\text{J}$
 
 :::
 
-**Esim.** Laske tehty työ, kun nostetaan
+::::
+
+::::{admonition} Esimerkki
+
+Laske tehty työ, kun nostetaan
 
 a) 100 g painava kirja 100 cm korkealle hyllylle,
 
@@ -49,9 +55,11 @@ c) $W=80~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2}\cdot 500~\text{m}=39240
 
 :::
 
+::::
+
 Myös energian yksikkö on joule. Yksi joule riittää nostamaan omenan metrin korkeuteen. Syömällä sama omena saadaan energiaa 135 000 joulea. Suuri osa energiasta muuttuu lämmöksi, kuten omenan energia elimistössä. Tällöin energia ei häviä, mutta se karkaa ulottuviltamme, eikä sitä voida enää hyödyntää muun työn tekemiseen. Esimerkiksi tehtaissa liukuhihnoilla esiintyvä kitka voi aiheuttaa merkittävää energiahäviötä.
 
-Teho $P$ tarkoittaa tehdyn työn määrää jaettuna kuluneella ajalla, siis $P=\frac{W}{t}$.
+Teho $P$ tarkoittaa tehdyn työn määrää jaettuna työhön kuluneella ajalla, siis $P=\frac{W}{t}$. Kyseessä on keskimääräinen teho. Todellinen teho suorituksen aikana voi vaihdella paljonkin, ihan samalla tavalla kuin nopeuskin voi matkan aikana poiketa paljonkin koko matkan keskinopeudesta.
 
 Tehon yksiköstä on J/s käytetään erityisnimeä watti, ja sen lyhenne on W. Siis tehon yksikkö on sama kirjain kuin työn tunnus! Jos tarkkoja ollaan, niin fysiikassa suureiden tunnuksia merkitään kursiivilla ja yksiköitä tavallisilla kirjaimilla: siis $[W]=\text{J}$ ja $[P]=\text{W}$. 
 
@@ -59,7 +67,10 @@ Teholle käytetään joskus myös yksikköä hevosvoima. Nimestään huolimatta 
 
 Tehon laskukaavaan työn paikalle tuleva lauseke riippuu siirtotyöstä. Nostotyössä sen paikalle tulee painovoiman ja nostokorkeuden tulo. Tasaisessa liikkeessä voidaan ilmaista siirtomatka $s$ nopeuden $v$ ja ajan $t$ avulla, siis $s=vt$. Tällöin $P=\frac{Fs}{t}=\frac{Fvt}{t}=Fv$.
 
-**Esim.** Painonnostaja nostaa 130 kg rautaa 1.5 metrin korkeuteen 1.2 sekunnissa. Laske teho noston aikana.
+::::{admonition} Esimerkki
+
+Painonnostaja nostaa 130 kg rautaa 1.5 metrin korkeuteen 1.2 sekunnissa. Laske teho noston aikana.
+
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
@@ -67,13 +78,20 @@ $P=\frac{W}{t}=\frac{mgh}{t}=\frac{130~\text{kg} \cdot 9.81~\frac{\text{m}}{\tex
 
 :::
 
-**Esim.** Autolla ajetaan nopeudella 100 km/h. Ilman vastusvoima on 280 N. Kuinka suurella teholla auto toimii ilmanvastusta vastaan? 
+::::
+
+::::{admonition} Esimerkki
+
+Autolla ajetaan nopeudella 100 km/h. Ilman vastusvoima on 280 N. Kuinka suurella teholla auto toimii ilmanvastusta vastaan? 
+
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 $P=Fv=280~\text{N}\cdot \frac{100}{3.6}~\frac{\text{m}}{\text{s}} = 7777.78~\frac{\text{Nm}}{\text{s}} = 7.8~\text{kW}$
 
 :::
+
+::::
 
 Sähkölaskusta tuttu yksikkö kilowattitunti kWh tarkoittaa 1000 watin teholla työskentelyä yhden tunnin ajan. Jouleina 1 kWh on siis  $1000~\text{W}\cdot 1~\text{h}=1000~\frac{\text{J}}{\text{s}}\cdot 3600~\text{s}=3.6~\text{MJ}$. Sähköön liittyviä energiamääriä voidaan ilmaista myös wattitunteina (Wh), esim. auton akussa on noin 600-700 Wh ja AA-paristossa 2-3 Wh. 
 
@@ -90,7 +108,9 @@ Tehon määritelmä huomioiden hyötysuhde voidaan myös esittää tietyssä aja
 
 Kaikista koneista menee energiaa hukkaan mm. kitkan aiheuttaman lämmön muodossa. Auton moottorin hyötysuhde on vain noin 20 %, eli 80 % bensiinin sisältämästä kemiallisesta energiasta muuttuu lämmöksi. Sähkömoottoreissa hyötysuhde voi olla jopa 97 %.
 
-**Esim.** Liukuportaat nostavat matkustajia metroasemalta 30 m matkan ylöspäin katutasolle. Ruuhka-aikana määrä voi olla 120 ihmistä minuutissa. Laske portaiden kuluttama sähköteho, jos matkustajan keskimääräinen paino on 75 kg ja koneen hyötysuhde on 70 %.
+::::{admonition} Esimerkki
+
+Liukuportaat nostavat matkustajia metroasemalta 30 m matkan ylöspäin katutasolle. Ruuhka-aikana määrä voi olla 120 ihmistä minuutissa. Laske portaiden kuluttama sähköteho, jos matkustajan keskimääräinen paino on 75 kg ja koneen hyötysuhde on 70 %.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -103,8 +123,11 @@ $P_{\text{otto}}=\frac{75~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot 
 
 :::
 
+::::
 
-**Esim.** Auton moottorin tehosta suuri osa tarvitaan ilmanvastuksen voittamiseen. Henkilöauton aerodynaaminen muotovakio on $c=0.33$ ja etenemissuuntaa vastaan kohtisuora pinta-ala $A$ on 2.4 neliömetriä. Ilman vastusvoima lasketaan kaavalla $F=\frac{1}{2}c \rho A v^2$, missä $\rho=1.25~\frac{\text{kg}}{\text{m}^3}$ on ilman tiheys ja $v$ on liikkuvan kappaleen nopeus. Laske polttoaineen kulutus 100 km matkalla, kun ajetaan nopeudella 100 km/h. Auton hyötysuhde on 24 % ja bensiinin lämpöarvo on 24 MJ/l. Laske myös auton teoreettinen maksiminopeus, jos auton moottorin maksimiteho on 55 kW.
+::::{admonition} Esimerkki
+
+Auton moottorin tehosta suuri osa tarvitaan ilmanvastuksen voittamiseen. Henkilöauton aerodynaaminen muotovakio on $c=0.33$ ja etenemissuuntaa vastaan kohtisuora pinta-ala $A$ on 2.4 neliömetriä. Ilman vastusvoima lasketaan kaavalla $F=\frac{1}{2}c \rho A v^2$, missä $\rho=1.25~\frac{\text{kg}}{\text{m}^3}$ on ilman tiheys ja $v$ on liikkuvan kappaleen nopeus. Laske polttoaineen kulutus 100 km matkalla, kun ajetaan nopeudella 100 km/h. Auton hyötysuhde on 24 % ja bensiinin lämpöarvo on 24 MJ/l. Laske myös auton teoreettinen maksiminopeus, jos auton moottorin maksimiteho on 55 kW.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -137,3 +160,4 @@ $v = \sqrt[3]{\frac{2\cdot 55\cdot 10^3~\frac{\text{kgm}^2}{\text{s}^3}}{0.33\cd
 
 :::
  
+::::

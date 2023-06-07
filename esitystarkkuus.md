@@ -10,17 +10,17 @@ Sopiva esitystarkkuus määräytyy fysiikassa siitä periaatteesta, että "huono
 
 **Esim.** Esitä luvut annetulla tarkkuudella:
 
-a) 10 801 kolmen merkitsevän numeron tarkkuudella: 10800
+a) 10 801 kolmen merkitsevän numeron tarkkuudella: **108**00
 
-b) 0.050120 kolmen merkitsevän numeron tarkkuudella: 0.0501
+b) 0.050120 kolmen merkitsevän numeron tarkkuudella: 0.0**501**
 
-c) 55.555 kahden desimaalin tarkkuudella: 55.56
+c) 55.555 kahden desimaalin tarkkuudella: 55.**56**
 
-d) 10.2017 kahden desimaalin tarkkuudella: 10.20
+d) 10.2017 kahden desimaalin tarkkuudella: 10.**20**
 
-e) 1762.35 grammaa kilogramman tarkkuudella: 2 kg
+e) 1762.35 grammaa kilogramman tarkkuudella: suureen arvo on 1.76235 kg eli **2** kg
 
-f) 114.875 metriä senttimetrin tarkkuudella: 11488 cm
+f) 114.875 metriä senttimetrin tarkkuudella: suureen arvo 11487.5 cm eli 1148**8** cm
 
 Laskutoimituksien tulokset esitetään yleensä seuraavien sääntöjen mukaan
 - yhteen- ja vähennyslaskut: niin monta desimaalia kuin epätarkimmassa luvussa on
@@ -28,7 +28,9 @@ Laskutoimituksien tulokset esitetään yleensä seuraavien sääntöjen mukaan
 - välituloksissa käytetään yhtä merkitsevää lukua enemmän kuin pitäisi
 - säännöt koskevat samoissa yksiköissä esitettyjä lukuja
 
-**Esim.** Esitä järkevällä tarkkuudella:
+::::{admonition} Esimerkki
+
+Esitä järkevällä tarkkuudella:
 
 a) $125~\text{nm} + 0.16~\mu\text{m}$
 
@@ -50,3 +52,5 @@ c) Tilavuus on $V=2400~\text{cm}^2\cdot 0.50~\text{cm}=1200~\text{cm}^3=0.00120~
 Massa on $710~\frac{\text{kg}}{\text{m}^3}\cdot 0.00120~\text{m}^3=0.85~\text{kg}$. 
 
 :::
+
+::::

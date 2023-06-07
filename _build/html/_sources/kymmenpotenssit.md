@@ -5,6 +5,7 @@ Edellisessä kappaleessa tutustuttiin suureisiin ja yksiköihin. Arjessa esiinty
 Esimerkiksi suureiden 0.00000048 m ja 50 895 400 103 Hz suuruusluokkaa on vaikea hahmottaa. Suureissa esiintyvät hyvin suuret tai hyvin pienet luvut pyritään esittämään siten, että luku koostuu kertoimesta ja kymmenpotenssiluvusta.
 
 Kymmenpotenssiluku tarkoittaa lukua $10^n$, missä luku $n$ on jokin positiivinen tai negatiivinen kokonaisluku. Luku $n$ on nimeltään eksponentti, ja se kertoo, kuinka monta kertaa kerroin pitää kertoa tai jakaa kymmenellä. 
+
 - Positiivisen eksponentin tapauksessa kerrotaan:  $3\cdot 10^4 = 3\cdot 10\cdot 10 \cdot 10 \cdot 10 = 30000$. 
 
 - Negatiivisen eksponentin tapauksessa jaetaan: $5\cdot 10^{-2} = \frac{5}{10\cdot 10} = 0.05$.
@@ -24,7 +25,9 @@ Laskin ei välttämättä anna vastausta suoraan toivotussa muodossa. Kymmenpote
 
 **Esim.** $50 895 400 103~\text{Hz} \approx 50.9\cdot 10^9~\text{Hz} = 50.9~\text{GHz}$
 
-**Esim.** Muuta seuraavat suureet sellaiseen kymmenpotenssimuotoon, että voit käyttää etuliitettä (mikro, milli, kilo jne.) ja että kymmenpotenssin edessä oleva luku on suuruudeltaan noin 1-1000.
+::::{admonition} Esimerkki
+
+Muuta seuraavat suureet sellaiseen kymmenpotenssimuotoon, että voit käyttää etuliitettä (mikro, milli, kilo jne.) ja että kymmenpotenssin edessä oleva luku on suuruudeltaan noin 1-1000.
 
 a) 585 602 500 mg
 
@@ -38,6 +41,8 @@ a) $585 602 500~\text{mg}=585 602 500\cdot 10^{-3}~\text{g}≈585.6\cdot 10^3~\t
 b) $0.6368~\text{THz}=0.6368\cdot 10^{12}~\text{Hz}=636.8 \cdot 10^9~\text{Hz}=636.8~\text{GHz}$
 
 :::
+
+::::
 
 :::{admonition} Huomautus
 :class: tip, dropdown

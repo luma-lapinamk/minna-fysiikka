@@ -12,7 +12,9 @@ Vaakasuuntaisessa liikkeessä tavallinen tapa valita suunnalle merkki on se, ett
 
 Tehtävissä loppukorkeus $y$ saatetaan ilmaista esimerkiksi muodossa "maassa" eikä suoraan lukuarvona $0~\text{m}$ kirjoitettuna. Lisäksi tehtävissä voidaan ilmaista esimerkiksi sanalla "putoaa" se, että kappaleen alkunopeus on 0 m/s. 
 
-**Esim.** Kuumailmapallo on nousemassa ylöspäin nopeudella 5.0 m/s, kun siitä pudotetaan 25 m korkeudessa hiekkasäkki. Kuinka pitkän ajan päästä ja millä nopeudella hiekkasäkki osuu maahan?
+::::{admonition} Esimerkki
+
+Kuumailmapallo on nousemassa ylöspäin nopeudella 5.0 m/s, kun siitä pudotetaan 25 m korkeudessa hiekkasäkki. Kuinka pitkän ajan päästä ja millä nopeudella hiekkasäkki osuu maahan?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -31,7 +33,12 @@ Halutessaan ongelman voisi ratkaista myös selvittämällä ensin paikkayhtälö
 
 :::
 
-**Esim.** Kivi pudotettiin tornista, ja se osui maahan 1.7 sekunnin kuluttua putoamisesta. Kuinka korkea torni on?
+::::
+
+::::{admonition} Esimerkki
+
+Tornista pudotettiin pikkukivi. Kivi osui maahan 1.7 sekunnin kuluttua putoamisesta. Kuinka korkea torni on?
+
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
@@ -51,17 +58,19 @@ Näistä toki riittäisi ensimmäinenkin yhtälö, sillä loppunopeutta $v$ ei e
 
 $y=0.5\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot (1.7~\text{s})^2 \approx 14.2~\text{m}$.
 
+Tätä voit kokeilla käytännössä vaikka näköalatornissa, kunhan tornin alla ei ole ketään!
+
 :::
 
-Jos kappale on heitetty ylös, sen nopeus on hetkellisesti 0 m/s juuri silloin, kun se lähtee putoamaan alaspäin. Tällä periaatteella voidaan laskea lakikorkeus, eli se korkeus, jolla kappale enimmillään käy. Periaatteessa ensin pitäisi laskea aika $t$, jolloin nopeus on nolla, ja sen jälkeen tämä aika pitäisi sijoittaa paikkayhtälöön:
+::::
 
-$0=v_0-gt$
+Jos kappale on heitetty ylös, sen nopeus on hetkellisesti 0 m/s juuri silloin, kun se lähtee putoamaan alaspäin. Tällä periaatteella voidaan laskea lakikorkeus, eli se korkeus, jolla kappale enimmillään käy. Jos tehtävän haluaa ratkaista käsin, niin  ensin pitäisi laskea aika $t$, jolloin nopeus on nolla, ja sen jälkeen tämä aika pitäisi sijoittaa paikkayhtälöön. Ajan saa ratkaistua seuraavasti:
 
-$gt=v_0$
+$0=v_0-gt \Leftrightarrow gt=v_0 \Leftrightarrow t=\frac{v_0}{g}$
 
-$t=\frac{v_0}{g}$
+::::{admonition} Esimerkki
 
-**Esim.** Pallo heitetään ylöspäin nopeudella 3 m/s. 
+Pallo heitetään ylöspäin nopeudella 3 m/s. 
 
 a) Kuinka korkealla pallo käy heittokorkeudesta mitattuna?
 
@@ -84,3 +93,4 @@ a) solve 0=3-9.81\*t, y=1.5+3\*t-0.5*9.81\*t^2
 
 :::
 
+::::

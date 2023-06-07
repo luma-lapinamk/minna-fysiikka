@@ -11,14 +11,19 @@ Auto ei luisu pois tieltä, jos
 
 $μmg \geq \frac{mv^2}{r}$ eli $μg \geq \frac{v^2}{r}$.
 
-**Esim.** Laske auton maksiminopeus kaarteessa, jonka kaarevuussäde on 140 m, jos lepokitkakerroin on 0.25. 
+::::{admonition} Esimerkki
+
+Laske auton maksiminopeus kaarteessa, jonka kaarevuussäde on 140 m, jos lepokitkakerroin on 0.25. 
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 Yhtälöstä $μg \geq \frac{v^2}{r}$ saadaan $v \leq \sqrt{\mu g r} = \sqrt{0.25\cdot 9.81~\frac{\text{m}}{\text{s}^2}\cdot 140~\text{m}} = 18.5~\frac{\text{m}}{\text{s}} \approx 66~\frac{\text{km}}{\text{h}}$.
+
 :::
- 
+
+::::
+
 ## Kallistettu kaarre
   
 Kitkallisessa kaarteessa, jonka kallistuskulma on $\alpha > 0$, autolla voidaan (teoriassa) ajaa nopeammin kuin kallistamattomassa. 
@@ -43,7 +48,9 @@ ja miniminopeus:
 
 $v_{\text{min}}=\sqrt{ \frac{gr(\sin{\alpha}+\mu \cos{\alpha})}{\cos{\alpha}+\mu \sin{\alpha} }}$
 
-**Esim.** Laske auton maksiminopeus kaarteessa, jonka kaarevuussäde on 140 m ja kallistuskulma 8.0 astetta. Renkaan ja tien välinen lepokitkakerroin on 0.25.
+::::{admonition} Esimerkki
+
+Laske auton maksiminopeus kaarteessa, jonka kaarevuussäde on 140 m ja kallistuskulma 8.0 astetta. Renkaan ja tien välinen lepokitkakerroin on 0.25.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -51,6 +58,8 @@ $v_{\text{min}}=\sqrt{ \frac{gr(\sin{\alpha}+\mu \cos{\alpha})}{\cos{\alpha}+\mu
 $v_{\text{max}}=\sqrt{\frac{9.81~\frac{\text{m}}{\text{s}^2} \cdot 140~\text{m}(\sin{8^{\circ}}+0.25 \cos{8^{\circ}})}{\cos{8^{\circ}}-0.25 \sin{8^{\circ}}}} \approx 23.6~\frac{\text{m}}{\text{s}} \approx 84.8~\frac{\text{km}}{\text{h}}$
 
 :::
+
+::::
 
 Periaatteessa täysin kitkattomastakin kallistetusta kaarteesta voidaan selvitä. Sijoitetaan maksimi- ja miniminopeuden yhtälöihin kitkakerroin $\mu=0$. Tällöin
 
@@ -116,7 +125,9 @@ Supernopeille junille käytetään ns. optimaalista kallistusta. Tällöin raide
  
 Kallistuskulma on optimaalinen silloin, kun $\tan{\alpha}=\frac{v^2}{rg}$
 
-**Esim.** Luotijunan nopeus on 270 km/h (=75 m/s) kaarteessa, jonka kaarevuussäde on 1500 m. Laske optimaalinen kallistuskulma.
+::::{admonition} Esimerkki
+
+Luotijunan nopeus on 270 km/h (=75 m/s) kaarteessa, jonka kaarevuussäde on 1500 m. Laske optimaalinen kallistuskulma.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -124,3 +135,5 @@ Kallistuskulma on optimaalinen silloin, kun $\tan{\alpha}=\frac{v^2}{rg}$
 $\tan{\alpha}=\frac{(75~\frac{\text{m}}{\text{s}})^2}{1500~\text{m}\cdot 9.81~\frac{\text{m}}{\text{s}^2}} \approx 0.38$, josta $\alpha = 21^{\circ}$.
 
 :::
+
+::::

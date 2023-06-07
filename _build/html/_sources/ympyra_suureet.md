@@ -13,7 +13,9 @@ Lisäksi voidaan määritellä
 
 Kulmaa mitataan radiaaneina. Kulmataajuus voidaan esittää myös sijoittamalla $f=\frac{1}{T}$, jolloin kulmataajuudeksi tulee $\omega=2\pi f$.
     
-**Esim.** Polkupyörän takapyörän säde on $r=0.35~\text{m}$ ja sen pyörimistaajuus ajossa on $2.5~\text{Hz}$. Laske renkaan pyörähdysaika, kulmataajuus ja pyörimisnopeus (eli polkupyörän nopeus).
+::::{admonition} Esimerkki
+
+Polkupyörän takapyörän säde on $r=0.35~\text{m}$ ja sen pyörimistaajuus ajossa on $2.5~\text{Hz}$. Laske renkaan pyörähdysaika, kulmataajuus ja pyörimisnopeus (eli polkupyörän nopeus).
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -27,3 +29,5 @@ ja pyörimisnopeus (=polkupyörän nopeus)
 $v=\frac{2 \pi r}{T}=\frac{2\pi \cdot 0.35~\text{m}}{0.4~\text{s}} = 5.5~\frac{\text{m}}{\text{s}} = 19.8~\frac{\text{km}}{\text{h}}$.
 
 :::
+
+::::

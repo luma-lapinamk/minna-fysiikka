@@ -4,7 +4,7 @@ Liikumme koko ajan Maapallon mukana Auringon ympäri noin 30 km/s. Voimme mennä
 
 Kappaleen nopeutta tarkastellaan yleensä maanpinnan suhteen tai sitten jonkun toisen kappaleen suhteen. Merkitään kappaleen A nopeutta maanpinnan suhteen $v_{AM}$ ja kappaleen B nopeutta maanpinnan suhteen $v_{BM}$. Kappaleen A nopeus kappaleen B suhteen on $v_{AB}$. Nopeuksille pätee yhtälö
 
-$v_{AM}=v_{AB}+v_{BM}$.
+$v_{AB}=v_{AM}-v_{BM}$.
 
 Nopeuksien suunnille pitää olla valittuna merkit. Voidaan esimerkiksi ajatella, että vasemmalta oikealle on positiivista nopeutta. Oikealta vasemmalle ajaminen olisi silloin negatiivista, vaikka auto ei varsinaisesti peruuttaisikaan. 
 
@@ -16,9 +16,11 @@ $v_{AB}=v_{AM}-v_{BM}=80~\text{km/h}-90~\text{km/h}=-10~\text{km/h}$.
 
 $v_{AB}=v_{AM}-v_{BM}=80~\text{km/h}-(-90~\text{km/h})=170~\text{km/h}$.
 
-Suhteellinen nopeus on tärkeä ohitustilanteissa. Kun arvioidaan ohitukseen tarvittavaa aikaa ja matkaa, lasektaan ohitusaika autojen suhteellisen nopeuden avulla. Tarvittava matka taas lasketaan autojen oikeiden nopeuksien avulla.
+Suhteellinen nopeus on tärkeä ohitustilanteissa. Kun arvioidaan ohitukseen tarvittavaa aikaa ja matkaa, lasketaan ensin ohitusaika autojen suhteellisen nopeuden avulla. Tarvittava matka taas lasketaan sitten tämän ajan autojen oikeiden nopeuksien avulla.
 
-**Esim.** Kaksi junaa, joiden pituudet ovat 240 m ja 125 m ja vauhdit vastaavasti 140 km/h ja 85 km/h, kulkevat vierekkäisillä raiteilla 
+::::{admonition} Esimerkki
+
+Kaksi junaa, joiden pituudet ovat 240 m ja 125 m ja vauhdit vastaavasti 140 km/h ja 85 km/h, kulkevat vierekkäisillä raiteilla 
 a) samaan suuntaan, b) vastakkaisiin suuntiin. Molemmissa tapauksissa junan A kulkema matka junan B suhteen on 240 m + 125 m = 365 m. Kuinka kauan ohitus kestää?
 
 ![Suhteellinen nopeus, esimerkki](suhteellinen_junat.png "Suhteellinen nopeus, esimerkki")
@@ -43,3 +45,5 @@ $v_{AB}=140~\text{km/h}-(-85~\text{km/h})=225~\text{km/h}=62.5~\text{m/s}$.
 Ohitusaika on $t=\frac{365~\text{m}}{62.5~\text{m/s}}=5.8~\text{s}$.
 
 Ohituksen aikana juna A liikkuu $\frac{140}{3.6}~\frac{\text{m}}{\text{s}}\cdot 5.8~\text{s}=226~\text{m}$.
+
+::::

@@ -29,7 +29,9 @@ Koska auton oletetaan pystysuunnassa olevan paikallaan ja siten noudattavan Newt
 
 $-\mu mg=ma$, josta ratkeaa välittömästi $a=-\mu g$.
 
-**Esim.** Kitkakerroin renkaan ja jäisen tien välillä on 0.20. Kuinka pitkä on jarrutusmatka pysähdykseen asti nopeudesta 85 km/h?
+::::{admonition} Esimerkki
+
+Kitkakerroin renkaan ja jäisen tien välillä on 0.20. Kuinka pitkä on jarrutusmatka pysähdykseen asti nopeudesta 85 km/h?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -58,6 +60,7 @@ Huomaa, että nopeus- ja paikkayhtälössä kiihtyvyyden edellä on plus (+) eik
 
 :::
 
+::::
 
 ## Jarrutus alamäessä
 
@@ -89,7 +92,9 @@ $a= g \sin{\alpha} - \mu g \cos {\alpha} = g (\sin{\alpha}- \mu g \cos {\alpha} 
 
 Jos kiihtyvyys on negatiivinen, voidaan laskea jarrutusaika ja jarrutusmatka kiihtyvän liikkeen yhtälöistä. Jos kiihtyvyys on positiivinen, nopeus kasvaakin koko ajan. Tällainen tilanne voi olla toivottukin esimerkiksi laskettelurinteessä. Jos tällaisessa tilanteessa yritettäisiin laskea jarrutusaikaa ja -matkaa, vastaukseksi tulisi negatiivisia lukuja: joskus ollaan oltu paikallaan, mutta ei tulla enää olemaan!
 
-**Esim.** Autoilija suorittaa lukkojarrutuksen alamäessä, jonka kaltevuuskulma on 3 astetta. Kitkakerroin on vain 0.1. Laske kiihtyvyys. Miten jyrkässä mäessä jarrutus olisi mahdollinen?
+::::{admonition} Esimerkki
+
+Autoilija suorittaa lukkojarrutuksen alamäessä, jonka kaltevuuskulma on 3 astetta. Kitkakerroin on vain 0.1. Laske kiihtyvyys. Miten jyrkässä mäessä jarrutus olisi mahdollinen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -102,8 +107,11 @@ WolframAlpha tulkitsee pienet kulmat radiaaneina. Kannattaa siis tarkistaa, onko
 
 :::
 
+::::
 
-**Esim.** Laske auton jarrutusmatka 90 km/h nopeudesta 5 asteen alamäessä, kun kitkakerroin on 0.35.
+::::{admonition} Esimerkki
+
+Laske auton jarrutusmatka 90 km/h nopeudesta 5 asteen alamäessä, kun kitkakerroin on 0.35.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -130,6 +138,8 @@ solve a=9.81\*(sin(5)-0.35*cos(5)), 0=90/3.6+a\*t, x=90/3.6\*t+0.5\*a\*t^2
 
 :::
 
+::::
+
 ## Jarrutus ylämäessä
 
 ![Voimat ylämäessä](kitka_ylamaki.png "Voimat alamäessä")
@@ -142,7 +152,9 @@ josta saadaan kiihtyvyys
 
 $a=-g(\mu \cos{\alpha}+\sin{\alpha})$.
 
-**Esim.** Laske edellisen tehtävän jarrutusmatka, jos kyseessä on 5 asteen ylämäki.
+::::{admonition} Esimerkki
+
+Laske edellisen tehtävän jarrutusmatka, jos kyseessä on 5 asteen ylämäki.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -169,10 +181,12 @@ solve a=-9.81*(sin(5)+0.35*cos(5)), 0=90/3.6+a\*t, x=90/3.6\*t+0.5\*a\*t^2
 
 :::
 
+::::
+
 :::{admonition} Huomautus
 :class: tip, dropdown
 
-Esimerkkien ja kokemustenkin perusteella lienee selvää, että jarrutusmatkat ovat lyhimmistä pisimpään järjestyksessä ylämäessä, tasaisella ja alamäessä. 
+Esimerkkien ja kokemustenkin perusteella lienee selvää, että jarrutusmatkat ovat lyhimmistä pisimpään seuraavassa järjestyksessä: ylämäessä, tasaisella ja alamäessä. 
 
 Sekä ala- että ylämäen laskukaavat toimivat myös tasaisella tiellä. Tällöin kaltevuuskulma on 0 astetta. Tälle kulmalle pätee $\cos{0^{\circ}}=1$ ja $\sin{0^{\circ}}=0$. Sijoittamalla nämä arvot kumpikin kaava sievenee muotoon $a=-\mu g$.
 
@@ -197,7 +211,7 @@ $\mu = \frac{\sin{\alpha}}{\cos{\alpha}}$ eli lyhyemmin $\mu = \tan{\alpha}$.
 Liikennemerkeissä mäen kaltevuus on kerrottu prosentteina. Luku tarkoittaa sitä, kuinka paljon mäki nousee ylöspäin suhteessa vaakasuuntaiseen siirtymään. Kyseinen lukema, desimaalilukuna ilmaisuna, on täsmälleen sama asia kuin kaltevuuskulman tangentti (eli pysty- ja vaakasuoran kateetin suhde). Niinpä jos mäen jyrkkyydeksi ilmoitetaan liikennemerkissä 7 %, tarkoittaa se samaa kuin mäki, jonka kaltevuuskulman tangentti on 0.07. Tällainen mäki päästään periaatteessa ylös, jos kitkakerroin on vähintään 0.07.
 
  
-**Esim.**
+::::{admonition} Esimerkki
 
 a) Kuinka suuren pitää renkaan ja tien välisen kitkakertoimen olla, jotta päästäisiin ylös mäki, jonka kaltevuus on 8 astetta?
 
@@ -212,3 +226,4 @@ b) $\alpha=\arctan{0.1}=5.7^{\circ}$ tai prosentteina ilmaistuna 10 %
 
 :::
 
+::::

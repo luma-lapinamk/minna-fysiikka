@@ -26,7 +26,9 @@ Kitka voidaan luokitella lepo- tai liikekitkaan. Lepokitka vastustaa kappaleen l
 
 Voimat aiheuttavat muutoksia kappaleen liiketilaan. Muutosten laskeminen tapahtuu Newtonin lakien avulla, mutta ennen niiden opiskelua täytyy osata laskea niinsanottu kokonaisvoima. Se tarkoittaa sitä, että vaakasuuntaiset voimat yhdistetään keskenään yhdeksi voimaksi ja pystysuuntaiset voimat keskenään yhdeksi voimaksi. Vaaka- ja pystysuuntaisia voimia on helppoa yhdistellä seuraavan esimerkin mukaisesti:
 
-**Esim.** Laatikkoa vedetään 15 N voimalla eteenpäin ja 20 N voimalla taaksepäin. Laske kokonaisvoimat vaaka- ja pystysuunnassa.
+::::{admonition} Esimerkki
+
+Laatikkoa vedetään 15 N voimalla eteenpäin ja 20 N voimalla taaksepäin. Laske kokonaisvoimat vaaka- ja pystysuunnassa.
 
 ![Kokonaisvoima](laatikko.png "Kokonaisvoima")
 
@@ -44,15 +46,19 @@ $-20~\text{N}+15~\text{N}=-5~\text{N}$.
 
 :::
 
+::::
+
 Jos voima ei olekaan vaaka- tai pystysuuntainen, vaan vino, pitää voimasta erottaa vaaka- ja pystysuuntainen osuus ennen kuin voimia voidaan käyttää laskuissa. Yksinkertaisimmassa tapauksessa voiman ja vaakatason välinen kulma on $\alpha$. Tällöin vaakasuuntainen osuus $F_x$ ja pystysuuntainen osuus $F_y$ saadaan suorakulmaisen kolmion trigonometristen funktioiden avulla:
 
 $F_x=F \cos{\alpha},  F_y=F \sin{\alpha}$.
 
 Laskukaavoja ei kuitenkaan kannata opetella ulkoa, sillä aina kulmia ei esitetä juuri vaakatasosta mitattuna.
 
-![Vinot voimat](vinot_esim.png "Vinot voimat")
+::::{admonition} Esimerkki
 
-**Esim.** Laske vaaka- ja pystysuuntaiset voimat, kun laatikkoa vedetään 15 N voimalla etuviistoon siten, että kulma vaakatason ja vetävän voiman välillä on 35 astetta.
+Laske vaaka- ja pystysuuntaiset voimat, kun laatikkoa vedetään 15 N voimalla etuviistoon siten, että kulma vaakatason ja vetävän voiman välillä on 35 astetta.
+
+![Vinot voimat](vinot_esim.png "Vinot voimat")
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -62,3 +68,5 @@ Tässä tapauksessa on tiedossa voiman ja vaakatason välinen kulma, joten
 $F_x=15~\text{N}\cdot\cos{35^{\circ}}=12.3~\text{N}$ ja $F_x=15~\text{N}\cdot\sin{35^{\circ}}=8.6~\text{N}$.
 
 :::
+
+::::

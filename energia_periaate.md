@@ -20,7 +20,7 @@ $\frac{1}{2} v_1^2+gh_1=\frac{1}{2} v_2^2+gh_2$
 
 Mekaanisen energian säilymislain avulla voidaan ratkaista samanlaisia ongelmia kuin pystysuoran kiihtyvän liikkeen kaavoilla.
 
-**Esim.** 
+::::{admonition} Esimerkki
 
 a) Kivi pudotetaan 30 metrin korkeudesta. Millä nopeudella se osuu maahan?
 
@@ -41,6 +41,7 @@ $v_2=\sqrt{v_1^2+2gh_1}=\sqrt{(5~\text{m/s})^2+2\cdot 9.81~\frac{\text{m}}{\text
 
 :::
 
+::::
 
 ## Yleinen energiaperiaate
 
@@ -50,7 +51,9 @@ $\frac{1}{2} mv_1^2+mgh_1+W=\frac{1}{2} mv_2^2+mgh_2$
 
 Työ $W$ voi olla esimerkiksi kitkavoiman tekemää työtä, jolloin $W=-\mu mgx$, missä $x$ on kappaleen kulkema matka ja $\mu$ kitkakerroin, tai $W=-μmg \cos{\alpha} x$, jos kappale on tasolla, jonka kaltevuuskulma on $\alpha$. Yleisen energiaperiaatteen avulla voidaan ratkaista samanlaisia ongelmia kuin kiihtyvän liikkeen kaavoilla, esimerkiksi jarrutusmatkoja pysähdykseen asti, tai nopeuksia tietyn jarrutusmatkan jälkeen.
 
-**Esim.** a) Laske yleisen energiaperiaatteen avulla auton jarrutusmatka pysähdykseen asti tasaisella tiellä nopeudesta 90 km/h (=25 m/s), kun jarrutuksen aiheuttaa liukukitka kitkakertoimella $\mu=0.50$.
+::::{admonition} Esimerkki
+
+a) Laske yleisen energiaperiaatteen avulla auton jarrutusmatka pysähdykseen asti tasaisella tiellä nopeudesta 90 km/h (=25 m/s), kun jarrutuksen aiheuttaa liukukitka kitkakertoimella $\mu=0.50$.
 
 b) Mikä on auton nopeus 40 metrin jarrutuksen jälkeen?
 
@@ -91,10 +94,13 @@ $v_2 = \sqrt{(25~\text{m/s})^2-2\cdot 0.5\cdot 9.81~\frac{\text{m}}{\text{s}^2} 
 
 WolframAlphalla laskun voisi suorittaa komennolla: solve 1/2\*25^2-0.5\*9.81\*30=1/2\*v^2
 
-
 :::
- 
-**Esim.** Puupalikka liukuu 5 m korkean talon katolta ensin räystäälle ja putoaa sitten alas. Räystään korkeus on 2.5 m ja katon kaltevuuskulma 30 astetta. Laske nopeus, jolla palikka putoaa maahan
+
+::::
+
+::::{admonition} Esimserkki
+
+Puupalikka liukuu 5 m korkean talon katolta ensin räystäälle ja putoaa sitten alas. Räystään korkeus on 2.5 m ja katon kaltevuuskulma 30 astetta. Laske nopeus, jolla palikka putoaa maahan
 
 a) jos katto on jäinen (kitkakerroin on likimain 0), 
 
@@ -134,8 +140,12 @@ $v_2 = \sqrt{2\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot (5~\text{m}-0.30\cos{
 WolframAlphaan yhtälön voisi kirjoittaa seuraavasti: solve s=2.5/sin(30), 9.81\*5-0.3\*9.81*cos(30)\*s=0.5\*v^2
 
 :::
- 
-**Esim.** Pientä punnusta pyöritetään 80 cm pitkän köyden avulla siten, että punnus liikkuu pystysuunnassa ympyränmuotoisella radalla. Kuinka suuri täytyy punnuksen nopeuden olla ympyrän matalimmassa kohdassa, jotta kyseinen liike olisi mahdollista?
+
+::::
+
+::::{admonition} Esimerkki
+
+Pientä punnusta pyöritetään 80 cm pitkän köyden avulla siten, että punnus liikkuu pystysuunnassa ympyränmuotoisella radalla. Kuinka suuri täytyy punnuksen nopeuden olla ympyrän matalimmassa kohdassa, jotta kyseinen liike olisi mahdollista?
  
 ![Punnuksen pyöritys](punnus.png "Punnuksen pyöritys") 
 
@@ -162,7 +172,11 @@ WolframAlpha: solve v2^2/0.8=9.81, 0.5\*v1^2=0.5\*v2^2+9.81\*1.6
  
 :::
 
-**Esim.** Huvipuistossa on vuoristorata, jolla vaunu liukuu kitkattomasti korkeudelta $h$ alas ja tekee silmukan, jonka säde on $R$. Kuinka korkealta vaunun on lähdettävä silmukan säteeseen verrattuna?
+::::
+
+::::{admonition} Esimerkki
+
+Huvipuistossa on vuoristorata, jolla vaunu liukuu kitkattomasti korkeudelta $h$ alas ja tekee silmukan, jonka säde on $R$. Kuinka korkealta vaunun on lähdettävä silmukan säteeseen verrattuna?
 
 ![Silmukka](silmukka.png "Energiaperiaate silmukassa")
 
@@ -186,3 +200,5 @@ $h=\frac{1}{2} R +2R$
 $h=2.5 R$
 
 :::
+
+::::

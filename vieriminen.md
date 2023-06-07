@@ -10,7 +10,9 @@ $E_k=\frac{1}{2} mv^2+\frac{1}{2} J\frac{v^2}{r^2}$
 
 Koska hitausmomentin $J$ laskukaavat sisältävät yleensä säteen $r$ toisen potenssin, niin käytännössä se aina supistuu pois, eikä näin ollen kappaleen koolla ole vaikutusta sen vierimiseen liittyvän energiaan. Massa sen sijaan vaikuttaa, ja lisäksi kappaleen muodosta hitausmomenttiin tulee jokin murtolukukerroin. 
 
-**Esim.** Laske jalkapallon kokonaisenergia, kun sen massa on 500 g ja se etenee vierien nopeudella 3 m/s. 
+::::{admonition} Esimerkki
+
+Laske jalkapallon kokonaisenergia, kun sen massa on 500 g ja se etenee vierien nopeudella 3 m/s. 
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -25,9 +27,13 @@ ja edelleen $E_k=\frac{5}{6} mv^2 = \frac{5}{6}\cdot 0.5~\text{kg}\cdot \left(3~
 
 :::
 
+::::
+
 Mekaanisen energian säilymislaki toimii myös vieriville kappaleille, kun huomioidaan potentiaali- ja liike-energian lisäksi vierimisenergia. Tällöinkin voi tapahtua samalla tapalla kuin putoamisen tai liukumisen tapauksessa: kappaleen massa supistuu pois. Niinpä ei periaatteessa ole merkitystä, onko mäkeä pitkin alas vierimässä talouspaperirulla vai vesitynnyri. Niiden pitäisi saavuttaa sama loppunopeus. Sen sijaan kappaleen muodolla on kyllä merkitystä asialle.
 
-**Esim.** Selvitä energiaperiaatteen avulla, mikä on umpinaisen pallon ($J=\frac{2}{5} mr^2$)  nopeus mäen alla, kun se vierii alas mäeltä, jonka korkeus on 4 m.
+::::{admonition} Esimerkki
+
+Selvitä energiaperiaatteen avulla, mikä on umpinaisen pallon ($J=\frac{2}{5} mr^2$)  nopeus mäen alla, kun se vierii alas mäeltä, jonka korkeus on 4 m.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -48,7 +54,11 @@ Sijoitetaan luvut: $v=\sqrt{9.81~\frac{\text{m}}{\text{s}^2}\cdot 4~\text{m}\cdo
 
 :::
 
-**Esim.** Umpinainen sylinteri, jonka säde on 25 cm, vierii mäkeä, jonka kaltevuuskulma on $15^{\circ}$. Laske sylinterin nopeus, kun se on vierinyt mäkeä pitkin mitattuna 7.5 m.
+::::
+
+::::{admonition} Esimerkki
+
+Umpinainen sylinteri, jonka säde on 25 cm, vierii mäkeä, jonka kaltevuuskulma on $15^{\circ}$. Laske sylinterin nopeus, kun se on vierinyt mäkeä pitkin mitattuna 7.5 m.
 
 ![Vieriminen, esimerkki](vieriminen_esim.png "Vieriminen, esimerkki")
 
@@ -70,3 +80,5 @@ Lasketaan vierimismatkan perusteella lähtökorkeus: $h=7.5~\text{m}\cdot \sin{�
 Loppunopeus on siis $v=\sqrt{\frac{4}{3} \cdot 9.81~\frac{\text{m}}{\text{s}^2}\cdot 7.5~\text{m}\cdot \sin{15^{\circ}}} = 5.0 ~\frac{\text{m}}{\text{s}}$.
 
 :::
+
+::::
