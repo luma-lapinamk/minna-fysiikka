@@ -8,7 +8,9 @@ Epäelastisessa törmäyksessä  kappaleet tarttuvat toisiinsa kiinni. Tällöin
 
 $m_1 v_1+m_2 v_2=(m_1+m_2)u$
 
-**Esim.** Luoti, jonka massa on 15 g, ammutaan nopeudella 300 m/s puupalaan, joka on paikallaan ja jonka massa on 200 g. Luoti jää puupalan sisälle. Millä nopeudella puupala liikkuu heti osuman jälkeen?
+::::{admonition} Esimerkki
+
+Luoti, jonka massa on 15 g, ammutaan nopeudella 300 m/s puupalaan, joka on paikallaan ja jonka massa on 200 g. Luoti jää puupalan sisälle. Millä nopeudella puupala liikkuu heti osuman jälkeen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -21,11 +23,15 @@ Huomaa, että massat on sijoitettu grammoina. Yleensä fysiikan kaavoissa massoj
 
 :::
 
+::::
+
 Kaksiulotteisissa törmäyksissä liikemäärä säilyy erikseen vaakasuunnassa ja pystysuunnassa. Yksinkertainen esimerkki kaksiulotteisesta epäelastisesta törmäyksestä on risteyskolari, jossa toinen ajoneuvo liikkuu esimerkiksi itä-länsi-suunnassa ja toinen pohjois-etelä-suunnassa. Olisi kuitenkin mahdollista myös käsitellä sellaisia törmäyksiä, jotka eivät tapahdu suorassa kulmassa. Tällöin vinosti liikkuvan kappaleen nopeus jaettaisiin toisen nopeuden suuntaiseen ja sitä vastaan kohtisuoraan nopeuteen. Tällä opintojaksolla ei tarkastella sellaisia tilanteita. Lisäksi kaksiulotteisten törmäysten tarkastelu rajataan vain epäelastiseen tapaukseen.
 
 ![Kaksiulotteinen törmäys](2dtormays.png "Kaksiulotteinen törmäys")
 
-**Esim.** Jalkapalloilija, jonka massa on 70 kg, juoksee suoraan maalia kohti nopeudella 7 m/s. Toinen pelaaja, jonka massa on 80 kg, törmää häneen kohtisuorasti sivusta nopeudella 8 m/s. Pelaajat takertuvat toisiinsa. Millä nopeudella ja mihin suuntaan he etenevät heti törmäyksen jälkeen?
+::::{admonition} Esimerkki
+
+Jalkapalloilija, jonka massa on 70 kg, juoksee suoraan maalia kohti nopeudella 7 m/s. Toinen pelaaja, jonka massa on 80 kg, törmää häneen kohtisuorasti sivusta nopeudella 8 m/s. Pelaajat takertuvat toisiinsa. Millä nopeudella ja mihin suuntaan he etenevät heti törmäyksen jälkeen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -44,8 +50,11 @@ Tästä saadaan $u_y= \frac{80~\text{kg}\cdot 8~\frac{\text{m}}{\text{s}}}{70~\t
 
 Kokonaisnopeus on $u=\sqrt{u_x^2+u_y^2} = \sqrt{(3.3~\text{m/s})^2+(4.3~\text{m/s})^2}=5.4~\text{m/s}$
 
-Suuntakulma on $\alpha=\arctan{\frac{u_y}{u_x}}=52^{\circ}$.  
+Suuntakulma on $\alpha=\arctan{\frac{u_y}{u_x}}=52^{\circ}$.
+
 :::
+
+::::
 
 # Elastinen törmäys
 
@@ -95,7 +104,9 @@ Tästä muokkaamalla saadaan tulos  $v_1+u_1=u_2+v_2$ ja edelleen $v_1-v_2=u_2-u
 :::
 
 
-**Esim.** Fysiikan tunnilla laitetaan kitkattomalla radalle kappale A (m=60 g), joka liikkuu nopeudella 0.80 m/s, törmäämään paikallaan olevaan kappaleeseen B (m=120 g). Kappaleet eivät tartu toisiinsa. Mitkä ovat kappaleiden nopeudet törmäyksen jälkeen?
+::::{admonition} Esimerkki
+
+Fysiikan tunnilla laitetaan kitkattomalla radalle kappale A (m=60 g), joka liikkuu nopeudella 0.80 m/s, törmäämään paikallaan olevaan kappaleeseen B (m=120 g). Kappaleet eivät tartu toisiinsa. Mitkä ovat kappaleiden nopeudet törmäyksen jälkeen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -140,6 +151,8 @@ solve 60\*0.8+120\*0=60\*u1+120\*u2, 60\*0.8^2+120\*0^2=60\*u1^2+120\*u2^2
 
 :::
 
+::::
+
 # Osittain elastinen törmäys
 
 Osittain elastisessa törmäyksessä liike-energia ei säily täysin, vaan energiaa muuttuu törmäyksessä muihin muotoihin, esimerkiksi kappaleiden muodon muuttuessa tai siksi, että törmäyksestä yleensä kuuluu jonkinlainen ääni. Osittain elastista törmäystä kuvaa ns. sysäyskerroin
@@ -148,7 +161,9 @@ $e=\frac{u_2-u_1}{v_1-v_2}$
 
 eli kappaleiden loppunopeuksien eron suhde alkunopeuksien eroon. Kirjain $e$ on tässä vain vakiintunut lyhenne eikä Neperin luku. Täysin elastisessa törmäyksessä $e=1$, sillä nopeuksien eroksi todettiin sama ennen törmäystä ja törmäyksen jälkeen, ja täysin epäelastisessa törmäyksessä $e=0$, sillä kappaleen liikkuvat yhdessä samalla nopeudella eli $u_1=u_2$. Tätä sysäyskertoimen määritelmää voidaan nyt käyttää törmäysongelmissa toisena yhtälönä, yhdessä liikemäärän säilymislain kanssa.
 
-**Esim.** Auto, jonka massa on 1400 kg, ajaa toisen auton, jonka massa on 1300 kg, perään. Ennen törmäystä autojen nopeudet ovat 15 m/s ja 10 m/s. Törmäys on osittain elastinen siten, että sysäyskerroin on 0.7. Mitkä ovat autojen nopeudet törmäyksen jälkeen?
+::::{admonition} Esimerkki
+
+Auto, jonka massa on 1400 kg, ajaa toisen auton, jonka massa on 1300 kg, perään. Ennen törmäystä autojen nopeudet ovat 15 m/s ja 10 m/s. Törmäys on osittain elastinen siten, että sysäyskerroin on 0.7. Mitkä ovat autojen nopeudet törmäyksen jälkeen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -173,3 +188,4 @@ solve 1400\*15+1300\*10=1400\*u1+1300\*u2, 0.7=(u2-u1)/(15-10)
 
 :::
 
+::::

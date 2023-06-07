@@ -1,6 +1,8 @@
-# Suureet ja yksiköt
+# Suureet, yksiköt ja kaavat
 
-Fysiikassa ei juuri koskaan lasketa pelkillä luvuilla, vaan laskuissa olevat luvut kuvaavat esim. pituutta, aikaa, sähköjännitettä ym. Mitattavien asioiden suuruutta kutsutaan nimellä suure. Suure sisältää mittaluvun ja yksikön. Esim. 170 cm on pituus-niminen suure, joka sisältää mittaluvun 170 ja yksikön cm. Tässä luvussa perehdytään suureiden ja niiden yksiköiden esitysmuotoihin.
+Fysiikassa ei juuri koskaan lasketa pelkillä luvuilla, vaan laskuissa olevat luvut kuvaavat esimerkiksi pituutta, aikaa, sähköjännitettä ja muita asioita, jotka voidaan mitata. Mitattavien asioiden suuruutta kutsutaan nimellä suure. Suure sisältää mittaluvun ja yksikön. Esim. 170 cm on pituus-niminen suure, joka sisältää mittaluvun 170 ja yksikön cm. Tässä luvussa perehdytään aluksi suureiden ja niiden yksiköiden esitysmuotoihin.
+
+Suureyhtälö tarkoittaa fysiikan "laskutoimitusta" ilman suureiden lukuarvoja. Suureyhtälöitä sanotaan myös kaavoiksi. Suureyhtälön avulla saa yleiskäsityksen jonkin fysiikan ilmiön luonteesta: miten jonkin suureen kasvaminen tai pieneneminen vaikuttaa johonkin toiseen suureeseen? Suureyhtälössä esiintyvien yksiköiden avulla voi myös tarkistaa, onko yhtälö oikein, ja jopa rakentaa sen itse.
 
 ## Perussuureet ja -yksiköt
 
@@ -38,7 +40,9 @@ Yksikkö on aika monimutkainen. Sillä onkin onneksi erityisnimitys ohmi ($\Omeg
 
 Yksiköiden pitäminen mukana laskuissa auttaa tarkistamaan, onko lasku oikein. Tämä on käyttökelpoinen tieto opintojakson tenttiä ajatellen! Lisäksi jos esimerkiksi raportoidaan mittausten tuloksia asiakkaille tai yhteistyökumppaneille, pitää tuloksissa aina olla yksiköt mukana. 
 
-**Esim.** Ajetaan autolla matka $s=115~\text{km}$ ajassa $t=1.5~\text{h}$. Millä seuraavista kaavoista saadaan auton keskinopeus $v$? Päättele oikea laskukaava saadun vastauksen yksikön perusteella. Vaihtoehdot: $v=st$, $v=\frac{t}{s}$ ja $v=\frac{s}{t}$.
+::::{admonition} Esimerkki
+
+Ajetaan autolla matka $s=115~\text{km}$ ajassa $t=1.5~\text{h}$. Millä seuraavista kaavoista saadaan auton keskinopeus $v$? Päättele oikea laskukaava saadun vastauksen yksikön perusteella. Vaihtoehdot: $v=st$, $v=\frac{t}{s}$ ja $v=\frac{s}{t}$.
 
 
 :::{admonition} Ratkaisu
@@ -52,14 +56,22 @@ $v=\frac{s}{t}$: tulokseksi tulee $\frac{115~\text{km}}{1.5~\text{h}} = 76.7~\fr
 
 :::
 
+::::
 
-## Suureyhtälöt
 
-Suureyhtälö tarkoittaa fysiikan "laskutoimitusta" ilman suureiden lukuarvoja. Suureyhtälön avulla saa yleiskäsityksen jonkin fysiikan ilmiön luonteesta: miten jonkin suureen kasvaminen tai pieneneminen vaikuttaa johonkin toiseen suureeseen? Suureyhtälössä esiintyvien yksiköiden avulla voi myös tarkistaa, onko yhtälö oikein, ja jopa rakentaa sen itse.
+## Kaavat
 
-**Esim.** Päätellään suureyhtälön avulla, miten ilmanvastus muuttuu eri tilanteissa. 
+Fysiikan tunnilla yleisin kysymys tuntuu olevan "millä kaavalla tämä lasketaan?". On tärkeää tiedostaa, että kaavoilla on aina jokin muukin merkitys kuin satunnaiselta vaikuttavaan järjestykseen sekoitellut kirjaimet. Jokainen kirjain jokaisessa kaavassa tarkoittaa jotakin suuretta, ja kirjainten suhde toisiinsa kuvaa sitä, millä tavalla kirjaimen kuvaama suure vaikuttaa ilmiössä, jota kaava kuvastaa.
 
-Etsitään ilmanvastusta kuvaava suureyhtälö:
+Esimerkiksi eräs tuttu kaava on $v=\frac{s}{t}$. Kaavojen opettelua parempi vaihtoehto on opetella kuvailemaan sanallisesti kaavan kuvaamaa ilmiötä. Tässä tapauksessa sääntö on: "nopeus on kuljettu matka jaettuna siihen käytetyllä ajalla". Sen jälkeen tarvitsee vain kirjoittaa sama sääntö lyhyemmin, matematiikan merkinnöin. Kirjaintenkaan ei ole pakko olla juuri ne, joita SI-järjestelmässä yleensä käytetään. Jos haluaa merkitä matkaa kirjaimella $å$ ja aikaa kirjaimella $q$, sen saa tehdä, kunhan itse tietää, mitä mikäkin kirjain tarkoittaa.
+
+Monia kaavoja on saatavilla taulukkokirjoista, esimerkiksi [täältä](https://www.taulukot.com/fysiikka/fysiikka_kaavoja/). Fysiikan tunneilla esiintyvät kaavat on hyvä kirjoittaa muistiin vaikka paperille. Kaavoja ei tarvitse osata ulkoa. Toisaalta, kaikki kaavat on mahdollista johtaa eli muodostaa sen perusteella, mitä kaavan kuvaamasta ilmiöstä tiedetään. Jos ymmärrät ilmiöt, osaat myös muodostaa siihen liittyvän laskukaavan. Tällaista osaamista kertyy sitä mukaa kun opiskelu etenee.
+
+::::{admonition} Esimerkki
+
+Päätellään kaavan avulla, miten ilmanvastus muuttuu eri tilanteissa. 
+
+Etsitään aluksi ilmanvastusta kuvaava suureyhtälö:
 
 $F=\frac{1}{2} c \rho A v^2$
 
@@ -88,7 +100,11 @@ $F_2=\frac{1}{2} c \rho \cdot 1.1 A \cdot (1.1v)^2 = 1.33 F_1$ eli 33 % alkuper�
 
 :::
 
-**Esim.** Voiko olla mahdollista, että vesisäiliössä olevan veden virtausnopeutta (metreinä sekunnissa) säiliössä olevasta aukosta kuvaa yhtälö $v=2gh$, missä $g=9.81~\frac{\text{m}}{\text{s}^2}$ ja $h$ on vedenpinnan ja aukon välinen korkeusero metreinä?
+::::
+
+::::{admonition} Esimerkki
+
+Voiko olla mahdollista, että vesisäiliössä olevan veden virtausnopeutta (metreinä sekunnissa) säiliössä olevasta aukosta kuvaa yhtälö $v=2gh$, missä $g=9.81~\frac{\text{m}}{\text{s}^2}$ ja $h$ on vedenpinnan ja aukon välinen korkeusero metreinä?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -104,3 +120,5 @@ Niinpä annettu yhtälö ei ole oikein. Toimiva yhtälö voisi olla $v=\sqrt{2gh
 Yksiköistä ei tosin voi päätellä, kuuluuko myös kerroin 2 neliöjuuren sisälle, tai onko se ylipäätään oikea luku. Tässä tapauksessa luku on oikea. Kyseinen yhtälö on Torricellin laki, johon palataan virtausfysiikassa. 
 
 :::
+
+::::

@@ -26,7 +26,9 @@ Hitausmomentti riippuu siis siitä, millä tavalla kappaleen pienet osaset jakau
 
 Hitausmomentteja erilaisille kappaleille voidaan laskea integraalilaskennan avulla. Muutamia tällaisten laskujen tuloksia on valmiina [taulukossa](http://www.taulukot.com/fysiikka/fysiikka_kaavoja/). Ainakin kaikkien taulukoitujen kappaleiden hitausmomenteissa esiintyy kappaleen kokonaismassa $m$ ja lisäksi kappaleen jokin mitta potenssiin kaksi, tai kahden mitan tulo. Niinpä hitausmomentin yksiköksi tulee $\text{kg}\cdot \text{m}^2$. Laskukaavoissa on myös erilaisia murtolukukertoimia. Ne ovat peräisin integraalilaskusta ja liittyvät kappaleen massan jakautumiseen.
 
-**Esim.** Laske hitausmomentti tasapaksulle ohuelle levylle, jonka massa on 3.0 kg ja jonka sivujen pituudet ovat 20 cm ja 50 cm.
+::::{admonition} Esimerkki
+
+Laske hitausmomentti tasapaksulle ohuelle levylle, jonka massa on 3.0 kg ja jonka sivujen pituudet ovat 20 cm ja 50 cm.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -36,11 +38,16 @@ Taulukosta nähdään hitausmomentin laskukaava: $J=\frac{1}{12} m (a^2+b^2)$
 Sijoitetaan lukuarvot:
 
 $J=\frac{1}{12}\cdot 3.0~\text{kg} \left[(0.20~\text{m})^2+(0.50~\text{m})^2\right]=0.0725~\text{kgm}^2$
+
 :::
- 
+
+::::
+
 Pistemäisten kappaleiden hitausmomentti on $J=mr^2$, missä $m$ on kappaleen massa ja $r$ etäisyys pyörimisakselista. Jos kappale koostuu useista pistemäisistä massoista, lasketaan pistemäisten osien hitausmomentit yhteen.
 
-**Esim.**  Laske oheisen systeemin (jossa massat A, B ja C on kiinnitetty toisiinsa ohuilla tangoilla) hitausmomentti, kun pyörimisakseli kulkee a) pisteen A kautta ja on kohtisuorassa tasoa vastaan, b) pisteiden B ja C kautta.
+::::{admonition} Esimerkki
+
+Laske oheisen systeemin (jossa massat A, B ja C on kiinnitetty toisiinsa ohuilla tangoilla) hitausmomentti, kun pyörimisakseli kulkee a) pisteen A kautta ja on kohtisuorassa tasoa vastaan, b) pisteiden B ja C kautta.
 
 ![Hitausmomentti, esimerkki](hitausmomentti_esim.png "Hitausmomentti, esimerkki")
 
@@ -55,5 +62,4 @@ b) $J=0.3~\text{kg}\cdot(0.4~\text{m})^2=0.048~\text{kg m}^2$
 
 :::
  
-
- 
+::::

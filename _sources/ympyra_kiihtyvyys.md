@@ -16,7 +16,9 @@ Kiihtyvyys määritellään: nopeuden muutos jaettuna muutokseen kuluneella ajal
 $a=\frac{2\pi v}{\frac{2\pi r}{v}} = 2\pi v \cdot \frac{2}{2\pi r} =\frac{v^2}{r}$
 :::
 
-**Esim.** Millä nopeudella pitäisi liikkua ympyräradalla, jotta saavutettaisiin noin yhden $g$:n suuruinen keskeiskiihtyvyys, jos ympyräradan säde on a) 20 m, b) 80 m?
+::::{admonition} Esimerkki
+
+Millä nopeudella pitäisi liikkua ympyräradalla, jotta saavutettaisiin noin yhden $g$:n suuruinen keskeiskiihtyvyys, jos ympyräradan säde on a) 20 m, b) 80 m?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -28,6 +30,8 @@ a) $v=\sqrt{9.81~\frac{\text{m}}{\text{s}^2}\cdot 20~\text{m}} = 14~\frac{\text{
 b) $v=\sqrt{9.81~\frac{\text{m}}{\text{s}^2}\cdot 80~\text{m}} = 28~\frac{\text{m}}{\text{s}} \approx 100~\frac{\text{km}}{\text{h}}$
 
 :::
+
+::::
 
 ## Keskeisvoima ja keskipakovoima
 
@@ -50,7 +54,9 @@ $F=\frac{mv^2}{r}$.
 
 Sijoittamalla voiman $F$ paikalle sopiva laskukaava voidaan nyt ratkaista esimerkiksi tämän kaltaisia ongelmia: Miten kaukana maapallo kiertää Aurinkoa? Miten suuri pitää olla tien ja renkaiden välisen kitkavoiman, jotta auto pysyy kaarteessa tiellä?
 
-**Esim.** Maapallon ja auringon välinen painovoima lasketaan kaavalla $F=G\cdot \frac{m\cdot M}{r^2}$, missä $m=5.97\cdot 10^{24}~\text{kg}$ on maapallon massa ja $M$ on auringon massa. Suure $G=6.67\cdot 10^{-11}~\frac{\text{m}^3}{\text{kg}\text{s}^2}$ on ns. gravitaatiovakio. Laske auringon massa, kun tiedetään, että maapallo kiertää 150 miljoonan kilometrin etäisyydellä auringosta yhden kierroksen vuodessa.
+::::{admonition} Esimerkki
+
+Maapallon ja auringon välinen painovoima lasketaan kaavalla $F=G\cdot \frac{m\cdot M}{r^2}$, missä $m=5.97\cdot 10^{24}~\text{kg}$ on maapallon massa ja $M$ on auringon massa. Suure $G=6.67\cdot 10^{-11}~\frac{\text{m}^3}{\text{kg}\text{s}^2}$ on ns. gravitaatiovakio. Laske auringon massa, kun tiedetään, että maapallo kiertää 150 miljoonan kilometrin etäisyydellä auringosta yhden kierroksen vuodessa.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -77,3 +83,5 @@ $M=2.0\cdot 10^{30}~\text{kg}$
 
 
 :::
+
+::::

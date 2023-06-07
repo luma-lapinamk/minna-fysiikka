@@ -10,13 +10,17 @@ Edellisistä määritelmistä voidaan johtaa impulssiperiaate: $F \Delta t=\Delt
 
 Jos kappaleen massa ei muutu voiman vaikutuksen takia, niin liikemäärän muutos johtuu pelkästään nopeuden muutoksesta ja tällöin voidaan kirjoittaa $F\Delta t=m \Delta v$.
 
-**Esim.** Pesäpallo (m=150 g) saa lyönnissä nopeuden 100 km/h. Jos maila osuu palloon 0.05 sekunnin ajan, niin kuinka suuren voiman se kohdistaa palloon?
+::::{admonition} Esimerkki
+
+Pesäpallo (m=150 g) saa lyönnissä nopeuden 100 km/h. Jos maila osuu palloon 0.05 sekunnin ajan, niin kuinka suuren voiman se kohdistaa palloon?
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 $F=\frac{m \Delta v}{\Delta t}=\frac{0.150~\text{kg}\cdot \frac{100}{3.6}~\frac{\text{m}}{\text{s}}}{0.05~\text{s}} = 83~\text{N}$
 
 :::
+
+::::
 
 Impulssiperiaatetta sovelletaan tilanteisiin, joissa kaksi kappaletta (massat $m_1$ ja $m_2$) liikkuvat nopeuksilla $v_1$ ja $v_2$ ja törmäävät toisiinsa suoraviivaisesti. Törmäyksessä kumpaankin kappaleeseen vaikuttaa Newtonin 3. lain mukaisesti vastakkaissuuntainen, mutta saman suuruinen voima $F$.
 

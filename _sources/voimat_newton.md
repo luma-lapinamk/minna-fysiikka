@@ -14,7 +14,9 @@ Newtonin 1. lain toinen nimi, jatkavuuden laki, kertoo että jos kappaleen ei ko
 
 Newtonin 1. lakia voidaan soveltaa ikään kuin takaperin: jos tiedetään, että kappale on paikallaan tai liikkuu tasaisella nopeudella, niin voidaan päätellä että kokonaisvoiman pitää olla nolla. Tällöin voidaan laskea, millaisia voimia kappaleeseen vaikuttaa.
 
-**Esim.** Vedetään 10 kg laatikkoa 15 N voimalla etuviistoon 35 asteen kulmassa. Kuinka suurella voimalla $N$ alusta tukee laatikkoa?
+::::{admonition} Esimerkki
+
+Vedetään 10 kg laatikkoa 15 N voimalla etuviistoon 35 asteen kulmassa. Kuinka suurella voimalla $N$ alusta tukee laatikkoa?
 
 ![Newtonin 1. laki, esimerkki 1](n1_esim1.png "Newtonin 1. laki, esimerkki 1")
 
@@ -37,7 +39,11 @@ $N=98.1~\text{N}-8.6~\text{N}=89.5~\text{N}$
 
 :::
 
-**Esim.** Kitkavoiman suuruus $F_{\mu}$ riippuu kitkakertoimesta µ ja tukivoimasta $N$ seuraavasti: $F_{\mu}=µN$. Pulkkaa, jonka massa on 20 kg, vedetään tasaisella tiellä siten, että kulma narun ja tien välillä on 40 astetta. Kitkakerroin on $\mu=0.58$. Kuinka suurella voimalla $F$ pulkkaa pitää vetää, jotta se kulkee tasaisella nopeudella?
+::::
+
+::::{admonition} Esimerkki
+
+Kitkavoiman suuruus $F_{\mu}$ riippuu kitkakertoimesta µ ja tukivoimasta $N$ seuraavasti: $F_{\mu}=µN$. Pulkkaa, jonka massa on 20 kg, vedetään tasaisella tiellä siten, että kulma narun ja tien välillä on 40 astetta. Kitkakerroin on $\mu=0.58$. Kuinka suurella voimalla $F$ pulkkaa pitää vetää, jotta se kulkee tasaisella nopeudella?
 
 ![Newtonin 1. laki, esimerkki 2](n1_esim2.png "Newtonin 1. laki, esimerkki 2")
 
@@ -69,7 +75,9 @@ solve F\*cos(40)-0.58\*N=0, F\*sin(40)-20\*9.81+N=0
 Tulokseksi saadaan $F=100~\text{N}$ ja $N=132~\text{N}$.
 
 :::
- 
+
+::::
+
 ## Newtonin 2. laki: dynamiikan peruslaki
 
 *"Jos kappaleeseen vaikuttava kokonaisvoima on $F$, niin kappale, jonka massa on $m$, saa kiihtyvyyden $a$, jonka suuruus saadaan yhtälöstä
@@ -77,7 +85,9 @@ $F=ma$".*
 
 Kokemusperäisesti on selvää, että esimerkiksi painavat ostoskärryt kaupassa on hankalampi saada työnnettyä liikkeelle kuin kevyet. Siis mitä suurempi on massa, sitä pienempi on kiihtyvyys, ja toisin päin.
 
-**Esim.** Ratkaistaan Newtonin 2. laista eri suureita liittyen peräkärryn vetämiseen:
+::::{admonition} Esimerkki
+
+Ratkaistaan Newtonin 2. laista eri suureita liittyen peräkärryn vetämiseen:
 
 a) Kuinka suurella voimalla on vedettävä 1000 kg massaista vaunua, jos sille halutaan kiihtyvyys 3.0 $\frac{\text{m}}{\text{s}^2}$?
 
@@ -101,6 +111,8 @@ c) Ratkaistaan Newtonin 2. laista massa ja sijoitetaan luvut:
 $m=\frac{F}{a}= \frac{2000~\text{N}}{4~\frac{\text{m}}{\text{s}^2}} = 500~\text{kg}$
 
 :::
+
+::::
 
 Newtonin 2. lakia tarvitaan usein myös tilanteissa, joissa jokin esine on liukumassa kaltevalla tasolla tai putoamassa. Esimerkiksi kun omena putoaa, siihen vaikuttaa painovoima alaspäin, mutta myös hyvin vähäinen ilmanvastus ylöspäin. Ilmanvastus ei riitä kumoamaan painovoimaa, joten pystysuuntaisten voimien summa ei ole nolla. Siksi omena putoaa kiihtyvällä nopeudella. Vastaavasti jos auto on liikkumassa alamäkeen ja jarruttaa, niin kokonaisvoima muodostuu mäkeä alas suuntautuvasta painovoimasta ja sille vastakkaisesta kitkavoimasta. Tällöin kiihtyvyys saa eri arvon kuin silloin, kun auto jarruttaa tasaisella tai ylämäessä. Tällaisiin ongelmiin palataan kappaleessa "Dynamiikkaa".
 

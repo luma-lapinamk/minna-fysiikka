@@ -10,7 +10,9 @@ Suorakulmaisen kolmion trigonometristen funktioiden perusteella $\sin{\alpha}=\f
 
 $v_0=\sqrt{v_{0x}^2+v_{0y}^2}$
 
-**Esim.** Lumipallo heitetään nopeudella 15 m/s ja heittokulma on 20 astetta. Laske alkunopeuden komponentit.
+::::{admoniotion} Esimerkki
+
+Lumipallo heitetään nopeudella 15 m/s ja heittokulma on 20 astetta. Laske alkunopeuden komponentit.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -21,19 +23,25 @@ Lisäksi todetaan, että $v_0=\sqrt{(5.13~\text{m/s})^2+(14.10~\text{m/s})^2}=15
 
 :::
 
+::::
+
 
 Jos tiedetään pysty- ja vaakasuuntaiset lähtönopeudet, saadaan niistä selville myös heittokulma: $\alpha=\arctan{\frac{v_{0y}}{v_{0x}}}$.
 
-**Esim.** Pesäpallon lähtönopeuden komponentit ovat vaakasuunnassa 20 m/s ja pystysuunnassa 6 m/s. Laske lähtönopeus ja lähtökulma.
+::::{admonition} Esimerkki
+
+Pesäpallon lähtönopeuden komponentit ovat vaakasuunnassa 20 m/s ja pystysuunnassa 6 m/s. Laske lähtönopeus ja lähtökulma.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
 Lähtönopeus on $v_0=\sqrt{(20~\text{m/s})^2+(6~\text{m/s})^2}=20.88~\text{m/s} \approx 75~\text{km/h}$
 
-ja lähtökulma on $\alpha=\arctan{\frac{6~\text{m/s}}}{20~\text{m/s}}} \approx 17^{\circ}$.
+ja lähtökulma on $\alpha=\arctan{\frac{6~\text{m/s}}{20~\text{m/s}}} \approx 17^{\circ}$.
 
 :::
+
+::::
 
 Vinossa heittoliikkeessä kappaleen liikettä määrittävät seuraavat yhtälöt:
 
@@ -59,7 +67,9 @@ Periaate on sama kuin aiemminkin: suureista voidaan selvittää yhtä monta tunt
 
 Kynällä ja paperilla laskettaessa voitaisiin toimia seuraavasti: Jos tiedetään lähtönopeus ja lähtökulma, niin lentoaika saadaan sijoittamalla pystysuunnan paikkayhtälöön $y=0$ m (etsitään siis hetkeä, jolloin heitetty esine on maan pinnalla). Kun lentoaika on selvillä, saadaan lentomatka vaakasuunnan paikkayhtälöstä.
 
-**Esim.** Rannikkotykistön ammunnassa eräs tykinammus lähtee nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Mihin asti ammus lentää?
+::::{admonition} Esimerkki
+
+Rannikkotykistön ammunnassa eräs tykinammus lähtee nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Mihin asti ammus lentää?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -76,17 +86,17 @@ solve 0=2+600\*sin(25)\*t-0.5\*9.81\*t^2, x=600\*cos(25)\*t
 
 :::
  
+::::
+
 Kun kappale on lentoratansa korkeimmassa kohdassa, sen pystysuuntainen nopeus on hetkellisesti 0 m/s. Näinhän todettiin jo pystysuuntaisen kiihtyvän liikkeen yhteydessä. Vinossa heittoliikkeessä vain erona on, että pystysuuntaiseksi nopeus pitää ilmaista heittokulman $\alpha$ avulla. Tällöin lakikorkeuden ajanhetkeksi saadaan nopeusyhtälöstä ratkaisemalla:
 
-$0=v_{0y}-gt$
-
-$0=v_0 \sin{\alpha} -gt$
-
-$t=\frac{v_0 \sin{\alpha}}{g}$
+$0=v_{0y}-gt \Leftrightarrow 0=v_0 \sin{\alpha} -gt \Leftrightarrow t=\frac{v_0 \sin{\alpha}}{g}$
 
 Lakikorkeus eli sijainti tuolla hetkellä saadaan sijoittamalla kyseinen ajanhetki pystysuunnan paikkayhtälöön. Vaihtoehtoisesti voidaan jälleen kirjoittaa nopeus- ja paikkayhtälö kerralla WolframAlphaan. 
 
-**Esim.** Rannikkotykistön ammunnassa eräs tykinammus lähtee nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Laske ammuksen lakikorkeus.
+::::{admonition} Esimerkki
+
+Rannikkotykistön ammunnassa eräs tykinammus lähtee nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Laske ammuksen lakikorkeus.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -103,4 +113,4 @@ solve 0=600\*sin(25)-9.81\*t, y=2+600\*sin(25)\*t-0.5\*9.81\*t^2
 
 :::
  
- 
+::::
