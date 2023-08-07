@@ -1,10 +1,10 @@
 # Tasapainoehdot
 
-Tarkastellaan jäykän kappaleen tasapainossa pysymistä. Jäykkiä kappaleita ovat esimerkiksi sillat, työkoneiden puomit ja vastaavat, sekä vaikkapa ihmisen raajat. Tasapainoehtojen avulla voi arvioida, millaisia voimia niveliin ja lihaksiin kohdistuu kuvan tilanteessa.
+Tarkastellaan jäykän kappaleen tasapainossa pysymistä. Jäykkiä kappaleita ovat esimerkiksi sillat, työkoneiden puomit ja vastaavat, sekä vaikkapa ihmisen raajat. Tasapainoehtojen avulla voi arvioida, millaisia voimia niveliin ja lihaksiin kohdistuu kun kädessä pidetään jotain painavaa esinettä.
 
 ![Voimia käsivarressa](hauis.png "Voimia käsivarressa")
 
-Jäykkä kappale on tasapainossa, jos seuraavat kaksi ehtoa toteutuvat:
+Yleensä, kun lasketaan kappaleeseen vaikuttavia voimia, oletetaan että kappale on tasapainossa. Tällöin yhtälöt, joilla tehtävän ratkaisu onnistuu, saadaan ns. jäykän kappaleen tasapainoehdoista:
 
 - kappaleeseen vaikuttavien voimien summa on nolla (= ei kiihtyvyyttä)
 
@@ -16,19 +16,16 @@ Sitten täytyy valita piste, jonka suhteen voimien momentteja lasketaan. Eräs h
 
 Voimat kannattaa kirjoittaa allekkain taulukoksi. Taulukkoon voidaan kirjoittaa kaikkien voimien etäisyydet kyseisestä pisteestä. Siten taulukkoon saa helposti myös voimien momentit. Lopuksi kerätään taulukosta yhdeksi yhtälöksi voimien summa, ja toiseksi yhtälöksi momenttien summa, ja ratkaistaan tämä yhtälöpari.
 
-**Esim.** Laske tukivoimat $N_1$ ja $N_2$, kun 240 cm pitkä, 25 kg painava palkki on tasapainossa. Voima $N_1$ sijaitsee 10 cm palkin päädystä ja voima $N_2$ 30 cm palkin vastakkaisesta päädystä mitattuna.
+::::{admonition} Esimerkki
 
+Metallinen palkki on 240 cm pitkä ja sen massa on 25 kg. Palkki lepää kahden tuen varassa siten, että toinen tuki (voima $N_1$) sijaitsee 10 cm palkin päädystä ja toinen tuki (voima $N_2$) sijaitsee 30 cm palkin vastakkaisesta päädystä. Laske tukivoimat $N_1$ ja $N_2$. Kuvaan on merkitty painovoima $G=mg$ sekä tukivoimat $N_1$ ja $N_2$.
+
+![Tasapaino, esim. 1](palkki1.png "Tasapaino, esim. 1")
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Piirretään aluksi kuva:
-
-![Tasapaino, esim. 1](palkki1.png "Tasapaino, esim. 1")
-
-Kuvaan on merkitty painovoima $G$, tukivoimat $N_1$ ja $N_2$ sekä momenttipiste $A$, joka on asetettu voiman $N_1$ kohdalle. 
-
-Ainoa tunnettu voima on $G = -25~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} = -245.25~\text{N}$. Tämän voiman etäisyys voimasta $N_1$ on 1.1 m. Palkin painopistehän on puolivälissä palkkia eli 1.2 m palkin päädystä, mutta voima $N_1$ on 10 cm päädystä oikealle.
+Lasketaan momentit voimasta $N_1$ mitattuna. Ainoa tunnettu voima on $G = mg= -25~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} = -245.25~\text{N}$. Tämän voiman etäisyys voimasta $N_1$ on 1.1 m. Palkin painopistehän on puolivälissä palkkia eli 1.2 m palkin päädystä, mutta voima $N_1$ on 10 cm päädystä oikealle.
 
 Voiman $N_2$ etäisyys on 2.0 m voimasta $N_1$. Etäisyys saadaan laskemalla 2.40 m - 0.10 m - 0.30 m.
 
@@ -64,8 +61,12 @@ WolframAlphalla ratkaisu saataisiin komennolla: N1-25\*9.81+N2=0, -25\*9.81\*1.1
 
 :::
 
+::::
+
  
-**Esim.** Laske tukivoimat $N_1$ ja $N_2$ kuvan esittämässä tilanteessa. Punnuksen massa on 5 kg ja palkin massa on 10 kg. 
+::::{admonition} Esimerkki
+
+Palkki on 300 cm pitkä ja painaa 10 kg. Palkin päällä 200 cm kohdalla on punnus, jonka massa on 5 kg. Laske tukivoimat $N_1$ ja $N_2$, kun ensimmäinen tuki (voima $N_1$) on aivan palkin päädyssä ja toinen tuki (voima $N_2$) 20 cm palkin toisesta päädystä.
 
 ![Tasapaino, esim. 2](palkki2.png "Tasapaino, esim. 2")
 

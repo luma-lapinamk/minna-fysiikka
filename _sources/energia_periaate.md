@@ -100,26 +100,26 @@ WolframAlphalla laskun voisi suorittaa komennolla: solve 1/2\*25^2-0.5\*9.81\*30
 
 ::::{admonition} Esimserkki
 
-Puupalikka liukuu 5 m korkean talon katolta ensin räystäälle ja putoaa sitten alas. Räystään korkeus on 2.5 m ja katon kaltevuuskulma 30 astetta. Laske nopeus, jolla palikka putoaa maahan
+Jääpala liukuu 5 m korkean talon katolta ensin räystäälle ja putoaa sitten alas. Räystään korkeus on 3 m ja katon kaltevuuskulma 30 astetta. Laske nopeus, jolla palikka putoaa maahan
 
 a) jos katto on jäinen (kitkakerroin on likimain 0), 
 
 b) jos kitkakerroin katon ja palikan välillä on 0.30.
 
-![Liukuva palikka](palikka.png "Liukuva palikka")
+![Liukuva jääpala](palikka.png "Liukuva jääpala")
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-a) Koska kitkatyötä ei ole, niin palikan potentiaalienergia katolla muuttuu kokonaan sen liike-energiaksi maahan osumisen hetkellä. Sijoitetaan energian säilymislakiin tunnetut lukuarvot $v_1=0~\text{m/s}$ ja $h_2=0~\text{m}$ ja ratkaistaan loppunopeus $v_2$:
+a) Koska kitkatyötä ei ole, niin jääpalan potentiaalienergia katolla muuttuu kokonaan sen liike-energiaksi maahan osumisen hetkellä. Sijoitetaan energian säilymislakiin tunnetut lukuarvot $v_1=0~\text{m/s}$, $h_1=5~\text{m}$ ja $h_2=0~\text{m}$ ja ratkaistaan loppunopeus $v_2$:
 
 $gh_1 = \frac{1}{2}v_2^2$
 
 $v_2=\sqrt{2 gh_1} = \sqrt{2\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot 5~\text{m}} = 9.9~\text{m/s}$
 
-b) Kitkatyö vaikuttaa palikkaan katolla matkan $s$, joka saadaan selville trigonometrian avulla:
+b) Kitkatyö vaikuttaa palikkaan katolla matkan $s$, joka saadaan selville suorakulmaisen kolmion trigonometriaa hyödyntäen. Katon alareunan ja huipun välinen kohtisuora etäisyys on $h=5~\text{m}-3~\text{m}=2~\text{m}$. Kaltevuuskulman sinin avulla saadaan
  
-$s=\frac{2.5~\text{m}}{\sin⁡{30^{\circ}}} = 5~\text{m}$
+$s=\frac{2~\text{m}}{\sin⁡{30^{\circ}}} = 4~\text{m}$
 
 Nyt kitkan tekemä työ on $W=-μmg \cos{30^{\circ}}$. 
 
@@ -135,9 +135,9 @@ josta saadaan tulos
 
 $v_2 = \sqrt{2 gh_1-2\mu g \cos{⁡30^{\circ}} s} = \sqrt{2g(h_1-\mu \cos{⁡30^{\circ}} s)} $ 
 
-$v_2 = \sqrt{2\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot (5~\text{m}-0.30\cos{30^{\circ}}\cdot 5~\text{m})} = 8.5~\text{m/s}$
+$v_2 = \sqrt{2\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot (5~\text{m}-0.30\cos{30^{\circ}}\cdot 4~\text{m})} = 8.8~\text{m/s}$
 
-WolframAlphaan yhtälön voisi kirjoittaa seuraavasti: solve s=2.5/sin(30), 9.81\*5-0.3\*9.81*cos(30)\*s=0.5\*v^2
+WolframAlphaan yhtälöt voisi kirjoittaa seuraavasti: solve s=2.5/sin(30), 9.81\*5-0.3\*9.81*cos(30)\*s=0.5\*v^2
 
 :::
 
@@ -145,18 +145,16 @@ WolframAlphaan yhtälön voisi kirjoittaa seuraavasti: solve s=2.5/sin(30), 9.81
 
 ::::{admonition} Esimerkki
 
-Pientä punnusta pyöritetään 80 cm pitkän köyden avulla siten, että punnus liikkuu pystysuunnassa ympyränmuotoisella radalla. Kuinka suuri täytyy punnuksen nopeuden olla ympyrän matalimmassa kohdassa, jotta kyseinen liike olisi mahdollista?
+Poimit ämpärillisen puolukoita ja päätät kokeilla temppua, jossa kanneton ämpäri pyöräytetään ilmassa ympäri siten, että puolukat pysyvät kyydissä. Ämpäri liikkuu siis ilmassa pystysuoran ympyrän muotoisen silmukan. Oletetaan, että silmukan säde $r$ on sama kuin käsivarren pituus eli noin 80 cm. Kuinka suuri täytyy ämpärin nopeuden olla silmukan matalimmassa kohdassa, jotta temppu onnistuisi? 
  
-![Punnuksen pyöritys](punnus.png "Punnuksen pyöritys") 
+![Punnuksen pyöritys](punnus.png "Ämpärin pyöritys") 
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Ympyräliikkeestä muistetaan, että ylimmässä pisteessä keskipakovoiman tulee olla yhtä suuri kuin kappaleeseen kohdistuvan painovoiman, siis 
+Tarkastellaan tilannetta, jossa ämpäri, jonka massa on $m$, on silmukan korkeimmassa pisteessä. Puolukat ovat tällöin silmukan alimmasta tasosta korkeudella $h_2=2r$, missä $r$ on pyörittävän käsivarren pituus (ämpärin kahvaa tai muita mittoja ei tarvitse huomioida). Kun puolukat liikkuvat silmukan ylimmässä kohdassa nopeudella $v$, niihin kohdistuu painovoima $mg$ alaspäin ja keskipakovoima $\frac{mv^2}{r}$ poispäin ympyrän säteestä eli ylöspäin. Voimien pitää olla yhtä suuret, eli ympyräliikkeen kaavoja muistellen 
 
-$mg=\frac{mv_2^2}{r}$, josta saadaan $v_2=\sqrt{rg}$, missä $r$ on köyden pituus.
-
-Lisäksi voidaan valita alimman pisteen korkeudeksi nolla, siis $h_1=0~\text{m}$ ja $h_2=1.60~\text{m}$ eli ympyrän halkaisijan pituus.
+$mg=\frac{mv_2^2}{r}$, josta saadaan $v_2=\sqrt{rg}$
 
 Sijoitetaan $h_1=0~\text{m}$ ja edellä laskettu $v_2$ mekaanisen energian säilymislakiin:
 
@@ -176,16 +174,16 @@ WolframAlpha: solve v2^2/0.8=9.81, 0.5\*v1^2=0.5\*v2^2+9.81\*1.6
 
 ::::{admonition} Esimerkki
 
-Huvipuistossa on vuoristorata, jolla vaunu liukuu kitkattomasti korkeudelta $h$ alas ja tekee silmukan, jonka säde on $R$. Kuinka korkealta vaunun on lähdettävä silmukan säteeseen verrattuna?
+Huvipuistossa on vuoristorata, jolla vaunu liukuu kitkattomasti korkeudelta $h$ alas ja tekee silmukan, jonka säde on $R$. Kuinka korkealta vaunun on lähdettävä silmukan säteeseen verrattuna, jotta sen nopeus riittää silmukan ylimpään pisteeseen asti?
 
 ![Silmukka](silmukka.png "Energiaperiaate silmukassa")
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Pisteessä P tulee taas olla voimassa $mg=\frac{mv_2^2}{R}$, josta saadaan $v_2=\sqrt{Rg}$.
+Silmukan ylimmässä pisteessä tulee taas olla voimassa $mg=\frac{mv_2^2}{R}$, josta saadaan $v_2=\sqrt{Rg}$.
 
-Energiaperiaatteen mukaan vaunun potentiaalienergia lähtöpisteessä on sama kuin vaunun mekaaninen energia pisteessä P. Tässä pisteessä korkeus on $2R$.
+Energiaperiaatteen mukaan vaunun potentiaalienergia lähtöpisteessä on sama kuin vaunun mekaaninen energia silmukan korkeimmassa kohdassa, eli silmukan pohjalta mitattuna korkeudessa $2R$:
 
 $mgh=\frac{1}{2} mv^2+mg\cdot 2R$
 
@@ -198,6 +196,8 @@ $gh=\frac{1}{2} gR +2gR$
 $h=\frac{1}{2} R +2R$
 
 $h=2.5 R$
+
+Näin ollen lähtökorkeuden pitää olla vähintään 2.5 kertaa silmukan säteen verran. Käytännössä tietysti kitkattomat radat ovat mahdottomia.
 
 :::
 

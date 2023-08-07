@@ -1,6 +1,6 @@
 # Liikkuvat nesteet ja kaasut
 
-Kun neste tai kaasu virtaa esimerkiksi putkessa, siihen voidaan soveltaa energian säilymislakia. Nesteille ja kaasuille muokatussa muodossa sitä kutsutaan nimellä Bernoullin laki. Tässä käytetään selkeyden vuoksi aineista nyt vain nimitystä "neste".
+Kun neste tai kaasu virtaa esimerkiksi putkessa, siihen voidaan soveltaa energian säilymislakia. Nesteille ja kaasuille muokatussa muodossa sitä kutsutaan nimellä Bernoullin laki. Tässä selkeyden vuoksi oletetaan, että tarkasteltava aine on vettä ja käytetään siitä nimitystä "neste". Yleisesti nesteitä ja kaasuja nimitetään fluideiksi.
 
 
 ## Virtauksen jatkuvuusyhtälö
@@ -11,7 +11,9 @@ Nesteiden virtausnopeus vaihtelee sen mukaan, millaisessa tilassa neste liikkuu.
  
 $A_1 v_1=A_2 v_2$
 
-**Esim.** Vesi liikkuu puutarhaletkussa nopeudella 3 m/s. Letkun poikkileikkaus on ympyrä, jonka halkaisija on 1.6 cm. Millä nopeudella vesi poistuu letkusta, kun se kulkee suuttimen kautta? Suuttimen poikkileikkaus on ympyrä, jonka halkaisija on 0.5 cm.
+::::{admonition} Esimerkki
+
+Vesi liikkuu puutarhaletkussa nopeudella 3 m/s. Letkun poikkileikkaus on ympyrä, jonka halkaisija on 1.6 cm. Millä nopeudella vesi poistuu letkusta, kun se kulkee suuttimen kautta? Suuttimen poikkileikkaus on ympyrä, jonka halkaisija on 0.5 cm.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -23,9 +25,11 @@ $v_2=\frac{A_1}{A_2} v_1$
 Pinta-alat saadaan säteiden avulla: $A_1=\pi \cdot (0.8~\text{cm})^2, A_2= \pi \cdot (0.25~\text{cm})^2$.
 
 Loppunopeus on siis $v_2=\frac{\pi\cdot(0.8~\text{cm})^2}{\pi\cdot (1.6~\text{cm})^2}\cdot 3\frac{\text{m}}{\text{s}} = \frac{(0.8~\text{cm})^2}{(1.6~\text{cm})^2}\cdot 3\frac{\text{m}}{\text{s}}= 31\frac{\text{m}}{\text{s}}$  
+
 :::
 
- 
+::::
+
 ## Bernoullin laki 
 
 Bernoullin laki on mekaanisen energian säilymislaki sovellettuna putkessa liikkuvalle nesteelle: Jos tietyllä nestemäärällä on jossakin pisteessä tietty määrä mekaanista energiaa ja sitten nestemäärään tehdään jotakin ulkoista työtä, saadaan saman nestemäärän mekaaninen energia jossakin toisessa pisteessä.
@@ -42,9 +46,9 @@ $\rho g h_1+\frac{1}{2} +\rho v_1^2+p_1=\rho gh_2+\frac{1}{2} \rho v_2^2+p_2$,
 
 jota kutsutaan Bernoullin yhtälöksi. Termiä $\rho g h$ kutsutaan hydrostaattiseksi paineeksi ja $\frac{1}{2} \rho v^2$ kutsutaan dynaamiseksi paineeksi. Niiden lausekkeet muistuttavat potentiaalienergian ja liike-energian laskukaavoja.
 
-**Esim.** Millä paineella $p_1$ on pumpattava vettä poikkileikkaukseltaan ympyrän muotoiseen putkeen, jotta vesi kohoaisi suihkulähteestä 10 metriä ylempänä nopeudella 32 m/s? Järjestelmän mitat on annettu kuvassa.
+::::{admonition} Esimerkki
 
-![Bernoullin laki, esimerkki](bernoullin_laki_esim.png "Bernoullin laki, esimerkki")
+Suihkulähteessä vettä pumpataan lammesta vaakasuoraan putkeen, joka on poikkileikkaukseltaan ympyrän (säde 10 cm) muotoinen. Vesi nousee kapeampaan (poikkileikkauksen säde 3 cm) pystysuoraan putkeen, jossa ne nousee 8 metriä ylöspäin. Tarkoitus olisi, että putkesta ulos tullessa veden nopeus olisi 25 m/s. Millä paineella vettä on pumpattava vaakasuoraan putkeen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -55,21 +59,25 @@ $\rho=1000 \frac{\text{kg}}{\text{m}^3}$,
 
 $p_2=101.3~\text{kPa}$ (ulkoinen ilmanpaine),
 
-$v_2=32\frac{\text{m}}{\text{s}}$,
+$v_1=?$ (nopeus nousuputken alapäässä)
 
-$h_1=-8~\text{m}$ (maanpinnan alapuolella) ja 
+$v_2=25\frac{\text{m}}{\text{s}}$ (tavoitenopeus nousuputken yläpäässä),
 
-$h_2=2~\text{m}$ (maanpinnan yläpuolella)
+$h_1=0~\text{m}$ (valittu korkeuden nollataso nousuputken alapäässä) ja 
 
-Nopeus putken alussa saadaan jatkuvuusyhtälön avulla: $v_2=\frac{(2.5~\text{cm})^2}{(7.5~\text{cm})^2} v_2=3.552 \frac{\text{m}}{\text{s}}$
+$h_2=8~\text{m}$ (korkeus nousuputken yläpäässä)
+
+Nopeus nousuputken alussa saadaan jatkuvuusyhtälön avulla: $v_1=\frac{(3~\text{cm})^2}{(10~\text{cm})^2} \cdot 25~\frac{\text{m}}{\text{s}}= 2.25 \frac{\text{m}}{\text{s}}$
 
 Kirjoitetaan yhtälö WolframAlphaan:
 
-solve 1000\*9.81\*(-8)+0.5\*1000\*3.552^2+p=1000\*9.81\*2+0.5\*1000\*32^2+101.3\*10^3
+solve 1000\*9.81\*0+0.5\*1000\*2.25^2+p=1000\*9.81\*8+0.5\*1000\*25^2+101.3\*10^3
 
-ja saadaan vastaukseksi $p=705 092$ pascalia.
+ja saadaan vastaukseksi $p=489 749$ pascalia eli noin 500 kPa.
 
 ::: 
+
+::::
 
 ### Bernoullin lain seurauksia
 

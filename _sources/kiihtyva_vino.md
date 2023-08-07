@@ -69,12 +69,12 @@ Kynällä ja paperilla laskettaessa voitaisiin toimia seuraavasti: Jos tiedetä�
 
 ::::{admonition} Esimerkki
 
-Rannikkotykistön ammunnassa eräs tykinammus lähtee nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Mihin asti ammus lentää?
+Keskiaikainen katapultti sinkoaa kiven nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Mihin asti kivi lentää?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-Pystysuunnan paikkayhtälöstä voidaan ensin ratkaista aika, joka ammuksella kestää saapua maahan:
+Pystysuunnan paikkayhtälöstä voidaan ensin ratkaista aika, joka kivellä kestää saapua maahan:
 
 $0~\text{m}=2~\text{m}+600~\frac{\text{m}}{\text{s}} \cdot \sin⁡{25^{\circ}} \cdot t - \frac{1}{2}\cdot 9.81~\frac{\text{m}}{\text{s}^2}\cdot t^2$
 
@@ -96,7 +96,7 @@ Lakikorkeus eli sijainti tuolla hetkellä saadaan sijoittamalla kyseinen ajanhet
 
 ::::{admonition} Esimerkki
 
-Rannikkotykistön ammunnassa eräs tykinammus lähtee nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Laske ammuksen lakikorkeus.
+Keskiaikainen katapultti sinkoaa kiven nopeudella 600 m/s ja 25 asteen lähtökulmassa 2 m maanpinnan yläpuolelta. Laske kiven lakikorkeus.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown

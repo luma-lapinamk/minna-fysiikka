@@ -47,7 +47,7 @@ Tätä kutsutaan **kiihtyvän liikkeen nopeusyhtälöksi**.
 
 ::::{admonition} Esimerkki
 
-Pyöräilijä ajaa nopeudella 15 km/h ja kiihdyttää sitten 5 sekunnin ajan kiihtyvyydellä $0.3 \frac{\text{m}}{\text{s}^2}$. Laske pyöräilijän nopeus kiihdytyksen jälkeen.
+Pyöräilijä ajaa nopeudella 15 km/h ja kiihdyttää sitten 5 sekunnin ajan kiihtyvyydellä $0.3~\frac{\text{m}}{\text{s}^2}$. Laske pyöräilijän nopeus kiihdytyksen jälkeen.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -123,7 +123,7 @@ $x=\frac{15}{3.6}~\frac{\text{m}}{\text{s}} \cdot 5~\text{s}+\frac{1}{2}\cdot 0.
 
 ::::{admonition} Esimerkki
 
-Ferrari-kuski aloittaa jarrutuksen 200 km/h nopeudesta. Kiihtyvyys jarrutuksessa on $-5.5 ~\frac{\text{m}}{\text{s}^2}$. 
+Autokuski aloittaa jarrutuksen 200 km/h nopeudesta. Kiihtyvyys jarrutuksessa on $-5.5 ~\frac{\text{m}}{\text{s}^2}$. 
 
 a) Laske jarrutusmatka, kun jarrutusajaksi laskettiin aiemmin 10.1 s.
 

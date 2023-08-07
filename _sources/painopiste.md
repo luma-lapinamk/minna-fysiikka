@@ -20,7 +20,9 @@ Laskukaava voidaan yleistää myös $n$ osasta koostuvalle kappaleelle. Näin sa
 
 $x_p=\frac{m_1 x_1 + m_2 x_2 + \ldots m_n x_n}{m_1 + m_2 + \ldots m_n}$, $y_p=\frac{m_1 y_1 + m_2 y_2 + \ldots m_n y_n}{m_1 + m_2 + \ldots m_n}$.
  
-**Esim.** Laske keltaisella värjätyn tasapaksun levyn painopisteen koordinaatit.  
+::::{admonition} Esimerkki
+
+Laske keltaisella värjätyn tasapaksun levyn painopisteen koordinaatit.  
 
 ![Painopiste, esim. 1](levy.png "Painopiste, esim. 1")
 
@@ -45,13 +47,15 @@ $y_p=\frac{6\rho d\cdot 1+18 \rho d \cdot 0-18 \rho d \cdot 3.5}{6\rho d+18 \rho
 
 :::
 
+::::
+
 Käytännönläheisemmin painopiste on massan keskimääräinen sijainti, tai osamassojen keskipisteiden painotettu keskiarvo. Painopiste voi olla myös kappaleen ulkopuolella, esimerkiksi autonrenkaan painopiste on renkaan keskellä. Symmetrisessä, kaikkialta samanlaisesta aineesta koostuvasta kappaleessa (esim. tasapaksu lankku) painopiste on kappaleen keskellä.
 
-Kappale pysyy tasapainossa, jos sitä tuetaan painopisteen kohdalta. Kappale kaatuu, jos sen painopisteestä kohtisuoraan alaspäin osoittava painovoimavektori osuu tukipinnan ulkopuolelle, kuten kuvan esimerkeissä. Tukipinnalla tarkoitetaan esimerkiksi tuolin tai ihmisen jalkojen rajaamaa aluetta. Ripustettaessa painopiste asettuu suoraan ripustuspisteen alapuolelle.
+Kappale pysyy tasapainossa, jos sitä tuetaan painopisteen kohdalta. Kappale kaatuu, jos sen painopisteestä kohtisuoraan alaspäin osoittava painovoimavektori osuu tukipinnan ulkopuolelle. Tukipinnalla tarkoitetaan esimerkiksi tuolin tai ihmisen jalkojen rajaamaa aluetta. Ripustettaessa painopiste asettuu suoraan ripustuspisteen alapuolelle.
 
-![Painopiste ja kaatuminen](kaatuminen.png "Painopiste ja kaatuminen")
+::::{admonition} Esimerkki
 
-**Esim.** Kuvassa on kalavaaka, jossa on liikutettava koukku, varsi ja vastapaino. Kahvan kohdalta varresta luetaan punnittavan kalan paino. Millä etäisyydellä koukusta kahva on, kun kala painaa 3000 g?
+Kuvassa on kalavaaka, jossa on liikutettava koukku, varsi ja vastapaino. Kahvan kohdalta varresta luetaan punnittavan kalan paino. Millä etäisyydellä koukusta kahva on, kun kala painaa 3000 g?
 
 ![Painopiste, esim. 2](kalavaaka.png "Painopiste, esim. 2")
 
@@ -63,3 +67,5 @@ Painopiste on suoraan ripustuskohdan alapuolella, eli kahva on systeemin painopi
 $x_p=\frac{10~\text{g}\cdot 0~\text{cm} + 3000~\text{g}\cdot 0~\text{cm} +100~\text{g} \cdot 40~\text{cm} + 500~\text{g} \cdot 85~\text{cm}}{10~\text{g} + 3000~\text{g} + 100~\text{g} + 500~\text{g}}=12.9~\text{cm}$
 
 :::
+
+::::

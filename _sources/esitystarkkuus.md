@@ -36,7 +36,7 @@ a) $125~\text{nm} + 0.16~\mu\text{m}$
 
 b) $22.3~\text{mg}+0.1~\text{ml}\cdot 12~\text{g/ml}$
 
-c) Laske sellaisen vanerilevyn massa, jonka pinta-ala on $A=2400~\text{cm}^2$, paksuus $h=5.0~\text{mm}$ ja tiheys $\rho=710~\frac{\text{kg}}{\text{m}^3}$. Massa lasketaan $m=\rho V$, missä $V=Ah$.
+c) Vanerilevyn pituus on 160 cm, leveys 70 cm ja paksuus $h=18~\text{mm}$. Materiaalin tiheys $\rho$ on valmistajan mukaan noin $680~\frac{\text{kg}}{\text{m}^3}$. Kuinka suuri on levyn massa? Massa lasketaan $m=\rho V$, missä $V=Ah$ ja $A$ on levyn pinta-ala eli pituuden ja leveyden tulo.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -47,9 +47,9 @@ b) $22.3~\text{mg}+0.1~\text{ml}\cdot 12~\text{g/ml}=$
 
 $ 22.3~\text{mg}+1.20~\text{g}= 22.3~\text{mg}+1200~\text{mg} = 1222~\text{mg}$
 
-c) Tilavuus on $V=2400~\text{cm}^2\cdot 0.50~\text{cm}=1200~\text{cm}^3=0.00120~\text{m}^3$.
+c) Tilavuuden laskemiseksi mitat on muutettava samaan yksikköön. Helpoiten laskusta selviää, kun muuttaa mitat metreiksi: pituus 1.60 m, leveys 0.70 m ja paksuus 0.018 m. Tilavuus on $V=1.60~\text{m}\cdot0.70~\text{m} \cdot 0.018~\text{m}=0.02016~\text{m}^3$.
 
-Massa on $710~\frac{\text{kg}}{\text{m}^3}\cdot 0.00120~\text{m}^3=0.85~\text{kg}$. 
+Massa on $680~\frac{\text{kg}}{\text{m}^3}\cdot 0.02016~\text{m}^3=13.7088~\text{kg}$. Kuitenkin tiheys tunnetaan vain kahden merkitsevän numeron tarkkuudella ja levyn pituus ja leveyskin ovat luultavasti pyöristettyjä arvoja. Niinpä järkevä tarkkuus voisi olla 14 kg.
 
 :::
 

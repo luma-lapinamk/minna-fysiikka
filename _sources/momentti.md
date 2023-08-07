@@ -14,7 +14,9 @@ Se, millä tavalla kappale lähtee pyörähtämään, riippuu kappaleesta. Momen
 
 Jos kappaleeseen vaikuttaa useita voimia, lasketaan kokonaismomentti yksittäisten momenttin summana, voimien suunnat huomioiden. Vertaa tilannetta Newtonin 2. lakiin $F=ma$: mitä suurempi on kappaleen massa, sitä pienemmän kiihtyvyyden se saa, kun siihen kohdistuu tietyn suuruinen kokonaisvoima. 
 
-**Esim.** 50 N voima vaikuttaa 2.5 m pitkään tankoon 40 asteen kulmassa alaspäin. Mikä on voiman momentti kiinnityspisteen A suhteen?
+::::{admonition} Esimerkki
+
+50 N voima vaikuttaa 2.5 m pitkään tankoon 40 asteen kulmassa alaspäin. Mikä on voiman momentti kiinnityspisteen A suhteen?
  
 ![Momentti, esim. 1](momentti1.png "Momentti, esim. 1")
 
@@ -34,7 +36,11 @@ Momentti on positiivinen. Jos kappaletta vedettäisiin voimanuolen suunnassa, se
 
 :::
 
-**Esim.** Laske momentti pisteen A suhteen kuvan kappaleelle:
+::::
+
+::::{admonition} Esimerkki
+
+Laske momentti pisteen A suhteen kuvan kappaleelle:
 
 ![Momentti, esim. 2](momentti2.png "Momentti, esim. 2")
 
@@ -59,13 +65,17 @@ $M=M_1+M_2=-28~\text{Nm}$.
 
 :::
 
+::::
+
 Eräs momentin sovellus on kaksivartinen vipu. Sellaisia käytetään mm. hydraulisissa laitteissa. Käytännössä myös tavallinen rautakanki voi toimia kaksivartisena vipuna. Fysiikan termein ilmaistuna se kone, jossa hyödynnetään momenttia tukipisteen suhteen.
 
 ![Vipuvarsi](vipu.png "Kaksivartinen vipu")
 
 Kaksivartiselle vivulle pätee: $Qr_2=Fr_1$ eli kuorma $Q$ saadaan nostettua voimalla $F$, jonka suuruus riippuu kuorman ja voiman etäisyyksistä $r_1$ ja $r_2$ tukipisteestä mitattuna.
 
-**Esim.** Kaksivartisella vivulla yritetään nostaa 100 kg kuormaa. Vivun alla on tuki 25 cm päässä kuormasta. Kuinka pitkä on vivun oltava, jotta nostamiseen riittää 250 N voima?
+::::{admonition} Esimerkki
+
+Kaksivartisella vivulla yritetään nostaa 150 kg kuormaa. Vivun alla on tuki 25 cm päässä kuormasta. Kuinka pitkä on vivun oltava, jotta nostamiseen riittää 350 N voima?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -74,12 +84,14 @@ Ratkaistaan vipuvarsi $r_1$ yhtälöstä $Qr_2=Fr_1$:
 
 $r_1=\frac{Q}{F} r_2$
 
-Kuorman paino on $Q=100~\text{kg}\cdot 9.81 ~\frac{\text{m}}{\text{s}^2}$.
+Kuorman paino on $Q=150~\text{kg}\cdot 9.81 ~\frac{\text{m}}{\text{s}^2}$.
 
-Sijoittamalla tämän lisäksi voima $F=250~\text{N}$ ja etäisyys $r_2=0.25~\text{m}$ saadaan
+Sijoittamalla tämän lisäksi voima $F=350~\text{N}$ ja etäisyys $r_2=0.25~\text{m}$ saadaan
 
-$r_1=\frac{100~\text{kg}\cdot 9.81 ~\frac{\text{m}}{\text{s}^2}}{250~\text{N}} \cdot 0.25~\text{m} = 0.98~\text{m}$.
+$r_1=\frac{150~\text{kg}\cdot 9.81 ~\frac{\text{m}}{\text{s}^2}}{350~\text{N}} \cdot 0.25~\text{m} = 1.05~\text{m}$.
 
-Koko vivun pituus olisi 0.25 m + 0.981 m = 1.231 m, eli noin 125 cm vipu riittäisi.
+Koko vivun pituus olisi 0.25 m + 1.05 m = 1.31 m.
 
 :::
+
+::::

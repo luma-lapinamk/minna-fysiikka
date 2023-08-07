@@ -58,7 +58,7 @@ Sijoitetaan luvut: $v=\sqrt{9.81~\frac{\text{m}}{\text{s}^2}\cdot 4~\text{m}\cdo
 
 ::::{admonition} Esimerkki
 
-Umpinainen sylinteri, jonka säde on 25 cm, vierii mäkeä, jonka kaltevuuskulma on $15^{\circ}$. Laske sylinterin nopeus, kun se on vierinyt mäkeä pitkin mitattuna 7.5 m.
+Puutukki, jota voidaan kuvata umpinaisena sylinterinä, lähtee korkeudelta $h$ vierimään alas mäkeä. Tukin säde on 15 cm ja mäen kaltevuuskulma on $10^{\circ}$. Laske tukin etenemisnopeus, kun se on vierinyt mäkeä pitkin mitattuna 20 metrin matkan.
 
 ![Vieriminen, esimerkki](vieriminen_esim.png "Vieriminen, esimerkki")
 
@@ -75,9 +75,9 @@ Sievennetään: $gh=\frac{1}{2}v^2+\frac{1}{4} v^2$ eli $gh=\frac{3}{4} v^2$
 
 Ratkaistaan nopeus: $v=\sqrt{\frac{4}{3} gh}$
 
-Lasketaan vierimismatkan perusteella lähtökorkeus: $h=7.5~\text{m}\cdot \sin{⁡15^{\circ}}$  
+Lasketaan vierimismatkan perusteella lähtökorkeus: $h=20~\text{m}\cdot \sin{⁡10^{\circ}}$  
 
-Loppunopeus on siis $v=\sqrt{\frac{4}{3} \cdot 9.81~\frac{\text{m}}{\text{s}^2}\cdot 7.5~\text{m}\cdot \sin{15^{\circ}}} = 5.0 ~\frac{\text{m}}{\text{s}}$.
+Loppunopeus on siis $v=\sqrt{\frac{4}{3} \cdot 9.81~\frac{\text{m}}{\text{s}^2}\cdot 20~\text{m}\cdot \sin{10^{\circ}}} = 6.7 ~\frac{\text{m}}{\text{s}}$.
 
 :::
 

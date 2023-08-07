@@ -20,30 +20,35 @@ Suhteellinen nopeus on tärkeä ohitustilanteissa. Kun arvioidaan ohitukseen tar
 
 ::::{admonition} Esimerkki
 
-Kaksi junaa, joiden pituudet ovat 240 m ja 125 m ja vauhdit vastaavasti 140 km/h ja 85 km/h, kulkevat vierekkäisillä raiteilla 
-a) samaan suuntaan, b) vastakkaisiin suuntiin. Molemmissa tapauksissa junan A kulkema matka junan B suhteen on 240 m + 125 m = 365 m. Kuinka kauan ohitus kestää?
+a) Linja-auto A, jonka pituus on 13 metriä, liikkuu nopeudella 100 km/h. Linja-auton kuljettaja ohittaa ajoneuvoyhdistelmän B, jonka pituus on 20 metriä ja nopeus 80 km/h. Oletetaan, että turvaväli ennen ja jälkeen ohituksen on 20 metriä. Kuinka kauan ohitus kestää ja kuinka pitkän matkan linja-auto liikkuu ohituksen aikana? 
+
+b) Edellisen esimerkin linja-auto ja ajoneuvoyhdistelmä liikkuvat omilla kaistoillaan ja kohtaavat toisensa. Kuinka kauan kohtaaminen kestää? Minkä matkan linja-auto liikkuu tässä ajassa?
 
 ![Suhteellinen nopeus, esimerkki](suhteellinen_junat.png "Suhteellinen nopeus, esimerkki")
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
 
-a) Valitaan $v_{AM}=140~\text{km/h}, v_{BM}=85~\text{km/h}$. Tällöin 
+a) Valitaan $v_{AM}=100~\text{km/h}, v_{BM}=80~\text{km/h}$. Tällöin 
 
 $v_{AB}=v_{AM}-v_{BM}$
 
-$v_{AB}=140~\text{km/h}-85~\text{km/h}=55~\text{km/h}=15.3~\text{m/s}$.  
+$v_{AB}=100~\text{km/h}-80~\text{km/h}=20~\text{km/h}=5.56~\text{m/s}$.  
 
-Ohitusaika on $t=\frac{365~\text{m}}{15.3~\text{m/s}}=24~\text{s}$.
+Ohitukseen tarvittava matka on ajoneuvojen pituuksien summa sekä turvavälit, yhteensä siis 73 metriä.
 
-Ohituksen aikana juna A liikkuu $\frac{140}{3.6}~\frac{\text{m}}{\text{s}}\cdot 24~\text{s}=933~\text{m}$.
+Ohitusaika on $t=\frac{73~\text{m}}{5.56~\text{m/s}}=13.13~\text{s}$.
 
-b) Valitaan $v_{AM}=140~\text{km/h}, v_{BM}=-85~\text{km/h}$. Tällöin 
+Ohituksen aikana linja-auto liikkuu $\frac{100}{3.6}~\frac{\text{m}}{\text{s}}\cdot 13.13~\text{s}=365~\text{m}$.
 
-$v_{AB}=140~\text{km/h}-(-85~\text{km/h})=225~\text{km/h}=62.5~\text{m/s}$.  
+b) Valitaan $v_{AM}=100~\text{km/h}, v_{BM}=-80~\text{km/h}$. Tällöin 
 
-Ohitusaika on $t=\frac{365~\text{m}}{62.5~\text{m/s}}=5.8~\text{s}$.
+$v_{AB}=100~\text{km/h}-(-80~\text{km/h})=180~\text{km/h}=50~\text{m/s}$.
 
-Ohituksen aikana juna A liikkuu $\frac{140}{3.6}~\frac{\text{m}}{\text{s}}\cdot 5.8~\text{s}=226~\text{m}$.
+Kohtaamismatka on autojen pituuksien summa, siis 33 m.
+
+Ohitusaika on $t=\frac{33~\text{m}}{50~\text{m/s}}=0.7~\text{s}$.
+
+Ohituksen aikana linja-auto liikkuu $\frac{100}{3.6}~\frac{\text{m}}{\text{s}}\cdot 0.7~\text{s}=19~\text{m}$.
 
 ::::

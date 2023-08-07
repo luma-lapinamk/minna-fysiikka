@@ -110,7 +110,7 @@ Kaikista koneista menee energiaa hukkaan mm. kitkan aiheuttaman lämmön muodoss
 
 ::::{admonition} Esimerkki
 
-Liukuportaat nostavat matkustajia metroasemalta 30 m matkan ylöspäin katutasolle. Ruuhka-aikana määrä voi olla 120 ihmistä minuutissa. Laske portaiden kuluttama sähköteho, jos matkustajan keskimääräinen paino on 75 kg ja koneen hyötysuhde on 70 %.
+Eräällä metroasemalla on liukuportaat, joilla noustaan 20 metrin matka katutasolle. Oletetaan, että liukuportaissa liikkuu noin 120 ihmistä minuutissa. Laske portaiden kuluttama sähköteho, jos matkustajan keskimääräinen massa on 75 kg ja koneen hyötysuhde on 70 %.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -119,7 +119,7 @@ Ratkaistaan hyötysuhteen määritelmästä ottoteho: $P_{\text{otto}}=\frac{P_{
 
 Sijoitetaan luvut:
 
-$P_{\text{otto}}=\frac{75~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot 30~\text{m}}{60~\text{s} \cdot 0.70}=63064~\text{W} = 63~\text{kW}$
+$P_{\text{otto}}=\frac{75~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot 20~\text{m}}{60~\text{s} \cdot 0.70}=42043~\text{W} = 42~\text{kW}$
 
 :::
 
@@ -127,7 +127,7 @@ $P_{\text{otto}}=\frac{75~\text{kg}\cdot 9.81~\frac{\text{m}}{\text{s}^2} \cdot 
 
 ::::{admonition} Esimerkki
 
-Auton moottorin tehosta suuri osa tarvitaan ilmanvastuksen voittamiseen. Henkilöauton aerodynaaminen muotovakio on $c=0.33$ ja etenemissuuntaa vastaan kohtisuora pinta-ala $A$ on 2.4 neliömetriä. Ilman vastusvoima lasketaan kaavalla $F=\frac{1}{2}c \rho A v^2$, missä $\rho=1.25~\frac{\text{kg}}{\text{m}^3}$ on ilman tiheys ja $v$ on liikkuvan kappaleen nopeus. Laske polttoaineen kulutus 100 km matkalla, kun ajetaan nopeudella 100 km/h. Auton hyötysuhde on 24 % ja bensiinin lämpöarvo on 24 MJ/l. Laske myös auton teoreettinen maksiminopeus, jos auton moottorin maksimiteho on 55 kW.
+Auton moottorin tehosta suuri osa tarvitaan ilmanvastuksen voittamiseen. Ilmanvastuksen suuruus riippuu auton nopeuden lisäksi sen etenemissuuntaa vastaan kohtisuorasta pinta-alasta sekä muodosta, jota kuvataan ns. aerodynaamisella muotovakiolla. Erään henkilöauton aerodynaaminen muotovakio on $c=0.33$ ja etenemissuuntaa vastaan kohtisuora pinta-ala $A$ 2.4 neliömetriä. Ilman vastusvoima lasketaan kaavalla $F=\frac{1}{2}c \rho A v^2$, missä $\rho=1.25~\frac{\text{kg}}{\text{m}^3}$ on ilman tiheys ja $v$ on liikkuvan kappaleen nopeus. Laske polttoaineen kulutus 100 km matkalla, kun ajetaan nopeudella 100 km/h. Auton hyötysuhde on 24 % ja bensiinin lämpöarvo on 24 MJ/l. Laske myös auton teoreettinen maksiminopeus, jos auton moottorin maksimiteho on 55 kW.
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown

@@ -6,9 +6,7 @@ Tarkastellaan muutamaa käytännönläheistä dynamiikan ongelmaa, jotka liittyv
 
 Jarrutuksessa kiihtyvyys on peräisin renkaiden ja alustan välisestä kitkasta sekä pinnan kaltevuudesta:
 
-- Kitkavoima $F_{\mu}=\mu N$ on kahden pinnan välillä vaikuttava, pinnan suuntainen voima, johon vaikuttaa pintojen laatu ja kappaleeseen kohdistuva pinnan tukivoima. Pintaparin vaikutusta kuvaa kitkakerroin $\mu$, josta on esimerkkejä taulukossa. Tukivoima $N$ riippuu kappaleen massasta, mahdollisista pystysuuntaisista voimista ja tason kaltevuudesta.
-
-![Kitkakertoimia](kitkakertoimia.png "Kitkakertoimia")
+- Kitkavoima $F_{\mu}=\mu N$ on kahden pinnan välillä vaikuttava, pinnan suuntainen voima, johon vaikuttaa pintojen laatu ja kappaleeseen kohdistuva pinnan tukivoima. Pintaparin vaikutusta kuvaa kitkakerroin $\mu$, josta on esimerkkejä [taulukossa](https://www.taulukot.com/fysiikka/mekaniikka_termodynamiikka/#kitkakertoimia_(ohjeellisia)). Tukivoima $N$ riippuu kappaleen massasta, mahdollisista pystysuuntaisista voimista ja tason kaltevuudesta.
 
 - Kaltevalla pinnalla painovoima kiihdyttää kappaletta alamäen suuntaan. Kiihtyvyys ei kuitenkaan ole niin suurta kuin suoraan alaspäin putoamisessa.
 

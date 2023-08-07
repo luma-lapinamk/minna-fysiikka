@@ -10,7 +10,7 @@ $m_1 v_1+m_2 v_2=(m_1+m_2)u$
 
 ::::{admonition} Esimerkki
 
-Luoti, jonka massa on 15 g, ammutaan nopeudella 300 m/s puupalaan, joka on paikallaan ja jonka massa on 200 g. Luoti jää puupalan sisälle. Millä nopeudella puupala liikkuu heti osuman jälkeen?
+Metsästäjä harjoittelee tähtäämistä paikallaan olevaan, puiseen palikkaan. Luoti lähtee aseen piipusta nopeudella 300 m/s. Luodin massa on 15 g. Se osuu ja uppoaa kiinni palikkaan, jonka massa on 200 g. Millä nopeudella palikka liikkuu heti osuman jälkeen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -25,7 +25,7 @@ Huomaa, että massat on sijoitettu grammoina. Yleensä fysiikan kaavoissa massoj
 
 ::::
 
-Kaksiulotteisissa törmäyksissä liikemäärä säilyy erikseen vaakasuunnassa ja pystysuunnassa. Yksinkertainen esimerkki kaksiulotteisesta epäelastisesta törmäyksestä on risteyskolari, jossa toinen ajoneuvo liikkuu esimerkiksi itä-länsi-suunnassa ja toinen pohjois-etelä-suunnassa. Olisi kuitenkin mahdollista myös käsitellä sellaisia törmäyksiä, jotka eivät tapahdu suorassa kulmassa. Tällöin vinosti liikkuvan kappaleen nopeus jaettaisiin toisen nopeuden suuntaiseen ja sitä vastaan kohtisuoraan nopeuteen. Tällä opintojaksolla ei tarkastella sellaisia tilanteita. Lisäksi kaksiulotteisten törmäysten tarkastelu rajataan vain epäelastiseen tapaukseen.
+Kaksiulotteisissa törmäyksissä liikemäärä säilyy erikseen vaakasuunnassa ja pystysuunnassa. Yksinkertainen esimerkki kaksiulotteisesta epäelastisesta törmäyksestä on risteyskolari, jossa toinen ajoneuvo liikkuu esimerkiksi itä-länsi-suunnassa ja toinen pohjois-etelä-suunnassa. Olisi kuitenkin mahdollista myös käsitellä sellaisia törmäyksiä, jotka eivät tapahdu suorassa kulmassa. Tällöin vinosti liikkuvan kappaleen nopeus jaettaisiin toisen nopeuden suuntaiseen ja sitä vastaan kohtisuoraan komponenttiin. Tällä opintojaksolla ei tarkastella sellaisia tilanteita. Lisäksi kaksiulotteisten törmäysten tarkastelu rajataan vain epäelastiseen tapaukseen.
 
 ![Kaksiulotteinen törmäys](2dtormays.png "Kaksiulotteinen törmäys")
 
@@ -106,7 +106,7 @@ Tästä muokkaamalla saadaan tulos  $v_1+u_1=u_2+v_2$ ja edelleen $v_1-v_2=u_2-u
 
 ::::{admonition} Esimerkki
 
-Fysiikan tunnilla laitetaan kitkattomalla radalle kappale A (m=60 g), joka liikkuu nopeudella 0.80 m/s, törmäämään paikallaan olevaan kappaleeseen B (m=120 g). Kappaleet eivät tartu toisiinsa. Mitkä ovat kappaleiden nopeudet törmäyksen jälkeen?
+Keilahallin hoitaja tekee ajankulukseen törmäyskokeen lähes kitkattomalla keilaradalla. Hän asettaa paikalleen koon 12 (massa $m_2$ noin 5.4 kg) keilapallon ja tähtää sitä koon 9 pallolla (massa $m_1$ noin 4.1 kg) nopeudella $v_1=1.0$ m/s. Keilapallojen törmäys on likimain elastaminen. Mitkä ovat pallojen nopeudet törmäyksen jälkeen?
 
 :::{admonition} Ratkaisu
 :class: tip, dropdown
@@ -115,7 +115,7 @@ Kirjoitetaan liikemäärän säilymislaki ja kappaleiden nopeuseron säilyminen:
 
 $m_1 v_1+m_2 v_2=m_1 u_1+m_2 u_2, v_1-v_2=u_2-u_1$
 
-Sijoittamalla kappaleen B nopeus $v_2=0$ m/s yhtälöt sievenevät muotoon
+Sijoittamalla paikallaan olevan pallon nopeus $v_2=0$ m/s yhtälöt sievenevät muotoon
 
 $m_1 v_1=m_1 u_1+m_2 u_2, v_1=u_2-u_1$
 
@@ -131,23 +131,23 @@ Siirretään $m_2 v_1$ oikealta vasemmalle puolelle ja asetetaan $v_1$ yhteiseks
 
 $v_1 (m_1-m_2) v_1=(m_1+m_2) u_1$
 
-Vaihdetaan puolet ja ratkaistaan kappaleen A loppunopeus $u_1$:
+Vaihdetaan puolet ja ratkaistaan kappaleen isomman pallon loppunopeus $u_1$:
 
 $u_1=\frac{(m_1-m_2) v_1}{m_1+m_2}$
 
-Sijoitetaan lukuarvot $m_1=60~\text{g}, m_2=120~\text{g}, v_1=0.80~\text{m/s}$:
+Sijoitetaan lukuarvot $m_1=4.1~\text{kg}, m_2=5.4~\text{kg}, v_1=1.0~\text{m/s}$:
 
-$u_1=\frac{(60~\text{g}-120~\text{g})\cdot 0.80~\text{m/s}}{60~\text{g}+120~\text{g}}=-0.27~\text{m/s}$
+$u_1=\frac{(4.1~\text{kg}-5.4~\text{kg})\cdot 1.0~\text{m/s}}{4.1~\text{g}+5.4~\text{g}}=-0.14~\text{m/s}$
 
-Lopuksi voidaan ratkaista vielä $u_2=0.80~\text{m/s}-0.27~\text{m/s}=0.53~\text{m/s}$
+Lopuksi voidaan ratkaista vielä $u_2=1.0~\text{m/s}-0.14~\text{m/s}=0.86~\text{m/s}$
 
 Tehtävä voitaisiin tietysti ratkaista myös syöttämällä yhtälöt kerralla WolframAlphaan:
 
-solve 60\*0.8+120\*0=60\*u1+120\*u2, (0.8-0)=(u2-u1)
+solve 4.1\*1.0+5.4\*0=4.1\*u1+5.4\*u2, 1.0-0=u2-u1
 
 tai liike-energian säilymislain avulla:
 
-solve 60\*0.8+120\*0=60\*u1+120\*u2, 60\*0.8^2+120\*0^2=60\*u1^2+120\*u2^2
+solve 4.1\*1.0+5.4\*0=4.1\*u1+5.4\*u2, 4.1\*1.0^2+5.4\*0^2=4.1\*u1^2+5.4\*u2^2
 
 :::
 

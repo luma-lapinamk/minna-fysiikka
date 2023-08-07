@@ -42,24 +42,3 @@ $J=\frac{1}{12}\cdot 3.0~\text{kg} \left[(0.20~\text{m})^2+(0.50~\text{m})^2\rig
 :::
 
 ::::
-
-Pistemäisten kappaleiden hitausmomentti on $J=mr^2$, missä $m$ on kappaleen massa ja $r$ etäisyys pyörimisakselista. Jos kappale koostuu useista pistemäisistä massoista, lasketaan pistemäisten osien hitausmomentit yhteen.
-
-::::{admonition} Esimerkki
-
-Laske oheisen systeemin (jossa massat A, B ja C on kiinnitetty toisiinsa ohuilla tangoilla) hitausmomentti, kun pyörimisakseli kulkee a) pisteen A kautta ja on kohtisuorassa tasoa vastaan, b) pisteiden B ja C kautta.
-
-![Hitausmomentti, esimerkki](hitausmomentti_esim.png "Hitausmomentti, esimerkki")
-
-:::{admonition} Ratkaisu
-:class: tip, dropdown
-
-a) $J=0.3~\text{kg}\cdot (0~\text{m})^2+0.2~\text{kg}\cdot (0.4~\text{m})^2+0.1~\text{kg}\cdot (0.5~\text{m})^2$
-
-$J=0.057~\text{kg m}^2$  
-
-b) $J=0.3~\text{kg}\cdot(0.4~\text{m})^2=0.048~\text{kg m}^2$
-
-:::
- 
-::::
